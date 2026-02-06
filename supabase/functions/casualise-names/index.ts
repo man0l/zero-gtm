@@ -1,53 +1,47 @@
 /**
  * Edge Function: casualise-names
- * Shortens company names to casual conversational form
- * Directive: casualise_company_name.md
- * Uses heuristic suffix removal + OpenAI fallback
+ * Shortens company names to casual conversational form using OpenAI.
+ * Matches the logic in execution/casualise_company_name.py.
+ *
+ * Always uses OpenAI with the same prompt/examples as the Python script.
+ * Batches names (25 per OpenAI call) and writes DB updates 25-concurrent.
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { getSupabaseClient, jsonResponse, errorResponse, handleCors } from "../_shared/supabase.ts";
 
-// Legal suffixes to remove
-const LEGAL_SUFFIXES = [
-  "inc", "incorporated", "llc", "l.l.c", "ltd", "limited", "corp",
-  "corporation", "co", "company", "pllc", "plc", "lp", "llp",
-  "p.c", "p.a", "gmbh", "ag", "sa", "srl", "bv", "nv",
-];
+// Same prompt as execution/casualise_company_name.py → openai_casualise_name()
+const SYSTEM_PROMPT =
+  "You shorten company names for casual outreach. " +
+  "Return JSON with key 'names' containing an array of shortened names in the same order as the input.";
 
-// Business descriptors to remove
-const DESCRIPTORS = [
-  "agency", "professional services", "services", "solutions", "technologies",
-  "technology", "consulting", "consultants", "group", "partners",
-  "associates", "enterprises", "international", "global", "digital",
-  "marketing", "management", "advisors", "advisory", "studio",
-  "labs", "lab", "systems", "network", "networks",
-];
+const USER_PROMPT_PREFIX =
+  "Rules:\n" +
+  "- Shorten the company name to its core brand identity — what people actually call the business.\n" +
+  "- Remove legal suffixes (Inc, LLC, Ltd, Corp, Company, Co, LP, PLLC, GmbH).\n" +
+  "- Remove descriptors and service words (Agency, Services, Group, Partners, Consulting, " +
+  "Solutions, Technologies, Media, Studio, Productions, Digital, Builders, Construction, " +
+  "Custom, Managed, Provider, Support, Repair, Professional).\n" +
+  "- For long names with dashes, taglines, or service descriptions (e.g. 'Acme Corp - Full Service IT Support'), " +
+  "keep ONLY the brand part before the dash/description.\n" +
+  "- Strip location qualifiers when the brand stands alone (e.g. 'Avantel Plumber of Chicago IL' -> 'Avantel').\n" +
+  "- Preserve the core brand (e.g., 'Love AMS' stays 'Love AMS').\n" +
+  "- If shortening makes it too short (<2 chars) or removes the brand, keep original.\n" +
+  "\nExamples:\n" +
+  "AARON FLINT BUILDERS -> Aaron Flint\n" +
+  "Westview Construction -> Westview\n" +
+  "Redemption Custom Builders LLC -> Redemption\n" +
+  "XYZ Agency -> XYZ\n" +
+  "Love AMS Professional Services -> Love AMS\n" +
+  "Love Mayo Inc. -> Love Mayo\n" +
+  "AJ Technology Company - Managed IT support & Services Phoenix -> AJ Technology\n" +
+  "Best IT Guru Managed IT Services Provider -> Best IT Guru\n" +
+  "Avantel Plumber of Chicago IL -> Avantel\n" +
+  "24/7 Quick Fix Plumbers NYC -> Quick Fix Plumbers\n" +
+  "Andres Plumbing and Repair -> Andres Plumbing\n" +
+  "\nCompany names (return shortened versions in same order as JSON array):\n";
 
-function casualiseName(name: string): string {
-  if (!name) return name;
-
-  let result = name.trim();
-
-  // Remove legal suffixes (with optional trailing punctuation)
-  for (const suffix of LEGAL_SUFFIXES) {
-    const pattern = new RegExp(
-      `[,\\s]+${suffix.replace(/\./g, "\\.")}[\\.\\s]*$`,
-      "i"
-    );
-    result = result.replace(pattern, "").trim();
-  }
-
-  // Remove business descriptors from the end
-  for (const desc of DESCRIPTORS) {
-    const pattern = new RegExp(`\\s+${desc}\\s*$`, "i");
-    result = result.replace(pattern, "").trim();
-  }
-
-  // If result is too short or empty, keep original
-  if (result.length < 2) return name.trim();
-
-  return result;
-}
+const DB_CONCURRENCY = 25;
+const OPENAI_BATCH_SIZE = 25;
 
 Deno.serve(async (req: Request) => {
   const corsResp = handleCors(req);
@@ -60,8 +54,17 @@ Deno.serve(async (req: Request) => {
   const supabase = getSupabaseClient(req);
 
   try {
-    const { campaign_id, lead_ids, use_openai = false } = await req.json();
+    const { campaign_id, lead_ids } = await req.json();
     if (!campaign_id) return errorResponse("campaign_id required");
+
+    // Get OpenAI key
+    const { data: keyRow } = await supabase
+      .from("api_keys")
+      .select("api_key")
+      .eq("service", "openai")
+      .single();
+
+    if (!keyRow) return errorResponse("OpenAI API key not configured");
 
     // Fetch leads needing casualisation
     let query = supabase
@@ -81,80 +84,76 @@ Deno.serve(async (req: Request) => {
       return jsonResponse({ processed: 0, message: "No leads need casualisation" });
     }
 
-    let processed = 0;
+    // Process names in batches via OpenAI (25 names per API call, 25 concurrent DB writes)
+    const allUpdates: { id: string; casual: string }[] = [];
 
-    if (use_openai) {
-      // Get OpenAI key from api_keys table
-      const { data: keyRow } = await supabase
-        .from("api_keys")
-        .select("api_key")
-        .eq("service", "openai")
-        .single();
+    // Fire all OpenAI batch requests concurrently for maximum throughput
+    const batchPromises: Promise<void>[] = [];
+    for (let i = 0; i < leads.length; i += OPENAI_BATCH_SIZE) {
+      const chunk = leads.slice(i, i + OPENAI_BATCH_SIZE);
+      const names = chunk.map((l: { company_name: string }) => l.company_name);
 
-      if (!keyRow) return errorResponse("OpenAI API key not configured");
-
-      // Process in chunks of 20 for OpenAI
-      const chunkSize = 20;
-      for (let i = 0; i < leads.length; i += chunkSize) {
-        const chunk = leads.slice(i, i + chunkSize);
-        const names = chunk.map((l) => l.company_name);
-
-        const response = await fetch("https://api.openai.com/v1/chat/completions", {
-          method: "POST",
-          headers: {
-            "Authorization": `Bearer ${keyRow.api_key}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            model: "gpt-4o-mini",
-            messages: [
-              {
-                role: "system",
-                content: `Shorten each company name to its casual form. Remove legal suffixes (Inc, LLC, Ltd), business descriptors (Agency, Services, Solutions). Keep brand identity. Return JSON array of shortened names in same order.`,
-              },
-              {
-                role: "user",
-                content: JSON.stringify(names),
-              },
-            ],
-            response_format: { type: "json_object" },
-          }),
-        });
-
-        const result = await response.json();
+      const promise = (async () => {
         try {
+          const response = await fetch("https://api.openai.com/v1/chat/completions", {
+            method: "POST",
+            headers: {
+              "Authorization": `Bearer ${keyRow.api_key}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              model: "gpt-4.1-nano",
+              messages: [
+                { role: "system", content: SYSTEM_PROMPT },
+                { role: "user", content: USER_PROMPT_PREFIX + JSON.stringify(names) },
+              ],
+            response_format: { type: "json_object" },
+            temperature: 0.2,
+            }),
+          });
+
+          const result = await response.json();
+          if (!result.choices?.[0]?.message?.content) {
+            console.error(`OpenAI unexpected response: ${JSON.stringify(result).slice(0, 500)}`);
+            throw new Error(`No choices in response: ${result.error?.message || 'unknown'}`);
+          }
           const content = JSON.parse(result.choices[0].message.content);
+          // Accept various JSON shapes: { names: [...] }, { result: [...] }, or values
           const casualNames: string[] = content.names || content.result || Object.values(content);
 
           for (let j = 0; j < chunk.length && j < casualNames.length; j++) {
-            await supabase
-              .from("leads")
-              .update({ company_name_casual: casualNames[j] })
-              .eq("id", chunk[j].id);
-            processed++;
+            const casual = (casualNames[j] || "").trim();
+            allUpdates.push({
+              id: chunk[j].id,
+              casual: casual.length >= 2 ? casual : chunk[j].company_name,
+            });
           }
-        } catch {
-          // Fallback to heuristic for this chunk
+        } catch (err) {
+          // On OpenAI failure, keep original names
+          console.error(`OpenAI batch error: ${err}`);
           for (const lead of chunk) {
-            const casual = casualiseName(lead.company_name);
-            await supabase
-              .from("leads")
-              .update({ company_name_casual: casual })
-              .eq("id", lead.id);
-            processed++;
+            allUpdates.push({ id: lead.id, casual: lead.company_name });
           }
         }
-      }
-    } else {
-      // Heuristic-only mode (fast, no API cost)
-      for (const lead of leads) {
-        const casual = casualiseName(lead.company_name);
-        await supabase
-          .from("leads")
-          .update({ company_name_casual: casual })
-          .eq("id", lead.id);
-        processed++;
-      }
+      })();
+      batchPromises.push(promise);
+    }
+
+    await Promise.all(batchPromises);
+
+    // Write all updates to DB with 25-concurrent writes
+    let processed = 0;
+    for (let i = 0; i < allUpdates.length; i += DB_CONCURRENCY) {
+      const batch = allUpdates.slice(i, i + DB_CONCURRENCY);
+      await Promise.all(
+        batch.map((item) =>
+          supabase
+            .from("leads")
+            .update({ company_name_casual: item.casual })
+            .eq("id", item.id)
+        )
+      );
+      processed += batch.length;
     }
 
     return jsonResponse({ processed, total: leads.length, campaign_id });

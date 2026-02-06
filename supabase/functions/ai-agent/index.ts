@@ -893,33 +893,48 @@ async function toolCasualiseNames(
   campaignId: string,
   defaults: AgentDefaults,
 ): Promise<string> {
-  // Heuristic suffix/descriptor removal (same as casualise-names Edge Function)
-  const LEGAL_SUFFIXES = [
-    "inc", "incorporated", "llc", "l.l.c", "ltd", "limited", "corp",
-    "corporation", "co", "company", "pllc", "plc", "lp", "llp",
-    "p.c", "p.a", "gmbh", "ag", "sa", "srl", "bv", "nv",
-  ];
-  const DESCRIPTORS = [
-    "agency", "professional services", "services", "solutions", "technologies",
-    "technology", "consulting", "consultants", "group", "partners",
-    "associates", "enterprises", "international", "global", "digital",
-    "marketing", "management", "advisors", "advisory", "studio",
-    "labs", "lab", "systems", "network", "networks",
-  ];
+  // Same prompt as execution/casualise_company_name.py → openai_casualise_name()
+  const CASUALISE_SYSTEM =
+    "You shorten company names for casual outreach. " +
+    "Return JSON with key 'names' containing an array of shortened names in the same order as the input.";
+  const CASUALISE_USER_PREFIX =
+    "Rules:\n" +
+    "- Shorten the company name to its core brand identity — what people actually call the business.\n" +
+    "- Remove legal suffixes (Inc, LLC, Ltd, Corp, Company, Co, LP, PLLC, GmbH).\n" +
+    "- Remove descriptors and service words (Agency, Services, Group, Partners, Consulting, " +
+    "Solutions, Technologies, Media, Studio, Productions, Digital, Builders, Construction, " +
+    "Custom, Managed, Provider, Support, Repair, Professional).\n" +
+    "- For long names with dashes, taglines, or service descriptions (e.g. 'Acme Corp - Full Service IT Support'), " +
+    "keep ONLY the brand part before the dash/description.\n" +
+    "- Strip location qualifiers when the brand stands alone (e.g. 'Avantel Plumber of Chicago IL' -> 'Avantel').\n" +
+    "- Preserve the core brand (e.g., 'Love AMS' stays 'Love AMS').\n" +
+    "- If shortening makes it too short (<2 chars) or removes the brand, keep original.\n" +
+    "\nExamples:\n" +
+    "AARON FLINT BUILDERS -> Aaron Flint\n" +
+    "Westview Construction -> Westview\n" +
+    "Redemption Custom Builders LLC -> Redemption\n" +
+    "XYZ Agency -> XYZ\n" +
+    "Love AMS Professional Services -> Love AMS\n" +
+    "Love Mayo Inc. -> Love Mayo\n" +
+    "AJ Technology Company - Managed IT support & Services Phoenix -> AJ Technology\n" +
+    "Best IT Guru Managed IT Services Provider -> Best IT Guru\n" +
+    "Avantel Plumber of Chicago IL -> Avantel\n" +
+    "24/7 Quick Fix Plumbers NYC -> Quick Fix Plumbers\n" +
+    "Andres Plumbing and Repair -> Andres Plumbing\n" +
+    "\nCompany names (return shortened versions in same order as JSON array):\n";
 
-  function casualise(name: string): string {
-    if (!name) return name;
-    let r = name.trim();
-    for (const s of LEGAL_SUFFIXES) {
-      r = r.replace(
-        new RegExp(`[,\\s]+${s.replace(/\./g, "\\.")}[\\.\\s]*$`, "i"),
-        "",
-      ).trim();
-    }
-    for (const d of DESCRIPTORS) {
-      r = r.replace(new RegExp(`\\s+${d}\\s*$`, "i"), "").trim();
-    }
-    return r.length < 2 ? name.trim() : r;
+  const OPENAI_BATCH = 25;
+  const DB_CONCURRENCY = 25;
+
+  // Get OpenAI key
+  const { data: keyRow } = await supabase
+    .from("api_keys")
+    .select("api_key")
+    .eq("service", "openai")
+    .single();
+
+  if (!keyRow?.api_key) {
+    return JSON.stringify({ error: "OpenAI API key not configured" });
   }
 
   const { data: leads, error } = await supabase
@@ -937,20 +952,75 @@ async function toolCasualiseNames(
       message: "No leads need casualisation",
     });
 
+  // Fire all OpenAI batch requests concurrently
+  const allUpdates: { id: string; casual: string }[] = [];
+  const batchPromises: Promise<void>[] = [];
+
+  for (let i = 0; i < leads.length; i += OPENAI_BATCH) {
+    const chunk = leads.slice(i, i + OPENAI_BATCH);
+    const names = chunk.map((l: { company_name: string }) => l.company_name);
+
+    const promise = (async () => {
+      try {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${keyRow.api_key}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "gpt-4.1-nano",
+            messages: [
+              { role: "system", content: CASUALISE_SYSTEM },
+              { role: "user", content: CASUALISE_USER_PREFIX + JSON.stringify(names) },
+            ],
+            response_format: { type: "json_object" },
+            temperature: 0.2,
+          }),
+        });
+
+        const result = await response.json();
+        const content = JSON.parse(result.choices[0].message.content);
+        const casualNames: string[] = content.names || content.result || Object.values(content);
+
+        for (let j = 0; j < chunk.length && j < casualNames.length; j++) {
+          const casual = (casualNames[j] || "").trim();
+          allUpdates.push({
+            id: chunk[j].id,
+            casual: casual.length >= 2 ? casual : chunk[j].company_name,
+          });
+        }
+      } catch (err) {
+        console.error(`OpenAI casualise batch error: ${err}`);
+        for (const lead of chunk) {
+          allUpdates.push({ id: lead.id, casual: lead.company_name });
+        }
+      }
+    })();
+    batchPromises.push(promise);
+  }
+
+  await Promise.all(batchPromises);
+
+  // Write DB updates 25-concurrent
   let processed = 0;
-  for (const lead of leads) {
-    const casual = casualise(lead.company_name);
-    await supabase
-      .from("leads")
-      .update({ company_name_casual: casual })
-      .eq("id", lead.id);
-    processed++;
+  for (let i = 0; i < allUpdates.length; i += DB_CONCURRENCY) {
+    const batch = allUpdates.slice(i, i + DB_CONCURRENCY);
+    await Promise.all(
+      batch.map((item) =>
+        supabase
+          .from("leads")
+          .update({ company_name_casual: item.casual })
+          .eq("id", item.id)
+      )
+    );
+    processed += batch.length;
   }
 
   return JSON.stringify({
     processed,
     total: leads.length,
-    message: `Casualised ${processed} company names.`,
+    message: `Casualised ${processed} company names using OpenAI.`,
   });
 }
 

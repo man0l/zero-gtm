@@ -70,8 +70,8 @@ class FindDecisionMakersWorker(SupabaseWorkerBase):
         processed = 0
         found = 0
 
-        # Process leads concurrently (5 at a time) for much better throughput
-        CONCURRENT = 5
+        # Process leads concurrently for much better throughput
+        CONCURRENT = 25
         with ThreadPoolExecutor(max_workers=CONCURRENT) as executor:
             futures = {}
             for lead in leads:
