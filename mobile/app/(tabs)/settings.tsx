@@ -12,8 +12,11 @@ import {
   useSaveApiKey,
   useAgentConfig,
   useSaveAgentConfig,
+  useOpenAIModels,
 } from "@/lib/queries";
 import type { AgentConfig, AgentToolDefaults } from "@/lib/types";
+import { Select } from "@/components/ui/select";
+import type { SelectOption } from "@/components/ui/select";
 
 const API_SERVICES = [
   { key: "openai", label: "OpenAI", desc: "GPT models for enrichment & icebreakers" },
@@ -95,6 +98,13 @@ export default function SettingsScreen() {
   const { data: agentConfig, isLoading: configLoading } = useAgentConfig();
   const saveConfig = useSaveAgentConfig();
 
+  // OpenAI models for dropdown
+  const {
+    data: openaiModels,
+    isLoading: modelsLoading,
+    error: modelsError,
+  } = useOpenAIModels();
+
   // Local state for editing
   const [model, setModel] = useState("");
   const [maxIterations, setMaxIterations] = useState("");
@@ -122,6 +132,17 @@ export default function SettingsScreen() {
   }, [agentConfig]);
 
   const markDirty = useCallback(() => setDirty(true), []);
+
+  // Build model dropdown options
+  const modelOptions: SelectOption[] = (openaiModels || []).map((m) => ({
+    label: m,
+    value: m,
+  }));
+
+  // If current model isn't in the list (e.g. API key not set yet), add it so it still shows
+  if (model && !modelOptions.find((o) => o.value === model)) {
+    modelOptions.unshift({ label: `${model} (current)`, value: model });
+  }
 
   const configuredServices = new Set(
     (existingKeys || []).map((k: { service: string }) => k.service),
@@ -280,14 +301,17 @@ export default function SettingsScreen() {
 
       {/* Model & General */}
       <Section title="Model & General" defaultOpen>
-        <Input
+        <Select
           label="OpenAI Model"
           value={model}
-          onChangeText={(v) => {
+          options={modelOptions}
+          onValueChange={(v) => {
             setModel(v);
             markDirty();
           }}
           placeholder="gpt-4o-mini"
+          loading={modelsLoading}
+          error={modelsError ? "Failed to load models. Check your OpenAI API key." : null}
         />
         <Input
           label="Max Tool Iterations"

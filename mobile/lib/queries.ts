@@ -476,6 +476,23 @@ export function useDashboardStats() {
   });
 }
 
+// ==================== OPENAI MODELS ====================
+
+export function useOpenAIModels() {
+  return useQuery({
+    queryKey: ["openai_models"],
+    queryFn: async () => {
+      const data = await invokeFunction<{ models: string[]; total: number }>(
+        "list-models",
+        {},
+      );
+      return data.models;
+    },
+    staleTime: 1000 * 60 * 30, // Cache for 30 minutes
+    retry: 1,
+  });
+}
+
 // ==================== AGENT CONFIG ====================
 
 export function useAgentConfig() {
