@@ -22,6 +22,7 @@ import {
 } from "react-native";
 import { useState, useRef, useCallback, useEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Card } from "@/components/ui/card";
 import {
   useSendAgentMessage,
@@ -316,6 +317,7 @@ function HistoryPanel({
   activeId: string | null;
 }) {
   const { data: conversations, isLoading } = useAgentConversations();
+  const historyInsets = useSafeAreaInsets();
 
   if (!visible) return null;
 
@@ -346,7 +348,7 @@ function HistoryPanel({
             <ActivityIndicator size="small" color="#3b82f6" />
           </View>
         ) : !conversations?.length ? (
-          <View className="py-8 items-center">
+          <View style={{ paddingBottom: historyInsets.bottom }} className="py-8 items-center">
             <Ionicons name="chatbubbles-outline" size={32} color="#475569" />
             <Text className="text-sm text-muted-foreground mt-2">
               No conversations yet
@@ -356,7 +358,7 @@ function HistoryPanel({
           <FlatList
             data={conversations}
             keyExtractor={(item) => item.id}
-            contentContainerClassName="pb-8"
+            contentContainerStyle={{ paddingBottom: Math.max(historyInsets.bottom, 16) + 16 }}
             renderItem={({ item }) => {
               const isActive = item.id === activeId;
               return (
@@ -407,6 +409,8 @@ function HistoryPanel({
 // ─── Main Screen ─────────────────────────────────────────────────────
 
 export default function AgentScreen() {
+  const insets = useSafeAreaInsets();
+
   // Conversation state
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<DisplayMessage[]>([]);
@@ -595,11 +599,14 @@ export default function AgentScreen() {
   const chatTitle =
     messages.find((m) => m.role === "user")?.content.slice(0, 40) || null;
 
+  // Tab bar (56) + bottom inset; iOS also needs the header offset
+  const kvOffset = Platform.OS === "ios" ? 90 : 56 + insets.bottom;
+
   return (
     <KeyboardAvoidingView
       className="flex-1 bg-background"
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-      keyboardVerticalOffset={Platform.OS === "ios" ? 90 : 0}
+      behavior="padding"
+      keyboardVerticalOffset={kvOffset}
     >
       {/* ─── Chat Header ─── */}
       <View className="flex-row items-center px-4 py-2 border-b border-border bg-card">

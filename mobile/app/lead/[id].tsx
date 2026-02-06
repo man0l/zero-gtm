@@ -8,6 +8,7 @@ import { useLocalSearchParams } from "expo-router";
 import { useState } from "react";
 import * as Clipboard from "expo-clipboard";
 import { Ionicons } from "@expo/vector-icons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useLead } from "@/lib/queries";
@@ -79,6 +80,7 @@ function Section({ title, icon, children, badge }: {
 
 export default function LeadDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
+  const insets = useSafeAreaInsets();
   const { data: lead } = useLead(id);
   const [showRaw, setShowRaw] = useState(false);
 
@@ -96,7 +98,7 @@ export default function LeadDetailScreen() {
   return (
     <ScrollView
       className="flex-1 bg-background"
-      contentContainerClassName="p-4 pb-8"
+      contentContainerStyle={{ padding: 16, paddingBottom: Math.max(insets.bottom, 16) + 16 }}
     >
       {/* Header */}
       <View className="mb-4">

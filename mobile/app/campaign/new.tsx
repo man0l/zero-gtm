@@ -4,12 +4,14 @@
 import { View, ScrollView, Alert } from "react-native";
 import { useRouter } from "expo-router";
 import { useState } from "react";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useCreateCampaign } from "@/lib/queries";
 
 export default function NewCampaignScreen() {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const createCampaign = useCreateCampaign();
   const [name, setName] = useState("");
   const [serviceLine, setServiceLine] = useState("");
@@ -44,7 +46,7 @@ export default function NewCampaignScreen() {
   return (
     <ScrollView
       className="flex-1 bg-background"
-      contentContainerClassName="p-4 pb-8"
+      contentContainerStyle={{ padding: 16, paddingBottom: Math.max(insets.bottom, 16) + 16 }}
     >
       <Input
         label="Campaign Name"
