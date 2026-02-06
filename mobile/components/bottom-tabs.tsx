@@ -1,10 +1,12 @@
 /**
  * Persistent bottom tab bar for screens outside the (tabs) layout.
  * Mirrors the same styling and navigation as the Tabs layout.
+ * Uses safe area insets so the bar clears the Android navigation bar.
  */
 import { View, Text, Pressable } from "react-native";
 import { useRouter, usePathname } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const TABS = [
   { name: "Dashboard", href: "/", icon: "grid-outline" as const },
@@ -17,39 +19,42 @@ const TABS = [
 export function BottomTabs() {
   const router = useRouter();
   const pathname = usePathname();
+  const insets = useSafeAreaInsets();
 
   return (
     <View
-      className="flex-row border-t border-border bg-background"
-      style={{ height: 56, paddingBottom: 4 }}
+      className="border-t border-border bg-background"
+      style={{ paddingBottom: insets.bottom }}
     >
-      {TABS.map((tab) => {
-        const isActive =
-          tab.href === "/"
-            ? pathname === "/"
-            : pathname.startsWith(tab.href);
+      <View className="flex-row" style={{ height: 56 }}>
+        {TABS.map((tab) => {
+          const isActive =
+            tab.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(tab.href);
 
-        return (
-          <Pressable
-            key={tab.name}
-            onPress={() => router.push(tab.href as any)}
-            className="flex-1 items-center justify-center"
-          >
-            <Ionicons
-              name={tab.icon}
-              size={22}
-              color={isActive ? "#3b82f6" : "#64748b"}
-            />
-            <Text
-              className={`text-[10px] mt-0.5 ${
-                isActive ? "text-blue-500" : "text-muted-foreground"
-              }`}
+          return (
+            <Pressable
+              key={tab.name}
+              onPress={() => router.push(tab.href as any)}
+              className="flex-1 items-center justify-center"
             >
-              {tab.name}
-            </Text>
-          </Pressable>
-        );
-      })}
+              <Ionicons
+                name={tab.icon}
+                size={22}
+                color={isActive ? "#3b82f6" : "#64748b"}
+              />
+              <Text
+                className={`text-[10px] mt-0.5 ${
+                  isActive ? "text-blue-500" : "text-muted-foreground"
+                }`}
+              >
+                {tab.name}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </View>
     </View>
   );
 }
