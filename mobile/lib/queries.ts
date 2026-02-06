@@ -4,7 +4,7 @@
  */
 import { useQuery, useInfiniteQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase, invokeFunction } from "./supabase";
-import type { Campaign, Lead, BulkJob, AgentMessage, AgentResponse } from "./types";
+import type { Campaign, Lead, BulkJob, AgentMessage, AgentResponse, AgentConfig } from "./types";
 
 // Lean field selection for list rendering (10 fields instead of 40+)
 const LEAD_LIST_FIELDS =
@@ -434,6 +434,54 @@ export function useDashboardStats() {
       };
     },
     refetchInterval: 10000,
+  });
+}
+
+// ==================== AGENT CONFIG ====================
+
+export function useAgentConfig() {
+  return useQuery({
+    queryKey: ["agent_config"],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("app_settings")
+        .select("settings")
+        .eq("id", 1)
+        .single();
+      if (error) throw error;
+      return (data?.settings as { agent?: AgentConfig })?.agent ?? null;
+    },
+  });
+}
+
+export function useSaveAgentConfig() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (agentConfig: Partial<AgentConfig>) => {
+      // Read current settings first to merge
+      const { data: current } = await supabase
+        .from("app_settings")
+        .select("settings")
+        .eq("id", 1)
+        .single();
+
+      const existingSettings = (current?.settings as Record<string, unknown>) || {};
+      const existingAgent = (existingSettings.agent as Record<string, unknown>) || {};
+
+      const merged = {
+        ...existingSettings,
+        agent: { ...existingAgent, ...agentConfig },
+      };
+
+      const { data, error } = await supabase
+        .from("app_settings")
+        .upsert({ id: 1, settings: merged }, { onConflict: "id" })
+        .select()
+        .single();
+      if (error) throw error;
+      return data;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["agent_config"] }),
   });
 }
 

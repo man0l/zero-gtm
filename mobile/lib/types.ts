@@ -105,6 +105,32 @@ export interface AppSettings {
   settings: Record<string, unknown>;
 }
 
+// ==================== AGENT CONFIG ====================
+
+export interface AgentToolDefaults {
+  scrape_max_leads: number;
+  scrape_qa_limit: number;
+  scrape_qa_concurrent: number;
+  scrape_full_concurrent: number;
+  locations_file: string;
+  clean_max_leads: number;
+  clean_workers: number;
+  find_emails_max_leads: number;
+  find_dm_max_leads: number;
+  casualise_batch_size: number;
+  sample_leads_default: number;
+  sample_leads_max: number;
+  active_jobs_limit: number;
+}
+
+export interface AgentConfig {
+  model: string;
+  max_iterations: number;
+  system_prompt: string;
+  tool_descriptions: Record<string, string>;
+  defaults: AgentToolDefaults;
+}
+
 // ==================== AI AGENT ====================
 
 export interface AgentMessage {
