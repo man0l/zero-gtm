@@ -310,6 +310,34 @@ export function useBulkJobs(campaignId?: string) {
  * Poll a single bulk_job by ID every 2s while it's running.
  * Stops automatically when the job reaches a terminal state.
  */
+/**
+ * Poll for active (pending/running) bulk_jobs created after a given timestamp.
+ * Used by the Agent chat to show live progress while the AI is thinking.
+ * Only polls when `enabled` is true; stops when disabled.
+ */
+export function useActiveJobsSince(sinceTs: number | null, enabled: boolean) {
+  return useQuery({
+    queryKey: ["active_jobs_since", sinceTs],
+    queryFn: async () => {
+      const since = new Date(sinceTs! - 5000).toISOString(); // 5s buffer
+      const { data, error } = await supabase
+        .from("bulk_jobs")
+        .select("id, type, status, progress, error, started_at, completed_at, created_at")
+        .gte("created_at", since)
+        .in("status", ["pending", "running"])
+        .order("created_at", { ascending: true })
+        .limit(10);
+      if (error) throw error;
+      return (data ?? []) as Pick<
+        BulkJob,
+        "id" | "type" | "status" | "progress" | "error" | "started_at" | "completed_at" | "created_at"
+      >[];
+    },
+    enabled: enabled && sinceTs !== null,
+    refetchInterval: 2000,
+  });
+}
+
 export function useJobProgress(jobId: string | null) {
   return useQuery({
     queryKey: ["job_progress", jobId],

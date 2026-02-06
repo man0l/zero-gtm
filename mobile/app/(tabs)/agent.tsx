@@ -30,7 +30,9 @@ import {
   useSaveConversation,
   useDeleteConversation,
   useJobProgress,
+  useActiveJobsSince,
 } from "@/lib/queries";
+import { JOB_TYPE_LABELS } from "@/lib/utils";
 import type { AgentMessage, AgentToolLogEntry } from "@/lib/types";
 
 // ─── Types ───────────────────────────────────────────────────────────
@@ -290,13 +292,74 @@ function MessageBubble({ msg }: { msg: DisplayMessage }) {
   );
 }
 
-function TypingIndicator() {
+function TypingIndicator({ sentAt }: { sentAt: number | null }) {
+  const { data: activeJobs } = useActiveJobsSince(sentAt, sentAt !== null);
+
   return (
     <View className="items-start mb-3">
       <View className="bg-card border border-border rounded-2xl rounded-bl-sm px-4 py-3 flex-row items-center">
         <ActivityIndicator size="small" color="#3b82f6" />
         <Text className="text-sm text-muted-foreground ml-2">Thinking...</Text>
       </View>
+
+      {/* Live job progress while the agent is working */}
+      {activeJobs && activeJobs.length > 0 && (
+        <View className="w-full max-w-[90%] mt-2">
+          {activeJobs.map((job) => {
+            const processed = job.progress?.processed ?? 0;
+            const total = job.progress?.total ?? 0;
+            const pct = total > 0 ? Math.round((processed / total) * 100) : 0;
+            const isRunning = job.status === "running";
+            const isPending = job.status === "pending";
+            const label = JOB_TYPE_LABELS[job.type] || job.type;
+
+            return (
+              <View
+                key={job.id}
+                className="bg-slate-800/60 rounded-lg px-3 py-2 my-1 border border-slate-700/50"
+              >
+                <View className="flex-row items-center mb-1.5">
+                  <Ionicons
+                    name={isRunning ? "sync-outline" : "time-outline"}
+                    size={14}
+                    color="#94a3b8"
+                    style={{ marginRight: 6 }}
+                  />
+                  <Text className="text-xs font-semibold text-slate-300 flex-1">
+                    {label}
+                  </Text>
+                  <View
+                    className={`px-1.5 py-0.5 rounded ${
+                      isRunning ? "bg-blue-500/20" : "bg-yellow-500/20"
+                    }`}
+                  >
+                    <Text
+                      className={`text-[10px] font-medium ${
+                        isRunning ? "text-blue-400" : "text-yellow-400"
+                      }`}
+                    >
+                      {job.status}
+                    </Text>
+                  </View>
+                </View>
+                <View className="h-2 bg-slate-700 rounded-full overflow-hidden">
+                  <View
+                    className={`h-full rounded-full ${
+                      isPending ? "bg-yellow-500" : "bg-blue-500"
+                    }`}
+                    style={{ width: `${isPending ? 5 : Math.max(pct, 2)}%` }}
+                  />
+                </View>
+                <Text className="text-xs text-slate-400 mt-1">
+                  {isPending
+                    ? "Queued — waiting for worker…"
+                    : `${pct}% — ${processed} / ${total} leads`}
+                </Text>
+              </View>
+            );
+          })}
+        </View>
+      )}
     </View>
   );
 }
@@ -418,6 +481,7 @@ export default function AgentScreen() {
   const [allToolLogs, setAllToolLogs] = useState<AgentToolLogEntry[]>([]);
   const [inputText, setInputText] = useState("");
   const [historyVisible, setHistoryVisible] = useState(false);
+  const [sentAt, setSentAt] = useState<number | null>(null);
 
   const flatListRef = useRef<FlatList>(null);
 
@@ -432,6 +496,7 @@ export default function AgentScreen() {
     setConversationHistory([]);
     setAllToolLogs([]);
     setInputText("");
+    setSentAt(null);
   }, []);
 
   // ─── Load conversation ──────────────────────────────────────────
@@ -528,6 +593,7 @@ export default function AgentScreen() {
     ];
 
     setInputText("");
+    setSentAt(Date.now());
 
     sendMutation.mutate(
       { messages: newHistory, conversation_id: conversationId || undefined },
@@ -558,6 +624,7 @@ export default function AgentScreen() {
           setMessages(updatedDisplay);
           setConversationHistory(updatedHistory);
           setAllToolLogs(updatedToolLogs);
+          setSentAt(null);
 
           // Auto-save
           saveToDb(
@@ -568,6 +635,7 @@ export default function AgentScreen() {
           );
         },
         onError: (error) => {
+          setSentAt(null);
           const errorMsg: DisplayMessage = {
             id: `error-${Date.now()}`,
             role: "assistant",
@@ -688,7 +756,7 @@ export default function AgentScreen() {
           </View>
         }
         ListFooterComponent={
-          sendMutation.isPending ? <TypingIndicator /> : null
+          sendMutation.isPending ? <TypingIndicator sentAt={sentAt} /> : null
         }
       />
 
