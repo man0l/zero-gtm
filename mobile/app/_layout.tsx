@@ -27,7 +27,7 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen
           name="campaign/[id]"
-          options={{ title: "Campaign" }}
+          options={{ title: "Campaign", headerShown: false }}
         />
         <Stack.Screen
           name="campaign/new"
@@ -39,7 +39,7 @@ export default function RootLayout() {
         />
         <Stack.Screen
           name="enrich/[campaignId]"
-          options={{ title: "Enrichment Pipeline", presentation: "modal" }}
+          options={{ title: "Enrichment Pipeline", headerShown: false }}
         />
       </Stack>
     </QueryClientProvider>

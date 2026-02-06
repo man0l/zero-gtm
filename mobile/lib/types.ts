@@ -105,6 +105,36 @@ export interface AppSettings {
   settings: Record<string, unknown>;
 }
 
+// ==================== AI AGENT ====================
+
+export interface AgentMessage {
+  role: "user" | "assistant" | "tool";
+  content: string | null;
+  tool_calls?: AgentToolCall[];
+  tool_call_id?: string;
+  name?: string;
+}
+
+export interface AgentToolCall {
+  id: string;
+  type: "function";
+  function: {
+    name: string;
+    arguments: string;
+  };
+}
+
+export interface AgentToolLogEntry {
+  name: string;
+  args: Record<string, unknown>;
+  result: string;
+}
+
+export interface AgentResponse {
+  messages: AgentMessage[];
+  tool_log: AgentToolLogEntry[];
+}
+
 // Supabase Database type for typed client
 export interface Database {
   ninja: {

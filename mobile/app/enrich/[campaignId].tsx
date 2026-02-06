@@ -22,8 +22,11 @@ import { DataQualityCard } from "@/components/data-quality";
 import { PipelineFunnel } from "@/components/pipeline-funnel";
 import { CategoryPicker } from "@/components/category-picker";
 import { InlineResult } from "@/components/job-progress";
+import { ScreenHeader } from "@/components/screen-header";
+import { BottomTabs } from "@/components/bottom-tabs";
 import {
   useCampaign,
+  useTriggerScrape,
   useTriggerEnrichment,
   useTriggerClean,
   useCasualiseNames,
@@ -32,6 +35,7 @@ import {
   useBulkJobs,
   useDataQuality,
 } from "@/lib/queries";
+import { Input } from "@/components/ui/input";
 import { STEP_REQUIREMENTS } from "@/lib/errors";
 import { JOB_TYPE_LABELS, formatRelativeTime } from "@/lib/utils";
 import type { BulkJob } from "@/lib/types";
@@ -49,6 +53,10 @@ export default function EnrichmentPipelineScreen() {
   const { data: quality } = useDataQuality(campaignId);
   const { data: jobs } = useBulkJobs(campaignId);
 
+  // Scrape Google Maps state
+  const [scrapeKeywords, setScrapeKeywords] = useState("");
+  const [scrapeMaxLeads, setScrapeMaxLeads] = useState("1000");
+
   // Learning #6: Include existing toggle
   const [includeExisting, setIncludeExisting] = useState(false);
 
@@ -60,6 +68,7 @@ export default function EnrichmentPipelineScreen() {
   const [spamResult, setSpamResult] = useState<Record<string, unknown> | null>(null);
   const [locationsResult, setLocationsResult] = useState<Record<string, unknown> | null>(null);
 
+  const triggerScrape = useTriggerScrape();
   const triggerEnrichment = useTriggerEnrichment();
   const triggerClean = useTriggerClean();
   const casualiseNames = useCasualiseNames();
@@ -81,10 +90,12 @@ export default function EnrichmentPipelineScreen() {
   const totalLeads = quality?.total || 0;
 
   return (
-    <ScrollView
-      className="flex-1 bg-background"
-      contentContainerClassName="p-4 pb-8"
-    >
+    <View className="flex-1 bg-background">
+      <ScreenHeader title="Enrichment Pipeline" />
+      <ScrollView
+        className="flex-1"
+        contentContainerClassName="p-4 pb-8"
+      >
       {/* Header */}
       <Text className="text-xl font-bold text-foreground mb-1">
         Enrichment Pipeline
@@ -117,10 +128,95 @@ export default function EnrichmentPipelineScreen() {
 
       {/* ==================== PIPELINE STEPS ==================== */}
 
-      {/* Step 1: Find Emails */}
+      {/* Step 1: Scrape Google Maps */}
+      <Card className="mb-3">
+        <CardHeader>
+          <View className="flex-row items-center justify-between">
+            <View className="flex-row items-center flex-1">
+              <View className="w-6 h-6 rounded-full bg-blue-600 items-center justify-center mr-2">
+                <Text className="text-xs font-bold text-white">1</Text>
+              </View>
+              <View className="flex-1">
+                <CardTitle className="text-base">Scrape Google Maps</CardTitle>
+                <CardDescription>Search keywords across US locations via RapidAPI</CardDescription>
+              </View>
+            </View>
+            <TierBadge tier="slow" />
+          </View>
+        </CardHeader>
+        <CardContent>
+          {/* Active scrape job */}
+          {getActiveJob("scrape_maps") && (
+            <View className="bg-blue-500/10 rounded-lg p-2.5 mb-2">
+              <View className="flex-row items-center justify-between">
+                <Text className="text-xs text-blue-400 font-medium">
+                  {getActiveJob("scrape_maps")?.progress?.processed || 0} / {getActiveJob("scrape_maps")?.progress?.total || "?"} leads
+                  {getActiveJob("scrape_maps")?.progress?.searches !== undefined &&
+                    ` · ${getActiveJob("scrape_maps")?.progress?.searches} searches`}
+                </Text>
+                <Badge variant="status" status={getActiveJob("scrape_maps")!.status}>
+                  {getActiveJob("scrape_maps")!.status}
+                </Badge>
+              </View>
+            </View>
+          )}
+          <LastJobResult job={getLastJob("scrape_maps")} />
+          <Input
+            label="Keywords"
+            value={scrapeKeywords}
+            onChangeText={setScrapeKeywords}
+            placeholder='e.g. "IT services", "marketing agency"'
+            multiline
+            numberOfLines={2}
+          />
+          <Input
+            label="Max Leads"
+            value={scrapeMaxLeads}
+            onChangeText={setScrapeMaxLeads}
+            placeholder="1000"
+          />
+          <Button
+            size="sm"
+            className="mt-1"
+            onPress={() => {
+              const keywords = scrapeKeywords
+                .split(/[,\n]+/)
+                .map((k) => k.trim().replace(/^["']|["']$/g, ""))
+                .filter(Boolean);
+              if (keywords.length === 0) {
+                Alert.alert("Error", "Enter at least one keyword.");
+                return;
+              }
+              const maxLeads = parseInt(scrapeMaxLeads, 10) || 1000;
+              Alert.alert(
+                "Scrape Google Maps",
+                `Search ${keywords.length} keyword${keywords.length > 1 ? "s" : ""} across US locations.\nTarget: ${maxLeads} leads.\nUses RapidAPI credits.`,
+                [
+                  { text: "Cancel", style: "cancel" },
+                  {
+                    text: "Start Scrape",
+                    onPress: () =>
+                      triggerScrape.mutate({
+                        campaign_id: campaignId,
+                        keywords,
+                        max_leads: maxLeads,
+                      }),
+                  },
+                ]
+              );
+            }}
+            disabled={!!getActiveJob("scrape_maps")}
+            loading={triggerScrape.isPending}
+          >
+            {getActiveJob("scrape_maps") ? "Scraping..." : "Search Google Maps"}
+          </Button>
+        </CardContent>
+      </Card>
+
+      {/* Step 2: Find Emails */}
       <StepCard
         step="find_emails"
-        number={1}
+        number={2}
         eligible={includeExisting ? totalLeads : (totalLeads - (quality?.withEmail || 0))}
         activeJob={getActiveJob("find_emails")}
         lastJob={getLastJob("find_emails")}
@@ -139,10 +235,10 @@ export default function EnrichmentPipelineScreen() {
         loading={triggerEnrichment.isPending}
       />
 
-      {/* Step 2: Find Decision Makers */}
+      {/* Step 3: Find Decision Makers */}
       <StepCard
         step="find_decision_makers"
-        number={2}
+        number={3}
         eligible={includeExisting ? totalLeads : (totalLeads - (quality?.withDM || 0))}
         activeJob={getActiveJob("find_decision_makers")}
         lastJob={getLastJob("find_decision_makers")}
@@ -161,10 +257,10 @@ export default function EnrichmentPipelineScreen() {
         loading={triggerEnrichment.isPending}
       />
 
-      {/* Step 3: Find DM Emails */}
+      {/* Step 4: Find DM Emails */}
       <StepCard
         step="anymail_emails"
-        number={3}
+        number={4}
         eligible={includeExisting ? totalLeads : (totalLeads - (quality?.withDM || 0))}
         activeJob={getActiveJob("anymail_emails")}
         lastJob={getLastJob("anymail_emails")}
@@ -183,13 +279,13 @@ export default function EnrichmentPipelineScreen() {
         loading={triggerEnrichment.isPending}
       />
 
-      {/* Step 4: Clean & Validate (with category picker - Learning #4) */}
+      {/* Step 5: Clean & Validate (with category picker - Learning #4) */}
       <Card className="mb-3">
         <CardHeader>
           <View className="flex-row items-center justify-between">
             <View className="flex-row items-center flex-1">
               <View className="w-6 h-6 rounded-full bg-secondary items-center justify-center mr-2">
-                <Text className="text-xs font-bold text-foreground">4</Text>
+                <Text className="text-xs font-bold text-foreground">5</Text>
               </View>
               <View className="flex-1">
                 <CardTitle className="text-base">Clean & Validate</CardTitle>
@@ -223,13 +319,13 @@ export default function EnrichmentPipelineScreen() {
         </CardContent>
       </Card>
 
-      {/* Step 5: Casualise Names (instant - Learning #2) */}
+      {/* Step 6: Casualise Names (instant - Learning #2) */}
       <Card className="mb-3">
         <CardHeader>
           <View className="flex-row items-center justify-between">
             <View className="flex-row items-center flex-1">
               <View className="w-6 h-6 rounded-full bg-secondary items-center justify-center mr-2">
-                <Text className="text-xs font-bold text-foreground">5</Text>
+                <Text className="text-xs font-bold text-foreground">6</Text>
               </View>
               <View className="flex-1">
                 <CardTitle className="text-base">Casualise Names</CardTitle>
@@ -257,13 +353,13 @@ export default function EnrichmentPipelineScreen() {
         </CardContent>
       </Card>
 
-      {/* Step 6: Clean Spam (instant - Learning #2) */}
+      {/* Step 7: Clean Spam (instant - Learning #2) */}
       <Card className="mb-3">
         <CardHeader>
           <View className="flex-row items-center justify-between">
             <View className="flex-row items-center flex-1">
               <View className="w-6 h-6 rounded-full bg-secondary items-center justify-center mr-2">
-                <Text className="text-xs font-bold text-foreground">6</Text>
+                <Text className="text-xs font-bold text-foreground">7</Text>
               </View>
               <View className="flex-1">
                 <CardTitle className="text-base">Clean Spam Keywords</CardTitle>
@@ -333,6 +429,8 @@ export default function EnrichmentPipelineScreen() {
       {/* Learning #5: Data quality at the bottom */}
       <DataQualityCard campaignId={campaignId} />
     </ScrollView>
+      <BottomTabs />
+    </View>
   );
 }
 

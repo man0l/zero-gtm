@@ -4,7 +4,7 @@
  */
 import { useQuery, useInfiniteQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase, invokeFunction } from "./supabase";
-import type { Campaign, Lead, BulkJob } from "./types";
+import type { Campaign, Lead, BulkJob, AgentMessage, AgentResponse } from "./types";
 
 // Lean field selection for list rendering (10 fields instead of 40+)
 const LEAD_LIST_FIELDS =
@@ -434,5 +434,20 @@ export function useDashboardStats() {
       };
     },
     refetchInterval: 10000,
+  });
+}
+
+// ==================== AI AGENT ====================
+
+export function useSendAgentMessage() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (params: {
+      messages: AgentMessage[];
+    }) => invokeFunction<AgentResponse>("ai-agent", params),
+    onSuccess: () => {
+      // Invalidate jobs/leads since tools may have created jobs or modified leads
+      queryClient.invalidateQueries({ queryKey: ["bulk_jobs"] });
+    },
   });
 }

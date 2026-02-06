@@ -14,6 +14,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DataQualityCard } from "@/components/data-quality";
 import { ReadinessChecklist } from "@/components/readiness-checklist";
+import { ScreenHeader } from "@/components/screen-header";
+import { BottomTabs } from "@/components/bottom-tabs";
 import { useCampaign, useInfiniteLeads, useDataQuality } from "@/lib/queries";
 import { useRealtimeLeads } from "@/hooks/use-realtime-leads";
 import { useDebounce } from "@/hooks/use-debounce";
@@ -191,38 +193,42 @@ export default function CampaignDetailScreen() {
 
   return (
     <View className="flex-1 bg-background">
-      <FlashList
-        data={leads}
-        renderItem={renderLead}
-        keyExtractor={(item) => item.id!}
-        estimatedItemSize={72}
-        onEndReached={loadMore}
-        onEndReachedThreshold={0.5}
-        refreshControl={
-          <RefreshControl
-            refreshing={refreshing}
-            onRefresh={onRefresh}
-            tintColor="#3b82f6"
-          />
-        }
-        ListHeaderComponent={ListHeader}
-        ListFooterComponent={ListFooter}
-        ListEmptyComponent={
-          isLoading ? (
-            <View className="items-center py-8">
-              <ActivityIndicator size="large" color="#3b82f6" />
-            </View>
-          ) : (
-            <View className="items-center py-8">
-              <Ionicons name="people-outline" size={40} color="#334155" />
-              <Text className="text-muted-foreground text-sm mt-2">
-                No leads yet. Start with the Enrichment Pipeline.
-              </Text>
-            </View>
-          )
-        }
-        contentContainerStyle={{ padding: 16, paddingBottom: 32 }}
-      />
+      <ScreenHeader title="Campaign" />
+      <View className="flex-1">
+        <FlashList
+          data={leads}
+          renderItem={renderLead}
+          keyExtractor={(item) => item.id!}
+          estimatedItemSize={72}
+          onEndReached={loadMore}
+          onEndReachedThreshold={0.5}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefresh}
+              tintColor="#3b82f6"
+            />
+          }
+          ListHeaderComponent={ListHeader}
+          ListFooterComponent={ListFooter}
+          ListEmptyComponent={
+            isLoading ? (
+              <View className="items-center py-8">
+                <ActivityIndicator size="large" color="#3b82f6" />
+              </View>
+            ) : (
+              <View className="items-center py-8">
+                <Ionicons name="people-outline" size={40} color="#334155" />
+                <Text className="text-muted-foreground text-sm mt-2">
+                  No leads yet. Start with the Enrichment Pipeline.
+                </Text>
+              </View>
+            )
+          }
+          contentContainerStyle={{ padding: 16, paddingBottom: 32 }}
+        />
+      </View>
+      <BottomTabs />
     </View>
   );
 }
