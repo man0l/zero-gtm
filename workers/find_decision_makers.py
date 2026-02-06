@@ -40,20 +40,23 @@ class FindDecisionMakersWorker(SupabaseWorkerBase):
             return
 
         # Fetch leads needing decision maker info
-        filters = {}
+        # Build query directly to apply all filters at the DB level (including JSONB)
+        query = self.db.from_("leads").select("*").eq(
+            "campaign_id", self.campaign_id
+        ).limit(max_leads)
+
         if not include_existing:
-            filters["decision_maker_name"] = None
+            query = query.is_("decision_maker_name", "null")
 
-        leads = self.get_leads(self.campaign_id, filters=filters, limit=max_leads)
-        leads = [l for l in leads if l.get("company_website") or l.get("domain")]
-
-        # Only process leads that passed the clean/validate step
+        # Filter for validated leads at the DB level so LIMIT works correctly
         if validated_only:
-            leads = [
-                l for l in leads
-                if (l.get("enrichment_status") or {}).get("website_validated") is True
-            ]
-            logger.info(f"Validated-only filter: {len(leads)} leads with validated websites")
+            query = query.contains("enrichment_status", {"website_validated": True})
+
+        result = query.execute()
+        leads = result.data or []
+        logger.info(f"Fetched {len(leads)} leads (validated_only={validated_only}, include_existing={include_existing})")
+
+        leads = [l for l in leads if l.get("company_website") or l.get("domain")]
 
         if not leads:
             msg = "No validated leads found. Run clean & validate first." if validated_only else "No leads need decision maker enrichment"

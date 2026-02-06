@@ -37,22 +37,24 @@ class FindEmailsWorker(SupabaseWorkerBase):
             return
 
         # Fetch leads needing email enrichment
-        filters = {}
-        if not include_existing:
-            filters["email"] = None  # Only leads without email
+        # Build query directly to apply all filters at the DB level (including JSONB)
+        query = self.db.from_("leads").select("*").eq(
+            "campaign_id", self.campaign_id
+        ).limit(max_leads)
 
-        leads = self.get_leads(self.campaign_id, filters=filters, limit=max_leads)
+        if not include_existing:
+            query = query.is_("email", "null")
+
+        # Filter for validated leads at the DB level so LIMIT works correctly
+        if validated_only:
+            query = query.contains("enrichment_status", {"website_validated": True})
+
+        result = query.execute()
+        leads = result.data or []
+        logger.info(f"Fetched {len(leads)} leads (validated_only={validated_only}, include_existing={include_existing})")
 
         # Filter to leads with websites
         leads = [l for l in leads if l.get("company_website") or l.get("domain")]
-
-        # Only process leads that passed the clean/validate step
-        if validated_only:
-            leads = [
-                l for l in leads
-                if (l.get("enrichment_status") or {}).get("website_validated") is True
-            ]
-            logger.info(f"Validated-only filter: {len(leads)} leads with validated websites")
 
         if not leads:
             msg = "No validated leads with websites found. Run clean & validate first." if validated_only else "No leads with websites found"
