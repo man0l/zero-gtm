@@ -1,0 +1,134 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  packages: write
+
+jobs:
+  # ──────────────────────────────────────────────
+  # 1. Build + push worker Docker image to GHCR
+  #    Watchtower on Contabo auto-pulls new images.
+  # ──────────────────────────────────────────────
+  worker-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set short SHA
+        run: echo "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v5
+        with:
+          context: ./workers
+          file: ./workers/Dockerfile
+          push: true
+          tags: |
+            ghcr.io/man0l/cold-email-ninja-app:worker-latest
+            ghcr.io/man0l/cold-email-ninja-app:worker-${{ env.SHA_SHORT }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  # ──────────────────────────────────────────────
+  # 2. Apply new SQL migrations via SSH
+  #    Runs BEFORE edge functions (new tables first).
+  # ──────────────────────────────────────────────
+  migrations:
+    runs-on: ubuntu-latest
+    environment: production          # requires manual approval in GitHub
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0             # full history for diff
+
+      - name: Detect new migrations
+        id: detect
+        run: |
+          # Find migrations added/modified in this push
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'supabase/migrations/*.sql' 2>/dev/null || true)
+          if [ -z "$CHANGED" ]; then
+            echo "No migration changes detected."
+            echo "has_migrations=false" >> $GITHUB_OUTPUT
+          else
+            echo "Migrations to apply:"
+            echo "$CHANGED"
+            echo "has_migrations=true" >> $GITHUB_OUTPUT
+            echo "files<<EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGED" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Apply migrations
+        if: steps.detect.outputs.has_migrations == 'true'
+        env:
+          SSH_KEY: ${{ secrets.CONTABO_SSH_KEY }}
+          HOST: ${{ secrets.CONTABO_HOST }}
+        run: |
+          # Set up SSH
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+          # Apply each new migration in order
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            echo "Applying $file ..."
+            cat "$file" | ssh -i ~/.ssh/deploy_key "root@$HOST" \
+              "docker exec -i salonease-supabase-db17-1 psql -U postgres -d salonease"
+            echo "  Done."
+          done <<< "${{ steps.detect.outputs.files }}"
+
+  # ──────────────────────────────────────────────
+  # 3. Sync Edge Functions + restart container
+  #    Runs after migrations (functions may depend on new tables).
+  # ──────────────────────────────────────────────
+  edge-functions:
+    needs: [migrations]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect function changes
+        id: detect
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'supabase/functions/' 2>/dev/null || true)
+          if [ -z "$CHANGED" ]; then
+            echo "No edge function changes."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Sync and restart
+        if: steps.detect.outputs.has_changes == 'true'
+        env:
+          SSH_KEY: ${{ secrets.CONTABO_SSH_KEY }}
+          HOST: ${{ secrets.CONTABO_HOST }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+          # Sync functions, preserving salonease-specific ones
+          rsync -avz --delete \
+            --exclude='enrichment-worker' \
+            --exclude='verification-worker' \
+            -e "ssh -i ~/.ssh/deploy_key" \
+            supabase/functions/ \
+            "root@$HOST:/app/salonease/supabase/functions/"
+
+          # Restart edge runtime to pick up changes
+          ssh -i ~/.ssh/deploy_key "root@$HOST" \
+            "docker restart salonease-supabase-functions-1"

@@ -1,0 +1,6001 @@
+City,State,Zip,Country
+New York,NY,10001,USA
+Los Angeles,CA,90001,USA
+Chicago,IL,60601,USA
+Houston,TX,77001,USA
+Phoenix,AZ,85001,USA
+Philadelphia,PA,19019,USA
+San Antonio,TX,78201,USA
+San Diego,CA,92101,USA
+Dallas,TX,75201,USA
+Austin,TX,73301,USA
+Jacksonville,FL,32099,USA
+San Jose,CA,95101,USA
+Fort Worth,TX,76101,USA
+Charlotte,NC,28201,USA
+Indianapolis,IN,46201,USA
+Columbus,OH,43085,USA
+San Francisco,CA,94102,USA
+Seattle,WA,98101,USA
+Denver,CO,80201,USA
+Oklahoma City,OK,73101,USA
+El Paso,TX,79901,USA
+Las Vegas,NV,89101,USA
+Boston,MA,2108,USA
+Portland,OR,97201,USA
+Memphis,TN,37501,USA
+Detroit,MI,48201,USA
+Baltimore,MD,21201,USA
+Milwaukee,WI,53201,USA
+Albuquerque,NM,87101,USA
+Tucson,AZ,85701,USA
+Fresno,CA,93650,USA
+Sacramento,CA,94203,USA
+Mesa,AZ,85201,USA
+Kansas City,MO,64101,USA
+Atlanta,GA,30301,USA
+Brookhaven,NY,11719,USA
+Colorado Springs,CO,80901,USA
+Omaha,NE,68101,USA
+Raleigh,NC,27601,USA
+Virginia Beach,VA,23450,USA
+Long Beach,CA,90801,USA
+Miami,FL,33101,USA
+Oakland,CA,94601,USA
+Minneapolis,MN,55401,USA
+Tulsa,OK,74101,USA
+Bakersfield,CA,93301,USA
+Tampa,FL,33601,USA
+Wichita,KS,67201,USA
+Arlington,TX,76001,USA
+Aurora,CO,80010,USA
+New Orleans,LA,70112,USA
+Cleveland,OH,44101,USA
+Anaheim,CA,92801,USA
+Islip,NY,11751,USA
+Henderson,NV,89002,USA
+Stockton,CA,95201,USA
+Riverside,CA,92501,USA
+Corpus Christi,TX,78401,USA
+Orlando,FL,32801,USA
+Irvine,CA,92602,USA
+Cincinnati,OH,45201,USA
+Santa Ana,CA,92701,USA
+Newark,NJ,7101,USA
+Saint Paul,MN,55101,USA
+Pittsburgh,PA,15201,USA
+Greensboro,NC,27401,USA
+Oyster Bay,NY,11771,USA
+Lincoln,NE,68501,USA
+Durham,NC,27701,USA
+Plano,TX,75023,USA
+Jersey City,NJ,7097,USA
+Saint Louis,MO,63101,USA
+Chandler,AZ,85224,USA
+North Las Vegas,NV,89030,USA
+Chula Vista,CA,91909,USA
+Buffalo,NY,14201,USA
+Gilbert,AZ,85233,USA
+Reno,NV,89501,USA
+Fort Wayne,IN,46801,USA
+Toledo,OH,43601,USA
+Lubbock,TX,79401,USA
+Saint Petersburg,FL,33701,USA
+Laredo,TX,78040,USA
+Irving,TX,75014,USA
+Chesapeake,VA,23320,USA
+Glendale,AZ,85301,USA
+Scottsdale,AZ,85250,USA
+Garland,TX,75040,USA
+Norfolk,VA,23501,USA
+Port Saint Lucie,FL,34952,USA
+Spokane,WA,99201,USA
+Richmond,VA,23173,USA
+Fremont,CA,94536,USA
+Huntsville,AL,35801,USA
+Tacoma,WA,98401,USA
+Baton Rouge,LA,70801,USA
+Santa Clarita,CA,91350,USA
+San Bernardino,CA,92401,USA
+Hialeah,FL,33002,USA
+Frisco,TX,75033,USA
+Modesto,CA,95350,USA
+Cape Coral,FL,33904,USA
+Fontana,CA,92331,USA
+Moreno Valley,CA,92551,USA
+Des Moines,IA,50301,USA
+Fayetteville,NC,28301,USA
+Yonkers,NY,10701,USA
+Worcester,MA,1601,USA
+Salt Lake City,UT,84101,USA
+Huntington,NY,11743,USA
+Little Rock,AR,72201,USA
+Columbus,GA,31901,USA
+Grand Prairie,TX,75050,USA
+Tallahassee,FL,32301,USA
+Amarillo,TX,79101,USA
+Oxnard,CA,93030,USA
+Peoria,AZ,85345,USA
+Overland Park,KS,66204,USA
+Montgomery,AL,36101,USA
+Birmingham,AL,35201,USA
+Grand Rapids,MI,49501,USA
+Knoxville,TN,37901,USA
+Vancouver,WA,98660,USA
+Huntington Beach,CA,92605,USA
+Providence,RI,2902,USA
+Brownsville,TX,78520,USA
+Glendale,CA,91201,USA
+Akron,OH,44301,USA
+Tempe,AZ,85280,USA
+Newport News,VA,23601,USA
+Chattanooga,TN,37401,USA
+Mobile,AL,36619,USA
+Fort Lauderdale,FL,33301,USA
+Cary,NC,27511,USA
+Shreveport,LA,71101,USA
+Ontario,CA,91758,USA
+Eugene,OR,97401,USA
+Aurora,IL,60502,USA
+Elk Grove,CA,95624,USA
+Salem,OR,97301,USA
+Santa Rosa,CA,95401,USA
+Clarksville,TN,37040,USA
+Rancho Cucamonga,CA,91701,USA
+Oceanside,CA,92049,USA
+Springfield,MO,65801,USA
+Pembroke Pines,FL,33028,USA
+Garden Grove,CA,92840,USA
+Fort Collins,CO,80521,USA
+Lancaster,CA,93534,USA
+Palmdale,CA,93550,USA
+Sioux Falls,SD,57101,USA
+Murfreesboro,TN,37127,USA
+Salinas,CA,93901,USA
+Corona,CA,92877,USA
+Killeen,TX,76540,USA
+Hayward,CA,94540,USA
+Paterson,NJ,7501,USA
+Alexandria,VA,22301,USA
+Roseville,CA,95661,USA
+Surprise,AZ,85374,USA
+Springfield,MA,1101,USA
+Charleston,SC,29401,USA
+Sunnyvale,CA,94085,USA
+Bellevue,WA,98004,USA
+Hollywood,FL,33019,USA
+Denton,TX,76201,USA
+Escondido,CA,92025,USA
+Joliet,IL,60431,USA
+Naperville,IL,60540,USA
+Bridgeport,CT,6601,USA
+Savannah,GA,31401,USA
+Mesquite,TX,75149,USA
+Pasadena,TX,77501,USA
+Rockford,IL,61101,USA
+Pomona,CA,91766,USA
+Jackson,MS,39201,USA
+Olathe,KS,66051,USA
+Gainesville,FL,32601,USA
+McAllen,TX,78501,USA
+Syracuse,NY,13201,USA
+Waco,TX,76701,USA
+Visalia,CA,93277,USA
+Thornton,CO,80241,USA
+Torrance,CA,90501,USA
+Fullerton,CA,92831,USA
+Columbia,SC,29201,USA
+New Haven,CT,6501,USA
+Hampton,VA,23630,USA
+Victorville,CA,92392,USA
+Warren,MI,48088,USA
+West Valley City,UT,84119,USA
+Cedar Rapids,IA,52401,USA
+Stamford,CT,6901,USA
+Orange,CA,92856,USA
+Dayton,OH,45401,USA
+Midland,TX,79701,USA
+Kent,WA,98030,USA
+Elizabeth,NJ,7201,USA
+Pasadena,CA,91101,USA
+Carrollton,TX,75006,USA
+Coral Springs,FL,33075,USA
+Sterling Heights,MI,48310,USA
+Fargo,ND,58102,USA
+Lewisville,TX,75029,USA
+Meridian,ID,83642,USA
+Norman,OK,73019,USA
+Palm Bay,FL,32905,USA
+Columbia,MO,65201,USA
+Abilene,TX,79601,USA
+Pearland,TX,77581,USA
+Santa Clara,CA,95050,USA
+Round Rock,TX,78664,USA
+Topeka,KS,66601,USA
+Allentown,PA,18101,USA
+Clovis,CA,93611,USA
+Simi Valley,CA,93062,USA
+College Station,TX,77840,USA
+Thousand Oaks,CA,91358,USA
+Vallejo,CA,94589,USA
+Concord,CA,94518,USA
+Rochester,MN,55901,USA
+Arvada,CO,80001,USA
+Lafayette,LA,70501,USA
+Independence,MO,64050,USA
+West Palm Beach,FL,33401,USA
+Hartford,CT,6101,USA
+Wilmington,NC,28401,USA
+Lakeland,FL,33801,USA
+Billings,MT,59101,USA
+Ann Arbor,MI,48103,USA
+Fairfield,CA,94533,USA
+Berkeley,CA,94701,USA
+Richardson,TX,75080,USA
+North Charleston,SC,29405,USA
+Cambridge,MA,2138,USA
+Broken Arrow,OK,74011,USA
+Clearwater,FL,33755,USA
+West Jordan,UT,84081,USA
+Smithtown,NY,11787,USA
+Evansville,IN,47701,USA
+League City,TX,77573,USA
+Antioch,CA,94509,USA
+Manchester,NH,3101,USA
+High Point,NC,27260,USA
+Waterbury,CT,6701,USA
+Westminster,CO,80030,USA
+Richmond,CA,94801,USA
+Carlsbad,CA,92008,USA
+Las Cruces,NM,88001,USA
+Murrieta,CA,92562,USA
+Lowell,MA,1850,USA
+Provo,UT,84601,USA
+Springfield,IL,62701,USA
+Elgin,IL,60120,USA
+Odessa,TX,79760,USA
+Pompano Beach,FL,33060,USA
+Beaumont,TX,77701,USA
+Temecula,CA,92589,USA
+Gresham,OR,97030,USA
+Allen,TX,75002,USA
+Pueblo,CO,81001,USA
+Everett,WA,98201,USA
+Peoria,IL,61601,USA
+Nampa,ID,83651,USA
+Tuscaloosa,AL,35401,USA
+Miami Gardens,FL,33056,USA
+Santa Maria,CA,93454,USA
+Downey,CA,90239,USA
+Concord,NC,28025,USA
+Costa Mesa,CA,92626,USA
+Sugar Land,TX,77478,USA
+Menifee,CA,92584,USA
+Tyler,TX,75701,USA
+Sparks,NV,89431,USA
+Greeley,CO,80631,USA
+Rio Rancho,NM,87124,USA
+Dearborn,MI,48120,USA
+Lansing,MI,48901,USA
+Hillsboro,OR,97123,USA
+Buckeye,AZ,85326,USA
+Boulder,CO,80301,USA
+Goodyear,AZ,85338,USA
+El Monte,CA,91731,USA
+West Covina,CA,91790,USA
+Brockton,MA,2301,USA
+New Braunfels,TX,78130,USA
+El Cajon,CA,92019,USA
+Edinburg,TX,78539,USA
+Renton,WA,98055,USA
+Burbank,CA,91501,USA
+Inglewood,CA,90301,USA
+Rialto,CA,92376,USA
+Bend,OR,97701,USA
+South Bend,IN,46601,USA
+Wichita Falls,TX,76301,USA
+Saint George,UT,84770,USA
+Fishers,IN,46037,USA
+Carmel,IN,46032,USA
+Vacaville,CA,95687,USA
+Quincy,MA,2169,USA
+Conroe,TX,77301,USA
+Chico,CA,95926,USA
+San Mateo,CA,94401,USA
+Lynn,MA,1901,USA
+Albany,NY,12201,USA
+Hesperia,CA,92340,USA
+New Bedford,MA,2740,USA
+Davenport,IA,52801,USA
+Daly City,CA,94014,USA
+Fayetteville,AR,72701,USA
+San Angelo,TX,76901,USA
+Boca Raton,FL,33427,USA
+Longmont,CO,80501,USA
+Norwalk,CA,90650,USA
+Suffolk,VA,23432,USA
+Yuma,AZ,85364,USA
+Kenosha,WI,53140,USA
+Palm Coast,FL,32135,USA
+Federal Way,WA,98003,USA
+Roanoke,VA,24001,USA
+Vista,CA,92081,USA
+Tracy,CA,95304,USA
+Deltona,FL,32725,USA
+Beaverton,OR,97003,USA
+Portsmouth,VA,23701,USA
+Yakima,WA,98901,USA
+Edmond,OK,73003,USA
+Plantation,FL,33388,USA
+Fort Myers,FL,33901,USA
+Orem,UT,84057,USA
+Lawrence,KS,66044,USA
+Reading,PA,19601,USA
+San Marcos,CA,92069,USA
+Mount Pleasant,SC,29464,USA
+Bellingham,WA,98225,USA
+Livonia,MI,48150,USA
+Asheville,NC,28801,USA
+Fall River,MA,2720,USA
+Erie,PA,16501,USA
+Chino,CA,91708,USA
+Roswell,GA,30075,USA
+Redding,CA,96001,USA
+Carson,CA,90745,USA
+Kirkland,WA,98033,USA
+Compton,CA,90220,USA
+Indio,CA,92201,USA
+Mission Viejo,CA,92690,USA
+Avondale,AZ,85323,USA
+Merced,CA,95340,USA
+Lawton,OK,73501,USA
+Norwalk,CT,6850,USA
+Nashua,NH,3060,USA
+South Gate,CA,90280,USA
+Hemet,CA,92543,USA
+Fort Smith,AR,72901,USA
+Santa Monica,CA,90401,USA
+Trenton,NJ,8601,USA
+Temple,TX,76501,USA
+Westminster,CA,92683,USA
+Champaign,IL,61820,USA
+Greenville,NC,27833,USA
+Santa Fe,NM,87501,USA
+Clifton,NJ,7011,USA
+Waukegan,IL,60079,USA
+Lawrence,MA,1840,USA
+Bryan,TX,77801,USA
+Springdale,AR,72762,USA
+Santa Barbara,CA,93101,USA
+Newton,MA,2458,USA
+Troy,MI,48007,USA
+Danbury,CT,6810,USA
+Manteca,CA,95336,USA
+Franklin,TN,37064,USA
+Ogden,UT,84201,USA
+Deerfield Beach,FL,33441,USA
+San Leandro,CA,94577,USA
+Mission,TX,78572,USA
+Duluth,MN,55801,USA
+Georgetown,TX,78626,USA
+Melbourne,FL,32901,USA
+Citrus Heights,CA,95610,USA
+San Ramon,CA,94582,USA
+Lake Forest,CA,92630,USA
+Medford,OR,97501,USA
+Sioux City,IA,51101,USA
+North Port,FL,34286,USA
+Auburn,WA,98001,USA
+Kennewick,WA,99336,USA
+Livermore,CA,94550,USA
+Hawthorne,CA,90250,USA
+Whittier,CA,90601,USA
+Lehi,UT,84043,USA
+Baytown,TX,77520,USA
+Westland,MI,48185,USA
+Newport Beach,CA,92658,USA
+South Jordan,UT,84009,USA
+Folsom,CA,95630,USA
+Warwick,RI,2886,USA
+Gastonia,NC,28052,USA
+Layton,UT,84040,USA
+Longview,TX,75601,USA
+Largo,FL,33770,USA
+Buena Park,CA,90620,USA
+Cranston,RI,2910,USA
+New Rochelle,NY,10801,USA
+Warner Robins,GA,31088,USA
+Frederick,MD,21701,USA
+Cicero,IL,60804,USA
+Homestead,FL,33030,USA
+Mountain View,CA,94035,USA
+Boynton Beach,FL,33424,USA
+Rancho Cordova,CA,95670,USA
+Redwood City,CA,94061,USA
+Perris,CA,92570,USA
+Alhambra,CA,91801,USA
+Castle Rock,CO,80104,USA
+Pharr,TX,78577,USA
+Miami Beach,FL,33109,USA
+Auburn,AL,36830,USA
+Kissimmee,FL,34741,USA
+Jonesboro,AR,72401,USA
+Flint,MI,48501,USA
+Somerville,MA,2143,USA
+Pasco,WA,99301,USA
+Lynchburg,VA,24501,USA
+Lake Charles,LA,70601,USA
+Bloomington,IN,47401,USA
+Lakewood,CA,90711,USA
+Bloomington,IL,61701,USA
+Upland,CA,91784,USA
+Rapid City,SD,57701,USA
+Flower Mound,TX,75022,USA
+Tustin,CA,92780,USA
+Napa,CA,94558,USA
+Daytona Beach,FL,32114,USA
+Chino Hills,CA,91709,USA
+Loveland,CO,80537,USA
+Milpitas,CA,95035,USA
+Cedar Park,TX,78613,USA
+Pittsburg,CA,94565,USA
+Missoula,MT,59801,USA
+Redmond,WA,98052,USA
+Wyoming,MI,49519,USA
+Mansfield,TX,76063,USA
+Pleasanton,CA,94566,USA
+Hammond,IN,46320,USA
+Missouri City,TX,77459,USA
+Racine,WI,53401,USA
+Bellflower,CA,90706,USA
+Schaumburg,IL,60159,USA
+Broomfield,CO,80020,USA
+Alameda,CA,94501,USA
+Flagstaff,AZ,86001,USA
+Apple Valley,CA,92307,USA
+Scranton,PA,18501,USA
+Evanston,IL,60201,USA
+Southfield,MI,48033,USA
+Rock Hill,SC,29730,USA
+Iowa City,IA,52240,USA
+Arlington Heights,IL,60004,USA
+Pawtucket,RI,2860,USA
+Bowling Green,KY,42101,USA
+Lakeville,MN,55044,USA
+Bismarck,ND,58501,USA
+New Britain,CT,6050,USA
+Leander,TX,78641,USA
+Bolingbrook,IL,60440,USA
+Rocklin,CA,95677,USA
+Redlands,CA,92373,USA
+Rogers,AR,72756,USA
+Kalamazoo,MI,49001,USA
+Noblesville,IN,46060,USA
+Johnson City,TN,37601,USA
+Greenville,SC,29601,USA
+Turlock,CA,95380,USA
+Marysville,WA,98270,USA
+Gulfport,MS,39501,USA
+Ankeny,IA,50021,USA
+Dublin,CA,94568,USA
+Lake Elsinore,CA,92530,USA
+Tonawanda,NY,14150,USA
+Mount Vernon,NY,10550,USA
+Harlingen,TX,78550,USA
+Wilmington,DE,19801,USA
+Lafayette,IN,47901,USA
+Dothan,AL,36301,USA
+Saint Charles,MO,63301,USA
+Apex,NC,27502,USA
+Camden,NJ,8101,USA
+Framingham,MA,1701,USA
+West Des Moines,IA,50265,USA
+Queen Creek,AZ,85142,USA
+Tulare,CA,93274,USA
+North Richland Hills,TX,76180,USA
+Saint Joseph,MO,64501,USA
+Maple Grove,MN,55311,USA
+Jacksonville,NC,28540,USA
+San Marcos,TX,78666,USA
+Camarillo,CA,93010,USA
+Canton,OH,44701,USA
+Bayonne,NJ,7002,USA
+Baldwin Park,CA,91706,USA
+Shawnee,KS,66203,USA
+Passaic,NJ,7055,USA
+Decatur,IL,62521,USA
+Yuba City,CA,95991,USA
+Walnut Creek,CA,94595,USA
+Gaithersburg,MD,20877,USA
+Redondo Beach,CA,90277,USA
+Schenectady,NY,12301,USA
+East Orange,NJ,7017,USA
+Portland,ME,4101,USA
+Jackson,TN,38301,USA
+Madera,CA,93636,USA
+Grand Junction,CO,81501,USA
+Gary,IN,46401,USA
+Idaho Falls,ID,83401,USA
+Conway,AR,72032,USA
+Eau Claire,WI,54701,USA
+Alpharetta,GA,30004,USA
+Lodi,CA,95240,USA
+Albany,GA,31701,USA
+Haverhill,MA,1830,USA
+Yorba Linda,CA,92885,USA
+Davis,CA,95616,USA
+Union City,CA,94587,USA
+Delray Beach,FL,33444,USA
+Ames,IA,50010,USA
+Rockville,MD,20847,USA
+Waterloo,IA,50701,USA
+Novi,MI,48374,USA
+Maricopa,AZ,85138,USA
+Brentwood,CA,94513,USA
+Commerce City,CO,80022,USA
+Palo Alto,CA,94301,USA
+Caldwell,ID,83605,USA
+Sammamish,WA,98074,USA
+Pflugerville,TX,78660,USA
+Skokie,IL,60076,USA
+Palatine,IL,60038,USA
+Ocala,FL,34470,USA
+Greenwood,IN,46142,USA
+Medford,MA,2153,USA
+Victoria,TX,77901,USA
+Union City,NJ,7087,USA
+Lorain,OH,44052,USA
+Rowlett,TX,75030,USA
+Port Orange,FL,32123,USA
+Malden,MA,2148,USA
+North Little Rock,AR,72114,USA
+Cheyenne,WY,82001,USA
+Saint Cloud,FL,34769,USA
+West Hartford,CT,6107,USA
+Plymouth,MA,2360,USA
+Lynwood,CA,90262,USA
+Utica,NY,13501,USA
+Waltham,MA,2451,USA
+Kenner,LA,70062,USA
+Burnsville,MN,55306,USA
+Laguna Niguel,CA,92607,USA
+Greenwich,CT,6830,USA
+South San Francisco,CA,94080,USA
+San Clemente,CA,92672,USA
+Sanford,FL,32771,USA
+Huntersville,NC,28070,USA
+Bellevue,NE,68005,USA
+Porterville,CA,93257,USA
+Hamilton,OH,45011,USA
+Hendersonville,TN,37075,USA
+Fairfield,CT,6824,USA
+Richland,WA,99352,USA
+Bossier City,LA,71111,USA
+Marietta,GA,30006,USA
+Lakewood,WA,98439,USA
+Brookline,MA,2445,USA
+Eden Prairie,MN,55344,USA
+Council Bluffs,IA,51501,USA
+Taylor,MI,48180,USA
+Chapel Hill,NC,27514,USA
+Dearborn Heights,MI,48125,USA
+La Habra,CA,90631,USA
+Pontiac,MI,48340,USA
+Santa Cruz,CA,95060,USA
+Woodland,CA,95695,USA
+Wellington,FL,33414,USA
+Springfield,OR,97475,USA
+Encinitas,CA,92023,USA
+Bristol,CT,6010,USA
+Parker,CO,80134,USA
+Jupiter,FL,33458,USA
+Corvallis,OR,97330,USA
+Wylie,TX,75098,USA
+Hamden,CT,6514,USA
+Montebello,CA,90640,USA
+Vineland,NJ,8360,USA
+Great Falls,MT,59401,USA
+La Mesa,CA,91941,USA
+Meriden,CT,6450,USA
+Palm Beach Gardens,FL,33410,USA
+Euless,TX,76039,USA
+Owensboro,KY,42301,USA
+Casa Grande,AZ,85122,USA
+San Rafael,CA,94901,USA
+Taunton,MA,2780,USA
+Clay,NY,13041,USA
+Madison,AL,35756,USA
+Pico Rivera,CA,90660,USA
+Kokomo,IN,46901,USA
+Blue Springs,MO,64013,USA
+Manchester,CT,6040,USA
+White Plains,NY,10601,USA
+Burlington,NC,27215,USA
+Herriman,UT,84096,USA
+Santee,CA,92071,USA
+Lake Havasu City,AZ,86403,USA
+Dubuque,IA,52001,USA
+Gardena,CA,90247,USA
+Grand Forks,ND,58201,USA
+Petaluma,CA,94952,USA
+Lenexa,KS,66215,USA
+Des Plaines,IL,60016,USA
+Monterey Park,CA,91754,USA
+Lacey,WA,98503,USA
+Casper,WY,82601,USA
+Revere,MA,2151,USA
+Saint Peters,MO,63376,USA
+Hanford,CA,93230,USA
+Terre Haute,IN,47801,USA
+Hempstead,NY,11549,USA
+Margate,FL,33093,USA
+Carson City,NV,89701,USA
+Springfield,OH,45501,USA
+Gilroy,CA,95020,USA
+Decatur,AL,35601,USA
+Bentonville,AR,72712,USA
+Cupertino,CA,95014,USA
+Bethlehem,PA,18015,USA
+Pocatello,ID,83201,USA
+Hoboken,NJ,7030,USA
+Orland Park,IL,60462,USA
+Royal Oak,MI,48067,USA
+Kyle,TX,78640,USA
+Lancaster,PA,17601,USA
+Sarasota,FL,34230,USA
+Coconut Creek,FL,33097,USA
+Bowie,MD,20719,USA
+Apopka,FL,32703,USA
+Bradenton,FL,34201,USA
+Albany,OR,97321,USA
+Highland,CA,92346,USA
+Smyrna,TN,37167,USA
+Bonita Springs,FL,34133,USA
+Southaven,MS,38671,USA
+Beaumont,CA,92223,USA
+Oak Lawn,IL,60453,USA
+Smyrna,GA,30080,USA
+Kingsport,TN,37660,USA
+Bozeman,MT,59715,USA
+New Brunswick,NJ,8901,USA
+DeSoto,TX,75115,USA
+Marana,AZ,85653,USA
+Fountain Valley,CA,92708,USA
+Spring Hill,TN,37174,USA
+Saint Cloud,MN,56301,USA
+Olympia,WA,98501,USA
+Texas City,TX,77590,USA
+Port Arthur,TX,77640,USA
+National City,CA,91950,USA
+San Jacinto,CA,92581,USA
+Kannapolis,NC,28081,USA
+Perth Amboy,NJ,8861,USA
+Little Elm,TX,75068,USA
+Anderson,IN,46011,USA
+Valdosta,GA,31601,USA
+West Sacramento,CA,95605,USA
+Winter Haven,FL,33880,USA
+Berwyn,IL,60402,USA
+West Haven,CT,6516,USA
+Chicopee,MA,1013,USA
+Arcadia,CA,91006,USA
+Mount Prospect,IL,60056,USA
+Logan,UT,84321,USA
+Westfield,IN,46074,USA
+Plainfield,NJ,7060,USA
+Yucaipa,CA,92399,USA
+Twin Falls,ID,83301,USA
+Tinley Park,IL,60477,USA
+Rocky Mount,NC,27801,USA
+Colton,CA,92324,USA
+Peabody,MA,1960,USA
+Pensacola,FL,32501,USA
+Manhattan,KS,66502,USA
+Elkhart,IN,46514,USA
+Pinellas Park,FL,33780,USA
+Burleson,TX,76028,USA
+Galveston,TX,77550,USA
+Wheaton,IL,60187,USA
+Elyria,OH,44035,USA
+Diamond Bar,CA,91765,USA
+Normal,IL,61761,USA
+Milford,CT,6460,USA
+Mooresville,NC,28115,USA
+Huntington Park,CA,90255,USA
+Oak Park,IL,60301,USA
+Minnetonka,MN,55345,USA
+Lincoln,CA,95648,USA
+Joplin,MO,64801,USA
+Grand Island,NE,68801,USA
+Cathedral City,CA,92234,USA
+Stratford,CT,6614,USA
+Novato,CA,94945,USA
+Battle Creek,MI,49014,USA
+West New York,NJ,7093,USA
+Placentia,CA,92870,USA
+Paramount,CA,90723,USA
+Summerville,SC,29483,USA
+Collierville,TN,38017,USA
+Palm Desert,CA,92211,USA
+Watsonville,CA,95076,USA
+Florissant,MO,63031,USA
+Rockwall,TX,75032,USA
+La Crosse,WI,54601,USA
+Columbus,IN,47201,USA
+Grapevine,TX,76051,USA
+Aliso Viejo,CA,92656,USA
+Harrisonburg,VA,22801,USA
+Wake Forest,NC,27587,USA
+Jeffersonville,IN,47130,USA
+Mishawaka,IN,46544,USA
+Troy,NY,12180,USA
+Delano,CA,93215,USA
+Glendora,CA,91740,USA
+Newark,OH,43055,USA
+Draper,UT,84020,USA
+East Hartford,CT,6108,USA
+Hoffman Estates,IL,60169,USA
+Cuyahoga Falls,OH,44221,USA
+Enid,OK,73701,USA
+Harrisburg,PA,17101,USA
+Rosemead,CA,91770,USA
+Lakewood,OH,44107,USA
+Covina,CA,91722,USA
+Downers Grove,IL,60515,USA
+Saratoga Springs,UT,84045,USA
+Everett,MA,2149,USA
+Chesterfield,MO,63005,USA
+Titusville,FL,32780,USA
+Cypress,CA,90630,USA
+Coral Gables,FL,33114,USA
+Stillwater,OK,74074,USA
+Biloxi,MS,39530,USA
+Prescott Valley,AZ,86312,USA
+Bothell,WA,98011,USA
+Dublin,OH,43016,USA
+Ceres,CA,95307,USA
+Portage,MI,49002,USA
+Leesburg,VA,20175,USA
+Azusa,CA,91702,USA
+Middletown,CT,6457,USA
+Bedford,TX,76021,USA
+Cleveland,TN,37311,USA
+Euclid,OH,44117,USA
+Hattiesburg,MS,39401,USA
+San Luis Obispo,CA,93401,USA
+Cedar Hill,TX,75104,USA
+Rye,NY,10580,USA
+Fort Pierce,FL,34945,USA
+Ocoee,FL,34761,USA
+Gallatin,TN,37066,USA
+Poway,CA,92064,USA
+Niagara Falls,NY,14301,USA
+Mansfield,OH,44901,USA
+Minot,ND,58701,USA
+Goose Creek,SC,29445,USA
+Wilson,NC,27893,USA
+Prescott,AZ,86301,USA
+Cerritos,CA,90703,USA
+Roswell,NM,88201,USA
+Middletown,OH,45042,USA
+Huntsville,TX,77320,USA
+Henrietta,NY,14467,USA
+Newark,CA,94560,USA
+Glenview,IL,60025,USA
+Wentzville,MO,63385,USA
+Charleston,WV,25301,USA
+Olive Branch,MS,38654,USA
+Winter Garden,FL,34777,USA
+Los Banos,CA,93635,USA
+Mentor,OH,44060,USA
+Brea,CA,92821,USA
+Monroe,LA,71201,USA
+Roseville,MI,48066,USA
+Rancho Santa Margarita,CA,92688,USA
+East Providence,RI,2914,USA
+Urbandale,IA,50322,USA
+Attleboro,MA,2703,USA
+Clermont,FL,34711,USA
+La Mirada,CA,90637,USA
+Plainfield,IL,60544,USA
+Salina,KS,67401,USA
+Farmington,NM,87401,USA
+Holly Springs,NC,27540,USA
+Columbia,TN,38401,USA
+Huntington,WV,25701,USA
+Shakopee,MN,55379,USA
+Strongsville,OH,44136,USA
+Poughkeepsie,NY,12601,USA
+Hackensack,NJ,7601,USA
+Blacksburg,VA,24060,USA
+Altamonte Springs,FL,32701,USA
+Haltom City,TX,76117,USA
+Arlington,MA,2474,USA
+Waxahachie,TX,75165,USA
+Sierra Vista,AZ,85635,USA
+Bremerton,WA,98310,USA
+Charlottesville,VA,22901,USA
+The Colony,TX,75056,USA
+Gainesville,GA,30501,USA
+Elmhurst,IL,60126,USA
+Sherman,TX,75090,USA
+Keller,TX,76244,USA
+Palm Springs,CA,92262,USA
+Brentwood,TN,37024,USA
+West Lafayette,IN,47906,USA
+Morgan Hill,CA,95037,USA
+East Lansing,MI,48823,USA
+Moorhead,MN,56560,USA
+York,PA,17401,USA
+Littleton,CO,80120,USA
+Salem,MA,1970,USA
+Oakley,CA,94561,USA
+Riverton,UT,84065,USA
+Burlington,VT,5401,USA
+Concord,NH,3301,USA
+Newnan,GA,30263,USA
+Bountiful,UT,84010,USA
+Fairfield,OH,45014,USA
+Rohnert Park,CA,94926,USA
+Hollister,CA,95023,USA
+Post Falls,ID,83854,USA
+Lebanon,TN,37087,USA
+Spanish Fork,UT,84660,USA
+Hickory,NC,28601,USA
+Ormond Beach,FL,32173,USA
+Wallingford,CT,6492,USA
+Alexandria,LA,71301,USA
+Delaware,OH,43015,USA
+Freeport,NY,11520,USA
+Lombard,IL,60148,USA
+El Centro,CA,92243,USA
+Southington,CT,6489,USA
+Lompoc,CA,93436,USA
+Hagerstown,MD,21740,USA
+Leominster,MA,1453,USA
+Saginaw,MI,48601,USA
+Linden,NJ,7036,USA
+Pittsfield,MA,1201,USA
+Lynnwood,WA,98036,USA
+Altoona,PA,16601,USA
+North Miami Beach,FL,33160,USA
+Schertz,TX,78154,USA
+Woonsocket,RI,2895,USA
+Bullhead City,AZ,86429,USA
+Coachella,CA,92236,USA
+Sumter,SC,29151,USA
+Danville,CA,94506,USA
+Manassas,VA,20108,USA
+Edmonds,WA,98020,USA
+Buffalo Grove,IL,60089,USA
+Mount Juliet,TN,37121,USA
+Jefferson City,MO,65101,USA
+Puyallup,WA,98371,USA
+Midland,MI,48640,USA
+Campbell,CA,95008,USA
+Beverly,MA,1915,USA
+Grove City,OH,43123,USA
+Weslaco,TX,78596,USA
+Danville,VA,24540,USA
+Peachtree Corners,GA,30092,USA
+Greer,SC,29650,USA
+Moline,IL,61265,USA
+Coppell,TX,75019,USA
+Shelton,CT,6484,USA
+Brighton,CO,80601,USA
+Marion,IA,52302,USA
+Indian Trail,NC,28079,USA
+Florence,AL,35630,USA
+San Bruno,CA,94066,USA
+Fitchburg,MA,1420,USA
+Billerica,MA,1821,USA
+Belleville,IL,62220,USA
+Woburn,MA,1801,USA
+Enfield,CT,6082,USA
+Lancaster,OH,43130,USA
+Reynoldsburg,OH,43068,USA
+Cottage Grove,MN,55016,USA
+Marlborough,MA,1752,USA
+Covington,KY,41011,USA
+Friendswood,TX,77546,USA
+Germantown,TN,38138,USA
+Cedar Falls,IA,50613,USA
+Rosenberg,TX,77471,USA
+Crystal Lake,IL,60012,USA
+Annapolis,MD,21401,USA
+Westfield,MA,1085,USA
+Rancho Palos Verdes,CA,90275,USA
+Rexburg,ID,83440,USA
+Lancaster,TX,75134,USA
+Cape Girardeau,MO,63701,USA
+Plant City,FL,33563,USA
+New Berlin,WI,53146,USA
+Findlay,OH,45839,USA
+DeKalb,IL,60115,USA
+Apache Junction,AZ,85119,USA
+Bartlett,IL,60103,USA
+Romeoville,IL,60446,USA
+Valley Stream,NY,11580,USA
+Lake Oswego,OR,97034,USA
+Florence,SC,29501,USA
+Norwich,CT,6360,USA
+West Fargo,ND,58078,USA
+Kearny,NJ,7032,USA
+Lake Stevens,WA,98258,USA
+Shrewsbury,MA,1545,USA
+Hutchinson,KS,67501,USA
+Hobbs,NM,88240,USA
+Hurst,TX,76053,USA
+Oviedo,FL,32762,USA
+Peachtree City,GA,30269,USA
+Bettendorf,IA,52722,USA
+Culver City,CA,90230,USA
+Pine Bluff,AR,71601,USA
+Duncanville,TX,75116,USA
+Lincoln Park,MI,48146,USA
+Issaquah,WA,98027,USA
+Owasso,OK,74055,USA
+La Vergne,TN,37086,USA
+Royal Palm Beach,FL,33421,USA
+Menomonee Falls,WI,53051,USA
+Grants Pass,OR,97526,USA
+Carol Stream,IL,60116,USA
+Stanton,CA,90680,USA
+Quincy,IL,62301,USA
+Warren,OH,44481,USA
+Penfield,NY,14526,USA
+Roy,UT,84067,USA
+Adelanto,CA,92301,USA
+Georgetown,KY,40324,USA
+Prattville,AL,36066,USA
+Winter Springs,FL,32708,USA
+Keizer,OR,97307,USA
+Cedar City,UT,84720,USA
+Chelsea,MA,2150,USA
+Midlothian,TX,76065,USA
+Dover,DE,19901,USA
+Tooele,UT,84074,USA
+Spartanburg,SC,29301,USA
+Atlantic City,NJ,8401,USA
+Windsor,CO,80550,USA
+Lewiston,ME,4240,USA
+Urbana,IL,61801,USA
+Myrtle Beach,SC,29572,USA
+La Quinta,CA,92247,USA
+Portage,IN,46368,USA
+Park Ridge,IL,60068,USA
+Phenix City,AL,36867,USA
+Calexico,CA,92231,USA
+Muskegon,MI,49440,USA
+Streamwood,IL,60107,USA
+San Gabriel,CA,91775,USA
+Clifton Park,NY,12065,USA
+Hilton Head Island,SC,29925,USA
+Copperas Cove,TX,76522,USA
+Douglasville,GA,30133,USA
+Wheeling,IL,60090,USA
+Bell Gardens,CA,90201,USA
+Rome,GA,30161,USA
+Clovis,NM,88101,USA
+Bartlesville,OK,74003,USA
+Longview,WA,98632,USA
+Tupelo,MS,38801,USA
+Prosper,TX,75078,USA
+Estero,FL,33928,USA
+Holyoke,MA,1040,USA
+Montclair,CA,91763,USA
+Pleasant Grove,UT,84062,USA
+New Albany,IN,47150,USA
+Hilliard,OH,43026,USA
+Woodstock,GA,30188,USA
+Oregon City,OR,97045,USA
+Carpentersville,IL,60110,USA
+American Fork,UT,84003,USA
+Wildomar,CA,92595,USA
+Guilderland,NY,12084,USA
+Trumbull,CT,6611,USA
+Leavenworth,KS,66048,USA
+Tucker,GA,30084,USA
+Monrovia,CA,91016,USA
+North Ridgeville,OH,44039,USA
+Muskogee,OK,74401,USA
+Hutto,TX,78634,USA
+La Puente,CA,91744,USA
+Benton,AR,72015,USA
+La Porte,TX,77571,USA
+Pacifica,CA,94044,USA
+Martinez,CA,94553,USA
+Redmond,OR,97756,USA
+Cumberland,RI,2864,USA
+Hanover Park,IL,60133,USA
+Andover,MA,1810,USA
+Natick,MA,1760,USA
+Rock Island,IL,61201,USA
+Weatherford,TX,76085,USA
+Merrillville,IN,46410,USA
+Richmond,KY,40475,USA
+Oak Creek,WI,53154,USA
+Plainfield,IN,46168,USA
+Dunedin,FL,34697,USA
+Monroe,NC,28110,USA
+Claremont,CA,91711,USA
+Cookeville,TN,38501,USA
+El Mirage,AZ,85335,USA
+Chelmsford,MA,1824,USA
+Coventry,RI,2816,USA
+Oswego,IL,60543,USA
+Riverhead,NY,11901,USA
+Springville,UT,84663,USA
+Canton,GA,30114,USA
+Salisbury,NC,28144,USA
+San Juan,TX,78589,USA
+Texarkana,TX,75501,USA
+San Luis,AZ,85349,USA
+Inver Grove Heights,MN,55076,USA
+Sahuarita,AZ,85629,USA
+Midvale,UT,84047,USA
+Torrington,CT,6790,USA
+Syracuse,UT,84075,USA
+Mount Vernon,WA,98273,USA
+Mason,OH,45040,USA
+Moorpark,CA,93020,USA
+Richmond,IN,47374,USA
+Hinesville,GA,31310,USA
+Wenatchee,WA,98801,USA
+Marion,OH,43301,USA
+Temple City,CA,91780,USA
+Glastonbury,CT,6033,USA
+Brunswick,OH,44212,USA
+Addison,IL,60101,USA
+Fairborn,OH,45324,USA
+Lima,OH,45801,USA
+Kingman,AZ,86401,USA
+Lewiston,ID,83501,USA
+Cibolo,TX,78108,USA
+Calumet City,IL,60409,USA
+Panama City,FL,32401,USA
+University Place,WA,98467,USA
+Long Beach,NY,11561,USA
+Valparaiso,IN,46383,USA
+San Juan Capistrano,CA,92675,USA
+Del Rio,TX,78840,USA
+McMinnville,OR,97128,USA
+Crown Point,IN,46307,USA
+West Hollywood,CA,90069,USA
+Bluffton,SC,29910,USA
+Derry,NH,3038,USA
+Goshen,IN,46526,USA
+Dalton,GA,30719,USA
+Statesboro,GA,30458,USA
+Kearney,NE,68845,USA
+Fulshear,TX,77441,USA
+Celina,TX,75009,USA
+Stow,OH,44224,USA
+College Park,MD,20740,USA
+Northbrook,IL,60062,USA
+Lufkin,TX,75901,USA
+Manhattan Beach,CA,90266,USA
+Harker Heights,TX,76548,USA
+Lexington,MA,2420,USA
+Clearfield,UT,84015,USA
+Pleasant Hill,CA,94523,USA
+Westlake,OH,44145,USA
+Helena,MT,59601,USA
+Alabaster,AL,35007,USA
+North Providence,RI,2911,USA
+Cleburne,TX,76031,USA
+Meridian,MS,39301,USA
+Eastpointe,MI,48021,USA
+Carmel,NY,10512,USA
+Leawood,KS,66206,USA
+Lathrop,CA,95330,USA
+Garner,NC,27529,USA
+Englewood,CO,80110,USA
+Eastchester,NY,10709,USA
+Haines City,FL,33844,USA
+Woodridge,IL,60517,USA
+Kennesaw,GA,30144,USA
+San Dimas,CA,91773,USA
+Walla Walla,WA,99362,USA
+Deer Park,TX,77536,USA
+Chester,PA,19013,USA
+Dover,NH,3820,USA
+Seguin,TX,78155,USA
+Petersburg,VA,23803,USA
+Gadsden,AL,35901,USA
+Gillette,WY,82716,USA
+Goldsboro,NC,27530,USA
+Salisbury,MD,21801,USA
+Rochester,NH,3839,USA
+Erie,CO,80516,USA
+Falmouth,MA,2540,USA
+Desert Hot Springs,CA,92240,USA
+Sherwood,AR,72120,USA
+Clarence,NY,14031,USA
+Andover,MN,55304,USA
+Savage,MN,55378,USA
+Spring Valley,NY,10977,USA
+Opelika,AL,36801,USA
+Kaysville,UT,84037,USA
+Saint Charles,IL,60174,USA
+Maryville,TN,37801,USA
+Washington,UT,84780,USA
+Florence,KY,41022,USA
+Oak Ridge,TN,37830,USA
+Pullman,WA,99163,USA
+Glendale Heights,IL,60139,USA
+Bell,CA,90202,USA
+Dana Point,CA,92629,USA
+Aiken,SC,29801,USA
+Long Branch,NJ,7740,USA
+Goleta,CA,93116,USA
+Garfield,NJ,7026,USA
+Los Gatos,CA,95030,USA
+Eagle,ID,83616,USA
+Atwater,CA,95301,USA
+Menlo Park,CA,94025,USA
+Cornelius,NC,28031,USA
+Massillon,OH,44646,USA
+Bay City,MI,48706,USA
+New Smyrna Beach,FL,32168,USA
+Needham,MA,2492,USA
+Forney,TX,75126,USA
+Fairbanks,AK,99701,USA
+Dracut,MA,1826,USA
+Laramie,WY,82070,USA
+Duluth,GA,30095,USA
+Nacogdoches,TX,75961,USA
+Zionsville,IN,46077,USA
+Nicholasville,KY,40340,USA
+Elizabethtown,KY,42701,USA
+Wheat Ridge,CO,80033,USA
+Michigan City,IN,46360,USA
+Newburgh,NY,12550,USA
+Houma,LA,70360,USA
+Rome,NY,13440,USA
+Bella Vista,AR,72714,USA
+North Olmsted,OH,44070,USA
+Shawnee,OK,74801,USA
+Naugatuck,CT,6770,USA
+Elk Grove Village,IL,60007,USA
+Mundelein,IL,60060,USA
+Carlsbad,NM,88220,USA
+Bangor,ME,4401,USA
+New Bern,NC,28560,USA
+Morrisville,NC,27560,USA
+Seaside,CA,93955,USA
+Morristown,TN,37813,USA
+San Pablo,CA,94806,USA
+Beverly Hills,CA,90209,USA
+Norwood,MA,2062,USA
+Alamogordo,NM,88310,USA
+North Andover,MA,1845,USA
+Pekin,IL,61554,USA
+Wallkill,NY,12589,USA
+Sanford,NC,27330,USA
+Brownsburg,IN,46112,USA
+West Warwick,RI,2893,USA
+Southlake,TX,76092,USA
+Greenville,TX,75401,USA
+Cicero,NY,13039,USA
+Jackson,MI,49201,USA
+Santa Paula,CA,93060,USA
+Northport,AL,35473,USA
+Vestal,NY,13850,USA
+Mamaroneck,NY,10543,USA
+Fort Mill,SC,29708,USA
+Hopkinsville,KY,42240,USA
+Tewksbury,MA,1876,USA
+Port Chester,NY,10573,USA
+North Royalton,OH,44133,USA
+Liberty,MO,64068,USA
+Lafayette,CO,80026,USA
+Banning,CA,92220,USA
+Salem,NH,3079,USA
+Ballwin,MO,63011,USA
+Sachse,TX,75048,USA
+Lawrenceville,GA,30042,USA
+Lawndale,CA,90260,USA
+Laguna Hills,CA,92653,USA
+Burlingame,CA,94010,USA
+Westfield,NJ,7090,USA
+Wellesley,MA,2482,USA
+North Chicago,IL,60064,USA
+Newark,DE,19702,USA
+Los Altos,CA,94022,USA
+La Verne,CA,91750,USA
+Princeton,NJ,8540,USA
+Newington,CT,6111,USA
+Easton,PA,18040,USA
+McDonough,GA,30252,USA
+Gurnee,IL,60031,USA
+Morgantown,WV,26501,USA
+North Tonawanda,NY,14120,USA
+Middletown,NY,10940,USA
+Milford,MA,1757,USA
+Paragould,AR,72450,USA
+Highland Park,IL,60035,USA
+Matthews,NC,28104,USA
+Hazleton,PA,18201,USA
+Algonquin,IL,60102,USA
+Saratoga,CA,95070,USA
+Casselberry,FL,32707,USA
+Gloucester,MA,1930,USA
+Winter Park,FL,32789,USA
+Niles,IL,60714,USA
+Bixby,OK,74008,USA
+Anderson,SC,29621,USA
+Enterprise,AL,36330,USA
+Southgate,MI,48195,USA
+Rahway,NJ,7065,USA
+Atascadero,CA,93422,USA
+Statesville,NC,28625,USA
+Daphne,AL,36526,USA
+Schererville,IN,46375,USA
+Bowling Green,OH,43402,USA
+Converse,TX,78109,USA
+San Carlos,CA,94070,USA
+Monterey,CA,93940,USA
+Hobart,IN,46342,USA
+Windsor,CT,6006,USA
+Burton,MI,48509,USA
+Clayton,NC,27520,USA
+Harrison,NY,10528,USA
+Queensbury,NY,12804,USA
+Laurel,MD,20707,USA
+Northampton,MA,1060,USA
+Independence,KY,41051,USA
+Texarkana,AR,71854,USA
+Galesburg,IL,61401,USA
+Parkersburg,WV,26101,USA
+Westerville,OH,43081,USA
+Leesburg,FL,34748,USA
+Waukee,IA,50263,USA
+Melrose,MA,2176,USA
+Russellville,AR,72801,USA
+Jacksonville,AR,72076,USA
+Oak Park,MI,48237,USA
+Stockbridge,GA,30281,USA
+Englewood,NJ,7631,USA
+Cheshire,CT,6408,USA
+Stoughton,MA,2072,USA
+Suisun City,CA,94585,USA
+Fountain,CO,80817,USA
+Pooler,GA,31322,USA
+Fredericksburg,VA,22401,USA
+Lake in the Hills,IL,60156,USA
+Athens,AL,35611,USA
+Slidell,LA,70458,USA
+Port Huron,MI,48060,USA
+Saratoga Springs,NY,12866,USA
+Leland,NC,28451,USA
+Merrimack,NH,3054,USA
+Saugus,MA,1906,USA
+Rockledge,FL,32955,USA
+Danville,IL,61832,USA
+Kalispell,MT,59901,USA
+Burbank,IL,60459,USA
+Frankfort,KY,40601,USA
+Glen Ellyn,IL,60137,USA
+Milton,MA,2186,USA
+Ridgecrest,CA,93555,USA
+Madison Heights,MI,48071,USA
+New Milford,CT,6776,USA
+Chaska,MN,55318,USA
+Eagle Pass,TX,78852,USA
+Jamestown,NY,14701,USA
+Crestview,FL,32536,USA
+Maple Valley,WA,98038,USA
+Aberdeen,SD,57401,USA
+Alvin,TX,77511,USA
+Twentynine Palms,CA,92277,USA
+Branford,CT,6405,USA
+Huntley,IL,60142,USA
+Prior Lake,MN,55372,USA
+McHenry,IL,60050,USA
+Allen Park,MI,48101,USA
+Marion,IN,46952,USA
+Greenville,MS,38701,USA
+Lansing,IL,60438,USA
+Glen Cove,NY,11542,USA
+New London,CT,6320,USA
+New Windsor,NY,12553,USA
+Winchester,VA,22601,USA
+Union City,GA,30291,USA
+Hamtramck,MI,48212,USA
+North Kingstown,RI,2852,USA
+Tualatin,OR,97062,USA
+Danvers,MA,1923,USA
+Madison,MS,39110,USA
+Maryland Heights,MO,63043,USA
+Kernersville,NC,27284,USA
+Wasco,CA,93280,USA
+Bristol,TN,37620,USA
+Henderson,KY,42419,USA
+East Haven,CT,6512,USA
+Pearl,MS,39208,USA
+Lake Jackson,TX,77566,USA
+New Lenox,IL,60451,USA
+Newtown,CT,6470,USA
+Garden City,KS,67846,USA
+Asheboro,NC,27203,USA
+New Iberia,LA,70560,USA
+Marshalltown,IA,50158,USA
+Westport,CT,6880,USA
+Dodge City,KS,67801,USA
+Williamsport,PA,17701,USA
+Thomasville,NC,27360,USA
+Camas,WA,98607,USA
+Walnut,CA,91788,USA
+Conway,SC,29526,USA
+Fremont,NE,68025,USA
+Millville,NJ,8332,USA
+Woodburn,OR,97071,USA
+Venice,FL,34284,USA
+Green,OH,44232,USA
+Wilmette,IL,60091,USA
+Carrollton,GA,30112,USA
+Kuna,ID,83634,USA
+Lemon Grove,CA,91945,USA
+Lemoore,CA,93245,USA
+Marysville,OH,43040,USA
+Kent,OH,44240,USA
+Jenks,OK,74037,USA
+Wethersfield,CT,6109,USA
+Granite City,IL,62040,USA
+Rosemount,MN,55068,USA
+Wakefield,MA,1880,USA
+Lindenhurst,NY,11757,USA
+Wooster,OH,44691,USA
+Williston,ND,58801,USA
+South Portland,ME,4106,USA
+Clinton,MS,39056,USA
+Balch Springs,TX,75180,USA
+West Linn,OR,97068,USA
+Mason City,IA,50401,USA
+Mauldin,SC,29662,USA
+Brawley,CA,92227,USA
+Cabot,AR,72023,USA
+Paducah,KY,42001,USA
+Garden City,MI,48135,USA
+Forest Grove,OR,97116,USA
+South Windsor,CT,6074,USA
+Belmont,CA,94002,USA
+Vernon Hills,IL,60061,USA
+Elk River,MN,55330,USA
+Simpsonville,SC,29680,USA
+Farmington,CT,6030,USA
+Belmont,MA,2478,USA
+Troy,OH,45373,USA
+Edwardsville,IL,62025,USA
+Ossining,NY,10562,USA
+Sanger,CA,93657,USA
+Wilsonville,OR,97070,USA
+Benicia,CA,94510,USA
+Horn Lake,MS,38637,USA
+Londonderry,NH,3053,USA
+Trussville,AL,35173,USA
+Lebanon,PA,17042,USA
+Owatonna,MN,55060,USA
+Chicago Heights,IL,60411,USA
+Oak Forest,IL,60452,USA
+Happy Valley,OR,97086,USA
+Oxford,MS,38655,USA
+Bridgeton,NJ,8302,USA
+Wheeling,WV,26003,USA
+Tumwater,WA,98511,USA
+Sebastian,FL,32958,USA
+Denison,TX,75020,USA
+Holland,MI,49422,USA
+Walpole,MA,2081,USA
+Moscow,ID,83843,USA
+Chanhassen,MN,55317,USA
+Austin,MN,55912,USA
+Ridgewood,NJ,7450,USA
+Eureka,CA,95501,USA
+Batavia,IL,60510,USA
+Lockport,IL,60441,USA
+Auburn,NY,13021,USA
+Medina,OH,44256,USA
+East Chicago,IN,46312,USA
+Burlington,MA,1803,USA
+Derby,KS,67037,USA
+Norfolk,NE,68701,USA
+Hercules,CA,94547,USA
+Staunton,VA,24401,USA
+Tarpon Springs,FL,34688,USA
+Moses Lake,WA,98837,USA
+South Pasadena,CA,91030,USA
+Colleyville,TX,76034,USA
+Winona,MN,55987,USA
+Imperial Beach,CA,91932,USA
+Windsor,CA,95492,USA
+Newberg,OR,97132,USA
+Franklin,IN,46131,USA
+Stevens Point,WI,54481,USA
+Marshfield,MA,2050,USA
+Woodstock,IL,60098,USA
+Rockville Centre,NY,11570,USA
+Farmington,UT,84025,USA
+Avon Lake,OH,44012,USA
+Xenia,OH,45385,USA
+Grandview,MO,64030,USA
+Key West,FL,33040,USA
+El Cerrito,CA,94530,USA
+Hudson,NH,3051,USA
+Corsicana,TX,75109,USA
+Yukon,OK,73085,USA
+Inkster,MI,48141,USA
+Salem,VA,24153,USA
+Peekskill,NY,10566,USA
+Brandon,MS,39042,USA
+Auburn Hills,MI,48321,USA
+Reedley,CA,93654,USA
+Belton,MO,64012,USA
+Galt,CA,95632,USA
+Avon,OH,44011,USA
+De Pere,WI,54115,USA
+Mequon,WI,53092,USA
+Big Spring,TX,79720,USA
+Dinuba,CA,93618,USA
+Bessemer,AL,35020,USA
+North Augusta,SC,29841,USA
+Katy,TX,77449,USA
+Easton,MA,2334,USA
+Barstow,CA,92311,USA
+Alton,IL,62002,USA
+Reading,MA,1867,USA
+Ottumwa,IA,52501,USA
+Mercer Island,WA,98040,USA
+Belvidere,IL,61008,USA
+West Chicago,IL,60185,USA
+Perrysburg,OH,43551,USA
+Muskego,WI,53150,USA
+Loma Linda,CA,92350,USA
+Walker,MI,49534,USA
+Romulus,MI,48174,USA
+Hazelwood,MO,63042,USA
+Lafayette,CA,94549,USA
+Norco,CA,92860,USA
+Ridgefield,CT,6877,USA
+Dedham,MA,2026,USA
+Dickinson,ND,58601,USA
+Simsbury,CT,6070,USA
+Hastings,NE,68901,USA
+Ardmore,OK,73401,USA
+Fairfax,VA,22030,USA
+Kingsville,TX,78363,USA
+Riverbank,CA,95367,USA
+Barberton,OH,44203,USA
+Florence,AZ,85132,USA
+Greenfield,IN,46140,USA
+Pelham,AL,35124,USA
+Kerrville,TX,78028,USA
+Nixa,MO,65714,USA
+Middletown,DE,19709,USA
+Paris,TX,75460,USA
+Newport,RI,2840,USA
+San Benito,TX,78586,USA
+Fort Dodge,IA,50501,USA
+Seal Beach,CA,90740,USA
+Lexington,SC,29071,USA
+Canton,MA,2021,USA
+Zanesville,OH,43701,USA
+Sandusky,OH,44870,USA
+Pickerington,OH,43147,USA
+Wadsworth,OH,44281,USA
+Faribault,MN,55021,USA
+Wyandotte,MI,48192,USA
+Mandan,ND,58554,USA
+Easley,SC,29640,USA
+Shelbyville,TN,37160,USA
+Homer Glen,IL,60491,USA
+Selma,CA,93662,USA
+Ridgeland,MS,39157,USA
+Oak Harbor,WA,98277,USA
+Windham,CT,6280,USA
+Clinton,IA,52732,USA
+Johnston,IA,50131,USA
+Morton Grove,IL,60053,USA
+Greenbelt,MD,20768,USA
+Westford,MA,1886,USA
+Ponca City,OK,74601,USA
+Decatur,GA,30030,USA
+Belton,TX,76513,USA
+Zion,IL,60099,USA
+Fernley,NV,89408,USA
+Gardner,KS,66030,USA
+Raymore,MO,64083,USA
+Columbus,NE,68601,USA
+Auburn,ME,4210,USA
+Soledad,CA,93960,USA
+Starkville,MS,39759,USA
+Herndon,VA,20170,USA
+Hingham,MA,2043,USA
+Willoughby,OH,44094,USA
+Maywood,CA,90270,USA
+North Haven,CT,6473,USA
+South Elgin,IL,60177,USA
+Brookings,SD,57006,USA
+Westmont,IL,60559,USA
+Collinsville,IL,62234,USA
+Eustis,FL,32726,USA
+Emporia,KS,66801,USA
+Southold,NY,11971,USA
+Cartersville,GA,30120,USA
+Melrose Park,IL,60160,USA
+Fairhope,AL,36532,USA
+Roseburg,OR,97470,USA
+Yorkville,IL,60560,USA
+Patterson,CA,95363,USA
+Acton,MA,1718,USA
+Mansfield,MA,2048,USA
+West Memphis,AR,72301,USA
+Papillion,NE,68046,USA
+Solon,OH,44139,USA
+Fountain Hills,AZ,85268,USA
+Van Buren,AR,72956,USA
+Bedford,NH,3110,USA
+Griffin,GA,30223,USA
+San Fernando,CA,91340,USA
+Munster,IN,46321,USA
+Marshall,TX,75670,USA
+Highland,IN,46322,USA
+Avon,IN,46123,USA
+Burlington,IA,52601,USA
+Elmwood Park,IL,60707,USA
+Kankakee,IL,60901,USA
+Foley,AL,36535,USA
+Farmington,MN,55024,USA
+Rolling Meadows,IL,60008,USA
+Anna,TX,75409,USA
+Perry,GA,31069,USA
+Jacksonville Beach,FL,32240,USA
+Edgewater,FL,32132,USA
+Kenmore,WA,98028,USA
+Freeport,IL,61032,USA
+Muscatine,IA,52761,USA
+Loves Park,IL,61111,USA
+Westerly,RI,2891,USA
+Columbus,MS,39701,USA
+Lisle,IL,60532,USA
+Scarborough,ME,4070,USA
+Oakdale,CA,95361,USA
+Wareham,MA,2571,USA
+Maple Heights,OH,44137,USA
+Coralville,IA,52241,USA
+Champlin,MN,55316,USA
+Hurricane,UT,84737,USA
+Duncan,OK,73533,USA
+Rock Springs,WY,82901,USA
+Watertown,SD,57201,USA
+Searcy,AR,72143,USA
+Hopewell,VA,23860,USA
+DeBary,FL,32713,USA
+Radcliff,KY,40159,USA
+Prairie Village,KS,66208,USA
+Maywood,IL,60153,USA
+Hudson,OH,44236,USA
+Wilmington,MA,1887,USA
+Princeton,TX,75407,USA
+Garden City,NY,11530,USA
+Ennis,TX,75119,USA
+Bonney Lake,WA,98391,USA
+Saint John,IN,46373,USA
+Corcoran,CA,93212,USA
+Fate,TX,75132,USA
+Waynesboro,VA,22980,USA
+Keene,NH,3431,USA
+Machesney Park,IL,61115,USA
+Albertville,AL,35950,USA
+North Platte,NE,69101,USA
+Portsmouth,NH,3801,USA
+Stoneham,MA,2180,USA
+Winchester,MA,1890,USA
+Evans,CO,80620,USA
+Laguna Beach,CA,92651,USA
+Sapulpa,OK,74066,USA
+Christiansburg,VA,24068,USA
+North Salt Lake,UT,84054,USA
+Waxhaw,NC,28173,USA
+Payson,UT,84651,USA
+Ozark,MO,65721,USA
+Roselle,IL,60172,USA
+Marina,CA,93933,USA
+Calabasas,CA,91302,USA
+Central Falls,RI,2863,USA
+Suwanee,GA,30024,USA
+Greenwood,SC,29646,USA
+Biddeford,ME,4005,USA
+Groveland,FL,34736,USA
+Summit,NJ,7901,USA
+Bloomingdale,IL,60108,USA
+Ruston,LA,71270,USA
+Acworth,GA,30101,USA
+Sanford,ME,4073,USA
+Junction City,KS,66441,USA
+Mustang,OK,73064,USA
+Watertown,CT,6795,USA
+East Peoria,IL,61611,USA
+Bristol,RI,2809,USA
+Millbrae,CA,94030,USA
+Snellville,GA,30039,USA
+Guilford,CT,6437,USA
+Oxford,AL,36203,USA
+Mesquite,NV,89024,USA
+Smithfield,RI,2917,USA
+Klamath Falls,OR,97601,USA
+Sedalia,MO,65301,USA
+Darien,CT,6820,USA
+Chillicothe,OH,45601,USA
+Helena,AL,35080,USA
+Shelby,NC,28150,USA
+Pleasant Prairie,WI,53158,USA
+Brunswick,ME,4011,USA
+Clemmons,NC,27012,USA
+Duarte,CA,91008,USA
+Montgomery,IL,60538,USA
+Villa Park,IL,60181,USA
+Clarksville,IN,47129,USA
+Dickinson,TX,77539,USA
+Carbondale,IL,62901,USA
+Birmingham,MI,48009,USA
+Blue Island,IL,60406,USA
+Yucca Valley,CA,92284,USA
+Pascagoula,MS,39567,USA
+Stephenville,TX,76401,USA
+Battle Ground,WA,98604,USA
+Seymour,IN,47274,USA
+Hammond,LA,70401,USA
+Darien,IL,60561,USA
+Bloomfield,CT,6002,USA
+Mountlake Terrace,WA,98043,USA
+New Castle,PA,16101,USA
+Ithaca,NY,14850,USA
+Centerton,AR,72719,USA
+Westborough,MA,1581,USA
+Altoona,IA,50009,USA
+Bryant,AR,72022,USA
+Lebanon,OH,45036,USA
+American Canyon,CA,94503,USA
+Port Hueneme,CA,93041,USA
+North Liberty,IA,52317,USA
+Alliance,OH,44601,USA
+Rocky River,OH,44116,USA
+Ashland,KY,41101,USA
+Carrboro,NC,27510,USA
+Ashland,OR,97520,USA
+Shafter,CA,93263,USA
+Willmar,MN,56201,USA
+Imperial,CA,92251,USA
+Geneva,IL,60134,USA
+Mineola,NY,11501,USA
+Hyde Park,NY,12538,USA
+Anniston,AL,36201,USA
+South Lake Tahoe,CA,96150,USA
+Hays,KS,67601,USA
+Somers,NY,10589,USA
+Secaucus,NJ,7094,USA
+Mukilteo,WA,98275,USA
+Mount Pleasant,MI,48804,USA
+Arlington,WA,98223,USA
+Montrose,CO,81401,USA
+Fort Walton Beach,FL,32547,USA
+Grayslake,IL,60030,USA
+Park Forest,IL,60466,USA
+Gallup,NM,87301,USA
+Gardner,MA,1440,USA
+East Moline,IL,61244,USA
+Saco,ME,4072,USA
+Ludlow,MA,1056,USA
+Forest Lake,MN,55025,USA
+Arnold,MO,63010,USA
+Tullahoma,TN,37388,USA
+Mill Creek,WA,98082,USA
+Athens,OH,45701,USA
+Marquette,MI,49855,USA
+New Canaan,CT,6840,USA
+Culpeper,VA,22701,USA
+Elko,NV,89801,USA
+Rocky Hill,CT,6067,USA
+Boerne,TX,78006,USA
+South Holland,IL,60473,USA
+Bethel,CT,6801,USA
+Frankfort,IL,60423,USA
+Hyattsville,MD,20781,USA
+Pleasantville,NJ,8232,USA
+Pittsburg,KS,66762,USA
+Westbrook,ME,4092,USA
+Painesville,OH,44077,USA
+Lockport,NY,14094,USA
+South Burlington,VT,5403,USA
+Dolton,IL,60419,USA
+Sandwich,MA,2563,USA
+Punta Gorda,FL,33950,USA
+Piqua,OH,45356,USA
+Louisville,CO,80027,USA
+South Saint Paul,MN,55075,USA
+Golden,CO,80401,USA
+Bethany,OK,73008,USA
+Adrian,MI,49221,USA
+Libertyville,IL,60048,USA
+Westminster,MD,21157,USA
+Vicksburg,MS,39180,USA
+Tavares,FL,32778,USA
+Portland,TX,78374,USA
+Sulphur,LA,70663,USA
+Morristown,NJ,7960,USA
+Rolla,MO,65401,USA
+South Milwaukee,WI,53172,USA
+Alamo,TX,78516,USA
+Monroe,MI,48161,USA
+Sidney,OH,45365,USA
+Marblehead,MA,1945,USA
+Berlin,CT,6037,USA
+Claremore,OK,74017,USA
+Shelbyville,IN,46176,USA
+Crest Hill,IL,60403,USA
+Lynbrook,NY,11563,USA
+Port Angeles,WA,98362,USA
+Lomita,CA,90717,USA
+Terrell,TX,75160,USA
+Lynn Haven,FL,32444,USA
+Oroville,CA,95965,USA
+Sand Springs,OK,74063,USA
+Sherwood,OR,97140,USA
+Saint Michael,MN,55376,USA
+Universal City,TX,78148,USA
+Southbury,CT,6488,USA
+Brigham City,UT,84302,USA
+Zachary,LA,70791,USA
+Kingsland,GA,31548,USA
+Bartow,FL,33830,USA
+Holden,MA,1520,USA
+North Myrtle Beach,SC,29582,USA
+Nogales,AZ,85621,USA
+Harrisburg,NC,28075,USA
+Grafton,MA,1519,USA
+Harrison,NJ,7029,USA
+Royse City,TX,75189,USA
+Miamisburg,OH,45342,USA
+Mokena,IL,60448,USA
+Oregon,OH,43616,USA
+Erlanger,KY,41018,USA
+Boone,NC,28607,USA
+Hudson,MA,1749,USA
+Ypsilanti,MI,48197,USA
+Republic,MO,65738,USA
+Knightdale,NC,27545,USA
+Fayetteville,GA,30214,USA
+Northfield,MN,55057,USA
+Lexington,NC,27292,USA
+Oxford,OH,45056,USA
+Broadview Heights,OH,44147,USA
+Durant,OK,74701,USA
+Lake Zurich,IL,60047,USA
+Naples,FL,34101,USA
+Arvin,CA,93203,USA
+Angleton,TX,77515,USA
+South El Monte,CA,91733,USA
+Plainview,TX,79072,USA
+Harvey,IL,60426,USA
+Cocoa,FL,32922,USA
+Durango,CO,81301,USA
+Seagoville,TX,75159,USA
+Crowley,TX,76036,USA
+Agoura Hills,CA,91301,USA
+Warrensburg,MO,64093,USA
+Springboro,OH,45066,USA
+Hermiston,OR,97838,USA
+Twinsburg,OH,44087,USA
+Albany,CA,94706,USA
+Lebanon,OR,97355,USA
+Forest Park,GA,30297,USA
+Winder,GA,30680,USA
+Mebane,NC,27302,USA
+Kinston,NC,28501,USA
+Greenfield,CA,93927,USA
+Maumelle,AR,72113,USA
+Melissa,TX,75454,USA
+Maitland,FL,32751,USA
+Orinda,CA,94563,USA
+Seminole,FL,33772,USA
+Zephyrhills,FL,33539,USA
+Stillwater,MN,55082,USA
+Liberal,KS,67901,USA
+Lake Forest,IL,60045,USA
+Cullman,AL,35055,USA
+Hopkinton,MA,1748,USA
+Monroe,WA,98272,USA
+Sheridan,WY,82801,USA
+Central Point,OR,97502,USA
+Springfield,TN,37172,USA
+Madisonville,KY,42431,USA
+Evergreen Park,IL,60805,USA
+Scituate,MA,2066,USA
+La Marque,TX,77568,USA
+Dixon,CA,95620,USA
+Winchester,KY,40391,USA
+Norton,MA,2766,USA
+Orange,TX,77630,USA
+Augusta,ME,4330,USA
+Panama City Beach,FL,32407,USA
+Sylvania,OH,43560,USA
+Ashland,OH,44805,USA
+Manor,TX,78653,USA
+Hermosa Beach,CA,90254,USA
+Palestine,TX,75801,USA
+Saint Marys,GA,31558,USA
+Gautier,MS,39553,USA
+Ferndale,MI,48220,USA
+Sudbury,MA,1776,USA
+Martinsburg,WV,25401,USA
+Deerfield,IL,60015,USA
+Ansonia,CT,6401,USA
+Clive,IA,50325,USA
+Avon,CT,6001,USA
+Lumberton,NC,28358,USA
+Monroe,CT,6468,USA
+Brookfield,IL,60513,USA
+Centralia,WA,98531,USA
+Milton,NY,12547,USA
+Cumberland,MD,21501,USA
+Elizabeth City,NC,27906,USA
+Holly Springs,GA,30142,USA
+Chowchilla,CA,93610,USA
+Homewood,IL,60430,USA
+Wisconsin Rapids,WI,54494,USA
+Brownwood,TX,76801,USA
+Ellensburg,WA,98926,USA
+Coronado,CA,92118,USA
+Ottawa,IL,61350,USA
+Newburyport,MA,1950,USA
+Ocean Springs,MS,39564,USA
+Siloam Springs,AR,72761,USA
+Sycamore,IL,60178,USA
+Johnstown,CO,80534,USA
+Pinole,CA,94564,USA
+Blooming Grove,NY,10914,USA
+Auburndale,FL,33823,USA
+El Reno,OK,73036,USA
+Altus,OK,73521,USA
+Arcata,CA,95518,USA
+Goffstown,NH,3045,USA
+Los Lunas,NM,87031,USA
+Round Lake,IL,60073,USA
+Weirton,WV,26062,USA
+Stonington,CT,6378,USA
+Brenham,TX,77833,USA
+Ashland,MA,1721,USA
+Thomasville,GA,31757,USA
+Wilton,CT,6897,USA
+Villa Rica,GA,30180,USA
+Santa Fe Springs,CA,90670,USA
+Matteson,IL,60443,USA
+Mount Washington,KY,40047,USA
+Dover,NJ,7801,USA
+Pinehurst,NC,28370,USA
+Sharon,MA,2067,USA
+North Aurora,IL,60542,USA
+Bensenville,IL,60105,USA
+Albert Lea,MN,56007,USA
+Berea,OH,44017,USA
+Newton,KS,67114,USA
+Arroyo Grande,CA,93420,USA
+Alsip,IL,60803,USA
+Lake Saint Louis,MO,63367,USA
+Firestone,CO,80520,USA
+Pembroke,MA,2359,USA
+Colonial Heights,VA,23834,USA
+Niles,OH,44446,USA
+Shorewood,IL,60404,USA
+Hopkins,MN,55305,USA
+Lenoir,NC,28633,USA
+Stuart,FL,34994,USA
+Fairmont,WV,26554,USA
+Pataskala,OH,43062,USA
+Trenton,MI,48183,USA
+Logansport,IN,46947,USA
+Somerset,MA,2725,USA
+Nederland,TX,77627,USA
+Mount Holly,NC,28120,USA
+Farmington,MO,63640,USA
+Buford,GA,30515,USA
+McAlester,OK,74501,USA
+Richmond Hill,GA,31324,USA
+Johnstown,PA,15901,USA
+Bellwood,IL,60104,USA
+Canby,OR,97013,USA
+Franklin Park,IL,60131,USA
+Hernando,MS,38632,USA
+South Hadley,MA,1075,USA
+Steubenville,OH,43952,USA
+Bourbonnais,IL,60914,USA
+Anacortes,WA,98221,USA
+Tallmadge,OH,44278,USA
+Anoka,MN,55303,USA
+Sevierville,TN,37862,USA
+Calhoun,GA,30701,USA
+Concord,MA,1742,USA
+Conyers,GA,30012,USA
+East Saint Louis,IL,62201,USA
+Gainesville,TX,76240,USA
+Palos Hills,IL,60465,USA
+Cohoes,NY,12047,USA
+Calera,AL,35040,USA
+Graham,NC,27253,USA
+Clemson,SC,29631,USA
+Cary,IL,60013,USA
+Hope Mills,NC,28348,USA
+Scarsdale,NY,10583,USA
+Ashtabula,OH,44004,USA
+Cudahy,WI,53110,USA
+West Richland,WA,99353,USA
+Gorham,ME,4038,USA
+Troy,AL,36079,USA
+Tiffin,OH,44883,USA
+Wildwood,FL,34785,USA
+Streetsboro,OH,44241,USA
+Norcross,GA,30003,USA
+Alice,TX,78332,USA
+Godfrey,IL,62035,USA
+North Canton,OH,44720,USA
+Portsmouth,RI,2871,USA
+Greenfield,MA,1301,USA
+Rancho Mirage,CA,92270,USA
+West Columbia,SC,29169,USA
+Rockland,MA,2370,USA
+Colchester,VT,5439,USA
+Morganton,NC,28655,USA
+Webster,MA,1570,USA
+Portsmouth,OH,45662,USA
+Madison,CT,6443,USA
+Shelbyville,KY,40065,USA
+Sartell,MN,56377,USA
+Brookfield,CT,6804,USA
+Lemont,IL,60439,USA
+Aurora,OH,44202,USA
+Murray,KY,42071,USA
+Bay City,TX,77404,USA
+Dallas,OR,97338,USA
+Plainville,CT,6062,USA
+Kirksville,MO,63501,USA
+Natchitoches,LA,71457,USA
+New Philadelphia,OH,44663,USA
+Stafford,TX,77477,USA
+Sunland Park,NM,88063,USA
+Bellingham,MA,2019,USA
+Red Oak,TX,75154,USA
+Takoma Park,MD,20912,USA
+Eastlake,OH,44095,USA
+Youngsville,LA,70592,USA
+Blythe,CA,92225,USA
+Wayne,MI,48184,USA
+New Castle,IN,47362,USA
+Easton,MD,21601,USA
+Powder Springs,GA,30127,USA
+Morton,IL,61550,USA
+New Port Richey,FL,34652,USA
+Cortland,NY,13045,USA
+Addison,TX,75001,USA
+Swansea,MA,2777,USA
+Danville,KY,40422,USA
+Jacksonville,IL,62650,USA
+Tifton,GA,31793,USA
+Hinsdale,IL,60521,USA
+Gretna,LA,70053,USA
+Laguna Woods,CA,92637,USA
+Mount Dora,FL,32756,USA
+Frederick,CO,80530,USA
+Wixom,MI,48393,USA
+Grovetown,GA,30813,USA
+Fort Thomas,KY,41075,USA
+Charleston,IL,61920,USA
+Barrington,RI,2806,USA
+Aberdeen,WA,98520,USA
+Long Beach,MS,39560,USA
+Millbrook,AL,36054,USA
+Vero Beach,FL,32960,USA
+Port Orchard,WA,98366,USA
+Laconia,NH,3246,USA
+Pendleton,OR,97801,USA
+Norwalk,OH,44857,USA
+Laurel,MS,39440,USA
+El Dorado,AR,71730,USA
+Eloy,AZ,85131,USA
+Coalinga,CA,93210,USA
+Selma,AL,36701,USA
+Huntington,IN,46750,USA
+Safety Harbor,FL,34695,USA
+Muscle Shoals,AL,35661,USA
+Bellaire,TX,77401,USA
+Defiance,OH,43512,USA
+Lebanon,IN,46052,USA
+Ellington,CT,6029,USA
+Taylor,TX,76574,USA
+Bristol,VA,24201,USA
+Abington,MA,2351,USA
+Fairburn,GA,30213,USA
+Hannibal,MO,63401,USA
+Washougal,WA,98671,USA
+Santaquin,UT,84655,USA
+Bedford,NY,10506,USA
+Massapequa Park,NY,11762,USA
+Nolensville,TN,37135,USA
+Aberdeen,MD,21001,USA
+Truckee,CA,96160,USA
+Longwood,FL,32750,USA
+Milledgeville,GA,31059,USA
+Tahlequah,OK,74464,USA
+Middletown,RI,2842,USA
+Seymour,CT,6483,USA
+Groves,TX,77619,USA
+Belle Glade,FL,33430,USA
+Lake Wales,FL,33853,USA
+Donna,TX,78537,USA
+Albemarle,NC,28001,USA
+Lake Mary,FL,32746,USA
+Auburn,MA,1501,USA
+Jasper,IN,47546,USA
+Beckley,WV,25801,USA
+Radford,VA,24141,USA
+Marion,IL,62959,USA
+Mercedes,TX,78570,USA
+Coolidge,AZ,85128,USA
+Moraga,CA,94556,USA
+Clearlake,CA,95422,USA
+Mount Vernon,OH,43050,USA
+Red Wing,MN,55066,USA
+Mattoon,IL,61938,USA
+Lady Lake,FL,32158,USA
+Fillmore,CA,93015,USA
+Payson,AZ,85541,USA
+El Segundo,CA,90245,USA
+Pampa,TX,79065,USA
+Southern Pines,NC,28387,USA
+Chickasha,OK,73018,USA
+Ada,OK,74820,USA
+Hayden,ID,83835,USA
+East Greenbush,NY,12061,USA
+Buffalo,MN,55313,USA
+Centerville,UT,84014,USA
+Vincennes,IN,47591,USA
+Hampton,NH,3842,USA
+Crawfordsville,IN,47933,USA
+Frankfort,IN,46041,USA
+Mountain Home,ID,83647,USA
+Bridgeview,IL,60455,USA
+Hewitt,TX,76643,USA
+Hugo,MN,55038,USA
+Sulphur Springs,TX,75482,USA
+La Vista,NE,68128,USA
+Milford,NH,3055,USA
+Dyer,IN,46311,USA
+Saraland,AL,36571,USA
+East Longmeadow,MA,1028,USA
+Dickson,TN,37055,USA
+Northbridge,MA,1534,USA
+Humble,TX,77338,USA
+Fairview Heights,IL,62208,USA
+Sunnyside,WA,98944,USA
+Grimes,IA,50111,USA
+Griffith,IN,46319,USA
+Vienna,VA,22180,USA
+Ripon,CA,95366,USA
+Westchester,IL,60154,USA
+Gardendale,AL,35071,USA
+Poplar Bluff,MO,63901,USA
+Westwood,MA,2090,USA
+Niceville,FL,32578,USA
+Kerman,CA,93630,USA
+Gatesville,TX,76528,USA
+Tiverton,RI,2878,USA
+Chelsea,AL,35043,USA
+Gulf Shores,AL,36542,USA
+Wolcott,CT,6716,USA
+Havelock,NC,28532,USA
+Grain Valley,MO,64029,USA
+Exeter,NH,3833,USA
+Lynden,WA,98264,USA
+Country Club Hills,IL,60478,USA
+Minneola,FL,34755,USA
+Ukiah,CA,95482,USA
+Warsaw,IN,46580,USA
+Duxbury,MA,2331,USA
+Buda,TX,78610,USA
+Hermitage,PA,16148,USA
+Sikeston,MO,63801,USA
+Indianola,IA,50125,USA
+Hibbing,MN,55746,USA
+Windham,NH,3087,USA
+Mount Pleasant,TX,75455,USA
+Dyersburg,TN,38024,USA
+Dublin,GA,31021,USA
+Bemidji,MN,56601,USA
+The Dalles,OR,97058,USA
+Floral Park,NY,11001,USA
+Elkton,MD,21921,USA
+Williamsburg,VA,23185,USA
+Washington,IL,61571,USA
+Bay Village,OH,44140,USA
+Grandville,MI,49418,USA
+Palmview,TX,78574,USA
+South Houston,TX,77587,USA
+New Haven,IN,46774,USA
+Coos Bay,OR,97420,USA
+Ferndale,WA,98248,USA
+Fairhaven,MA,2719,USA
+Waterville,ME,4901,USA
+Fremont,OH,43420,USA
+La Grange,IL,60525,USA
+Artesia,CA,90701,USA
+Davidson,NC,28035,USA
+Canyon,TX,79015,USA
+Jamestown,ND,58401,USA
+Westbury,NY,11590,USA
+Suffield,CT,6078,USA
+Jackson,MO,63755,USA
+Newton,IA,50208,USA
+Troutdale,OR,97060,USA
+Scottsboro,AL,35768,USA
+Lilburn,GA,30047,USA
+Monroe,GA,30655,USA
+Northborough,MA,1532,USA
+Mitchell,SD,57301,USA
+Hartselle,AL,35640,USA
+Seekonk,MA,2771,USA
+Clarksburg,WV,26301,USA
+Americus,GA,31709,USA
+Longmeadow,MA,1106,USA
+Port Royal,SC,29935,USA
+Andover,KS,67002,USA
+Greeneville,TN,37743,USA
+Cedar Lake,IN,46303,USA
+Douglas,AZ,85607,USA
+Colchester,CT,6415,USA
+North Reading,MA,1864,USA
+Thibodaux,LA,70301,USA
+Yankton,SD,57078,USA
+Berea,KY,40403,USA
+Opelousas,LA,70570,USA
+Carthage,MO,64836,USA
+Monroe,OH,45050,USA
+Prospect Heights,IL,60070,USA
+Clinton,MA,1510,USA
+Raynham,MA,2767,USA
+Mashpee,MA,2649,USA
+Uvalde,TX,78801,USA
+Mount Clemens,MI,48043,USA
+Belmont,NC,28012,USA
+Eden,NC,27288,USA
+Hendersonville,NC,28739,USA
+Phillipsburg,NJ,8865,USA
+Belchertown,MA,1007,USA
+Bennington,VT,5201,USA
+Jefferson,GA,30549,USA
+Glasgow,KY,42141,USA
+Swampscott,MA,1907,USA
+Rio Grande City,TX,78582,USA
+Front Royal,VA,22630,USA
+Moncks Corner,SC,29461,USA
+Whitman,MA,2382,USA
+Loganville,GA,30052,USA
+Bradley,IL,60915,USA
+Lebanon,MO,65536,USA
+La Palma,CA,90623,USA
+Saint Augustine,FL,32080,USA
+Dixon,IL,61021,USA
+Mineral Wells,TX,76067,USA
+Harper Woods,MI,48225,USA
+Brunswick,GA,31520,USA
+Asbury Park,NJ,7712,USA
+Plainfield,CT,6374,USA
+California City,CA,93504,USA
+Johnson City,NY,13790,USA
+Washington,MO,63090,USA
+Lebanon,NH,3756,USA
+Menasha,WI,54952,USA
+Vandalia,OH,45377,USA
+Waunakee,WI,53597,USA
+Havre de Grace,MD,21078,USA
+Depew,NY,14043,USA
+Lockhart,TX,78644,USA
+Berkley,MI,48072,USA
+Dennis,MA,2638,USA
+Gloversville,NY,12078,USA
+Deming,NM,88030,USA
+Laurinburg,NC,28352,USA
+Orange City,FL,32763,USA
+Boulder City,NV,89005,USA
+Oldsmar,FL,34677,USA
+Fort Payne,AL,35967,USA
+Alexandria,MN,56308,USA
+Macomb,IL,61455,USA
+Holliston,MA,1746,USA
+Roanoke Rapids,NC,27870,USA
+Braselton,GA,30517,USA
+Warrenville,IL,60555,USA
+Hazel Park,MI,48030,USA
+Hammonton,NJ,8037,USA
+Henderson,NC,27536,USA
+Monticello,MN,55362,USA
+Manvel,TX,77578,USA
+Pacific Grove,CA,93950,USA
+Antioch,IL,60002,USA
+Hereford,TX,79045,USA
+Dallas,GA,30132,USA
+Livingston,CA,95334,USA
+Farmington,NY,14425,USA
+Hanover,MA,2339,USA
+Hooksett,NH,3106,USA
+Riverdale,GA,30274,USA
+Greensburg,PA,15601,USA
+Stony Point,NY,10980,USA
+Hutchinson,MN,55350,USA
+Talladega,AL,35160,USA
+Star,ID,83669,USA
+Chippewa Falls,WI,54729,USA
+Fallsburg,NY,12733,USA
+Alexander City,AL,35010,USA
+Owosso,MI,48867,USA
+Glens Falls,NY,12801,USA
+Falls Church,VA,22040,USA
+Brainerd,MN,56401,USA
+Tolland,CT,6084,USA
+East Greenwich,RI,2818,USA
+Sterling,IL,61081,USA
+Reidsville,NC,27320,USA
+Parlier,CA,93648,USA
+Chesterton,IN,46304,USA
+Greendale,WI,53129,USA
+Clarkston,GA,30021,USA
+Wilbraham,MA,1095,USA
+White House,TN,37188,USA
+Somerton,AZ,85350,USA
+Narragansett,RI,2882,USA
+Moultrie,GA,31768,USA
+Beech Grove,IN,46107,USA
+Great Bend,KS,67530,USA
+Fraser,MI,48026,USA
+Shepherdsville,KY,40165,USA
+Durham,NH,3824,USA
+Pelham,NH,3076,USA
+Chatham,IL,62629,USA
+Huron,SD,57350,USA
+Hidalgo,TX,78557,USA
+Key Biscayne,FL,33149,USA
+Jacksonville,AL,36265,USA
+Cornelius,OR,97113,USA
+Smithfield,UT,84335,USA
+Nantucket,MA,2554,USA
+Grantsville,UT,84029,USA
+Red Bluff,CA,96080,USA
+Washington Court House,OH,43160,USA
+Arlington,TN,38002,USA
+Powell,OH,43065,USA
+Uxbridge,MA,1569,USA
+Covington,GA,30014,USA
+Athens,TN,37303,USA
+Saint Helens,OR,97051,USA
+Morris,IL,60450,USA
+Jasper,AL,35501,USA
+East Bridgewater,MA,2333,USA
+Cromwell,CT,6416,USA
+Corinth,MS,38834,USA
+Ozark,AL,36360,USA
+Beacon,NY,12508,USA
+Mount Vernon,IL,62864,USA
+Circleville,OH,43113,USA
+Scottsbluff,NE,69361,USA
+Orange,CT,6477,USA
+Ridgefield,WA,98642,USA
+Elizabethton,TN,37643,USA
+Bainbridge,GA,39817,USA
+Jacksonville,TX,75766,USA
+Glenpool,OK,74033,USA
+Fergus Falls,MN,56537,USA
+Broussard,LA,70518,USA
+Lone Tree,CO,80124,USA
+Norwalk,IA,50211,USA
+Dumas,TX,79029,USA
+Bedford,MA,1730,USA
+Destin,FL,32540,USA
+Pineville,LA,71359,USA
+Bellefontaine,OH,43311,USA
+Lumberton,TX,77657,USA
+East Wenatchee,WA,98802,USA
+New Ulm,MN,56073,USA
+Hickory Hills,IL,60457,USA
+Mill Valley,CA,94941,USA
+Chicago Ridge,IL,60415,USA
+Clarksdale,MS,38614,USA
+Pierre,SD,57501,USA
+Azle,TX,76020,USA
+Troy,MO,63379,USA
+Millbury,MA,1527,USA
+Wauconda,IL,60084,USA
+Grass Valley,CA,95945,USA
+Channahon,IL,60410,USA
+Aurora,NY,13026,USA
+Newport,KY,41071,USA
+Bedford,IN,47421,USA
+McPherson,KS,67460,USA
+Ipswich,MA,1938,USA
+Glen Carbon,IL,62034,USA
+Kingston,MA,2364,USA
+Midlothian,IL,60445,USA
+Natchez,MS,39120,USA
+Lewisville,NC,27023,USA
+Forest Park,IL,60130,USA
+Sauk Rapids,MN,56379,USA
+Beachwood,OH,44122,USA
+Moberly,MO,65270,USA
+Fruita,CO,81521,USA
+Worthington,MN,56187,USA
+Waycross,GA,31501,USA
+Bardstown,KY,40004,USA
+King City,CA,93930,USA
+Auburn,CA,95602,USA
+Martinsville,VA,24112,USA
+Auburn,IN,46706,USA
+Beaufort,SC,29901,USA
+Wood Dale,IL,60191,USA
+Seabrook,TX,77586,USA
+Susanville,CA,96127,USA
+South Sioux City,NE,68776,USA
+Maumee,OH,43537,USA
+Marshall,MN,56258,USA
+Chino Valley,AZ,86323,USA
+Wayland,MA,1778,USA
+Cayce,SC,29033,USA
+Harwich,MA,2645,USA
+Pell City,AL,35125,USA
+Marshall,MO,65340,USA
+Snoqualmie,WA,98065,USA
+Palmetto,FL,34220,USA
+Port Neches,TX,77651,USA
+Marion,AR,72364,USA
+Hawaiian Gardens,CA,90716,USA
+Moody,AL,35004,USA
+Tomball,TX,77375,USA
+Greenwood,MS,38930,USA
+New Fairfield,CT,6812,USA
+Brecksville,OH,44141,USA
+Rogers,MN,55374,USA
+Trenton,OH,45067,USA
+Davenport,FL,33836,USA
+Washington,PA,15301,USA
+Portland,TN,37148,USA
+Kilgore,TX,75662,USA
+North Branford,CT,6471,USA
+Lake Elmo,MN,55042,USA
+Fernandina Beach,FL,32034,USA
+Clinton,CT,6413,USA
+Medway,MA,2053,USA
+Henderson,TX,75652,USA
+Waconia,MN,55387,USA
+Avenal,CA,93204,USA
+Charlton,MA,1507,USA
+Orangeburg,SC,29115,USA
+Mandeville,LA,70448,USA
+Harrison,AR,72601,USA
+Endicott,NY,13760,USA
+Pottsville,PA,17901,USA
+Newton,NC,28658,USA
+Beeville,TX,78102,USA
+Coatesville,PA,19320,USA
+Western Springs,IL,60558,USA
+Steamboat Springs,CO,80477,USA
+Englewood,OH,45322,USA
+Coldwater,MI,49036,USA
+Smyrna,DE,19977,USA
+Connersville,IN,47331,USA
+Oxford,MA,1540,USA
+Atlantic Beach,FL,32233,USA
+Andrews,TX,79714,USA
+Woodinville,WA,98072,USA
+Clayton,OH,45315,USA
+Festus,MO,63028,USA
+Suamico,WI,54173,USA
+Marietta,OH,45750,USA
+Butler,PA,16001,USA
+South Charleston,WV,25303,USA
+Webb City,MO,64870,USA
+Mountain Home,AR,72653,USA
+Claremont,NH,3743,USA
+Cambridge,MD,21613,USA
+Ridgefield Park,NJ,7660,USA
+Grand Terrace,CA,92313,USA
+La Grande,OR,97850,USA
+Sterling,CO,80751,USA
+Lake Station,IN,46405,USA
+Lincoln,IL,62656,USA
+North Palm Beach,FL,33408,USA
+Harrison,OH,45030,USA
+Medfield,MA,2052,USA
+Neosho,MO,64850,USA
+Gonzales,LA,70707,USA
+Newcastle,OK,73065,USA
+Canton,IL,61520,USA
+Las Vegas,NM,87701,USA
+Jerome,ID,83338,USA
+Rehoboth,MA,2769,USA
+Manchester,TN,37349,USA
+La Grange Park,IL,60526,USA
+Athens,TX,75751,USA
+Mapleton,UT,84664,USA
+Dover,OH,44622,USA
+Lincolnwood,IL,60712,USA
+Milford,DE,19963,USA
+East Hampton,CT,6424,USA
+Sandy,OR,97055,USA
+Sharon,PA,16146,USA
+Lynnfield,MA,1940,USA
+Carpinteria,CA,93013,USA
+Branson,MO,65615,USA
+Cottonwood,AZ,86326,USA
+Oxford,CT,6478,USA
+Ionia,MI,48846,USA
+Garden City,ID,83714,USA
+Spearfish,SD,57783,USA
+Emeryville,CA,94608,USA
+Miami,OK,74354,USA
+Kent,NY,14477,USA
+Hazel Crest,IL,60429,USA
+Amherst,OH,44001,USA
+El Dorado,KS,67042,USA
+Falmouth,ME,4105,USA
+Stoughton,WI,53589,USA
+Santa Fe,TX,77510,USA
+Bedford,OH,44146,USA
+Rochester,MI,48306,USA
+Minooka,IL,60447,USA
+Solana Beach,CA,92075,USA
+Lewisburg,TN,37091,USA
+North Adams,MA,1247,USA
+Union,MO,63084,USA
+Saint Ann,MO,63074,USA
+Larkspur,CA,94939,USA
+Cheney,WA,99004,USA
+Bloomsburg,PA,17815,USA
+Eureka,MO,63025,USA
+Byram,MS,39272,USA
+Enumclaw,WA,98022,USA
+Greenville,OH,45331,USA
+Berthoud,CO,80513,USA
+Fulton,MO,65251,USA
+Blytheville,AR,72315,USA
+Marysville,CA,95901,USA
+Blackfoot,ID,83221,USA
+Kelso,WA,98626,USA
+Meadville,PA,16335,USA
+Forrest City,AR,72335,USA
+Wilmington,OH,45177,USA
+Liberty Lake,WA,99019,USA
+West Monroe,LA,71291,USA
+Melvindale,MI,48122,USA
+Grover Beach,CA,93433,USA
+Mendota,CA,93640,USA
+Kingsburg,CA,93631,USA
+Ottawa,KS,66067,USA
+Wickliffe,OH,44092,USA
+Paradise Valley,AZ,85253,USA
+Cloquet,MN,55720,USA
+Poquoson,VA,23662,USA
+San Anselmo,CA,94960,USA
+Eufaula,AL,36027,USA
+Lindsay,CA,93247,USA
+Windsor Locks,CT,6096,USA
+West Plains,MO,65775,USA
+Saint Marys,PA,15857,USA
+Richmond,TX,77406,USA
+Fortuna,CA,95540,USA
+Gig Harbor,WA,98329,USA
+North Smithfield,RI,2896,USA
+Plano,IL,60545,USA
+Crossville,TN,38555,USA
+Wawarsing,NY,12489,USA
+Wrentham,MA,2093,USA
+Gaffney,SC,29340,USA
+Lake City,FL,32024,USA
+Richton Park,IL,60471,USA
+Wendell,NC,27591,USA
+Big Lake,MN,55309,USA
+Fort Atkinson,WI,53538,USA
+Camp Verde,AZ,86322,USA
+Boone,IA,50036,USA
+Conneaut,OH,44030,USA
+Granbury,TX,76048,USA
+Tehachapi,CA,93561,USA
+Artesia,NM,88210,USA
+Guymon,OK,73942,USA
+Greensburg,IN,47240,USA
+Winnetka,IL,60093,USA
+Carencro,LA,70520,USA
+Derby,CT,6418,USA
+Massena,NY,13662,USA
+Port Wentworth,GA,31407,USA
+Escanaba,MI,49829,USA
+Leeds,AL,35094,USA
+Patchogue,NY,11772,USA
+Levelland,TX,79336,USA
+Grenada,MS,38901,USA
+Coventry,CT,6238,USA
+Sylacauga,AL,35150,USA
+Newman,CA,95360,USA
+Streator,IL,61364,USA
+Borger,TX,79007,USA
+Riverview,MI,48193,USA
+Kewanee,IL,61443,USA
+Beatrice,NE,68310,USA
+Somerset,KY,42501,USA
+Choctaw,OK,73020,USA
+Haverstraw,NY,10927,USA
+Madison,IN,47250,USA
+Effingham,IL,62401,USA
+Herrin,IL,62948,USA
+Justice,IL,60458,USA
+El Campo,TX,77437,USA
+Webster,TX,77598,USA
+Baker,LA,70704,USA
+Washington,IN,47501,USA
+Somersworth,NH,3878,USA
+Saint Peter,MN,56082,USA
+Little Chute,WI,54140,USA
+Macedonia,OH,44056,USA
+Babylon,NY,11702,USA
+Burley,ID,83318,USA
+Smithfield,NC,27577,USA
+Rantoul,IL,61866,USA
+Brattleboro,VT,5301,USA
+Scotts Valley,CA,95066,USA
+Show Low,AZ,85901,USA
+McComb,MS,39648,USA
+San Marino,CA,91108,USA
+Poulsbo,WA,98370,USA
+New Baltimore,MI,48047,USA
+New Kensington,PA,15068,USA
+Wellington,CO,80549,USA
+Portales,NM,88130,USA
+Belgrade,MT,59714,USA
+Gladstone,OR,97027,USA
+Irmo,SC,29063,USA
+Centralia,IL,62801,USA
+Moss Point,MS,39562,USA
+Arkansas City,KS,67005,USA
+Lawrenceburg,KY,40342,USA
+Vermillion,SD,57069,USA
+Spencer,MA,1562,USA
+Amherst,NH,3031,USA
+Athol,MA,1331,USA
+Lakeville,MA,2347,USA
+Plattsburgh,NY,12901,USA
+Weatherford,OK,73096,USA
+Martinsville,IN,46151,USA
+Dudley,MA,1571,USA
+Evanston,WY,82930,USA
+Tremonton,UT,84337,USA
+Lunenburg,MA,1462,USA
+South Lyon,MI,48178,USA
+Picayune,MS,39466,USA
+Lawrenceburg,TN,38464,USA
+Sussex,WI,53089,USA
+Lincolnton,NC,28092,USA
+Alcoa,TN,37701,USA
+Monument,CO,80132,USA
+Woodward,OK,73801,USA
+Putnam Valley,NY,10579,USA
+Tarrytown,NY,10591,USA
+Spring Lake,NC,28390,USA
+Niles,MI,49120,USA
+Fountain Inn,SC,29644,USA
+Kennebunk,ME,4043,USA
+Ontario,OR,97914,USA
+Wells,ME,4090,USA
+Salem,OH,44460,USA
+Plymouth,CT,6782,USA
+Healdsburg,CA,95448,USA
+Lindon,UT,84042,USA
+Winfield,KS,67156,USA
+Yorktown,IN,47396,USA
+Douglas,GA,31533,USA
+Elma,NY,14059,USA
+Weston,MA,2493,USA
+Franklin,OH,45005,USA
+Lovejoy,GA,30250,USA
+Kings Mountain,NC,28086,USA
+Covington,LA,70433,USA
+Palos Heights,IL,60463,USA
+Carver,MA,2330,USA
+Pepperell,MA,1463,USA
+Brookhaven,MS,39601,USA
+Campbellsville,KY,42718,USA
+Patterson,NY,12563,USA
+Norfolk,MA,2056,USA
+Los Alamitos,CA,90720,USA
+Bucyrus,OH,44820,USA
+Green River,WY,82935,USA
+Woodbury,NY,11797,USA
+Prineville,OR,97754,USA
+Mexico,MO,65265,USA
+North Branch,MN,55056,USA
+Woods Cross,UT,84087,USA
+Oskaloosa,IA,52577,USA
+Gloucester City,NJ,8030,USA
+Fort Morgan,CO,80701,USA
+Stafford,CT,6075,USA
+Holmen,WI,54636,USA
+Spencer,IA,51301,USA
+Farmington,MI,48331,USA
+Okmulgee,OK,74447,USA
+Minden,LA,71055,USA
+Signal Hill,CA,90755,USA
+Sebring,FL,33870,USA
+Crowley,LA,70526,USA
+Elgin,TX,78621,USA
+Cocoa Beach,FL,32931,USA
+Bridgeton,MO,63044,USA
+Suffern,NY,10901,USA
+Dobbs Ferry,NY,10522,USA
+River Forest,IL,60305,USA
+Anderson,CA,96007,USA
+Storm Lake,IA,50588,USA
+Ocean City,NJ,8226,USA
+Victoria,MN,55386,USA
+Lenoir City,TN,37771,USA
+Elk City,OK,73644,USA
+Haysville,KS,67060,USA
+Holbrook,MA,2343,USA
+Schiller Park,IL,60176,USA
+Norwell,MA,2061,USA
+Monmouth,OR,97361,USA
+Satellite Beach,FL,32937,USA
+Grand Rapids,MN,55730,USA
+Lovington,NM,88260,USA
+Port Lavaca,TX,77979,USA
+Fredericksburg,TX,78624,USA
+Collegedale,TN,37315,USA
+Orono,ME,4469,USA
+Ravenna,OH,44266,USA
+Elon,NC,27244,USA
+Rincon,GA,31326,USA
+Markham,IL,60428,USA
+Petal,MS,39465,USA
+Snyder,TX,79549,USA
+Clawson,MI,48017,USA
+Canandaigua,NY,14424,USA
+Guthrie,OK,73044,USA
+Bastrop,TX,78602,USA
+Lansing,KS,66043,USA
+Pleasant Hill,IA,50327,USA
+Half Moon Bay,CA,94019,USA
+Batesville,AR,72501,USA
+Groton,MA,1450,USA
+Troy,IL,62294,USA
+Waterloo,IL,62298,USA
+Lowell,IN,46356,USA
+Urbana,OH,43078,USA
+Warren,RI,2885,USA
+Summerfield,NC,27358,USA
+Bolivar,MO,65613,USA
+Brandon,SD,57005,USA
+Burkburnett,TX,76354,USA
+Pontiac,IL,61764,USA
+Morgan City,LA,70380,USA
+Van Wert,OH,45891,USA
+Marinette,WI,54143,USA
+Lowell,AR,72745,USA
+New Albany,OH,43054,USA
+Grandview,WA,98930,USA
+Granby,CT,6035,USA
+Lake Grove,NY,11755,USA
+Great Neck,NY,11020,USA
+Leicester,MA,1524,USA
+Calimesa,CA,92320,USA
+Coshocton,OH,43812,USA
+Sturgis,MI,49091,USA
+Pleasanton,TX,78064,USA
+Raymond,NH,3077,USA
+Union City,TN,38261,USA
+Grand Haven,MI,49417,USA
+Columbia,IL,62236,USA
+Malvern,AR,72104,USA
+Abbeville,LA,70510,USA
+Flowery Branch,GA,30542,USA
+Danville,IN,46122,USA
+Essex Junction,VT,5452,USA
+Kearney,MO,64060,USA
+Clayton,CA,94517,USA
+Martin,TN,38237,USA
+Pineville,NC,28134,USA
+Celina,OH,45822,USA
+Roscoe,IL,61073,USA
+Fox Lake,IL,60020,USA
+Airway Heights,WA,99001,USA
+Standish,ME,4084,USA
+Peru,IN,46970,USA
+Shelton,WA,98584,USA
+Piedmont,CA,94620,USA
+Sierra Madre,CA,91024,USA
+Magnolia,AR,71753,USA
+Riverton,WY,82501,USA
+Alachua,FL,32615,USA
+Russellville,AL,35653,USA
+Fairview,OR,97024,USA
+Hartford,VT,5047,USA
+Bonham,TX,75418,USA
+Pella,IA,50219,USA
+Canton,MS,39046,USA
+Locust Grove,GA,30248,USA
+Atchison,KS,66002,USA
+Newberry,SC,29108,USA
+Lexington,NE,68850,USA
+Winterville,NC,28590,USA
+Bargersville,IN,46106,USA
+Cottage Grove,OR,97424,USA
+Goodlettsville,TN,37070,USA
+Rockport,TX,78381,USA
+Plymouth,IN,46563,USA
+Pike Road,AL,36064,USA
+Jackson,WY,83001,USA
+Morro Bay,CA,93442,USA
+Milton,VT,5468,USA
+Milton,FL,32570,USA
+La Plata,MD,20646,USA
+Vidalia,GA,30474,USA
+Tarboro,NC,27886,USA
+Yelm,WA,98597,USA
+Placerville,CA,95667,USA
+Rolesville,NC,27571,USA
+Spanish Fort,AL,36527,USA
+Smithville,MO,64089,USA
+Middleton,ID,83644,USA
+Rathdrum,ID,83858,USA
+Mount Kisco,NY,10549,USA
+Clute,TX,77531,USA
+Heath,OH,43056,USA
+Waynesville,NC,28785,USA
+Mount Airy,NC,27030,USA
+West Haverstraw,NY,10993,USA
+Nanticoke,PA,18634,USA
+Le Mars,IA,51031,USA
+Bel Air,MD,21014,USA
+Bay Saint Louis,MS,39520,USA
+Sumner,WA,98352,USA
+Hyrum,UT,84319,USA
+New Richmond,WI,54017,USA
+Worth,IL,60482,USA
+Hanson,MA,2341,USA
+Acushnet,MA,2743,USA
+Ontario,NY,14519,USA
+Severance,CO,80546,USA
+Excelsior Springs,MO,64024,USA
+Palatka,FL,32177,USA
+Alexandria,KY,41001,USA
+Rifle,CO,81650,USA
+Maynard,MA,1754,USA
+Freeport,TX,77541,USA
+Barrington,IL,60010,USA
+Cleveland,MS,38732,USA
+Fort Oglethorpe,GA,30742,USA
+Old Saybrook,CT,6475,USA
+Flowood,MS,39232,USA
+Waverly,IA,50677,USA
+Vienna,WV,26105,USA
+Cadillac,MI,49601,USA
+Somers Point,NJ,8244,USA
+Cambridge,MN,55008,USA
+Sonoma,CA,95476,USA
+Atoka,TN,38004,USA
+Maryville,MO,64468,USA
+Coweta,OK,74429,USA
+Saint Albans,WV,25177,USA
+Brewster,MA,2631,USA
+Silverton,OR,97381,USA
+London,OH,43140,USA
+Millington,TN,38053,USA
+Vernal,UT,84078,USA
+Flat Rock,MI,48134,USA
+Tipp City,OH,45371,USA
+Bogalusa,LA,70427,USA
+Versailles,KY,40383,USA
+Newport,OR,97365,USA
+Lyons,IL,60534,USA
+Southborough,MA,1772,USA
+Plattekill,NY,12568,USA
+Sweetwater,TX,79556,USA
+Salem,UT,84653,USA
+River Grove,IL,60171,USA
+Port Townsend,WA,98368,USA
+Ware,MA,1082,USA
+Winchendon,MA,1475,USA
+Bluffton,IN,46714,USA
+Rio Vista,CA,94571,USA
+Malibu,CA,90263,USA
+Galena Park,TX,77547,USA
+Weston,CT,6883,USA
+Wood River,IL,62095,USA
+Hanover,NH,3755,USA
+Wabash,IN,46992,USA
+Franklin,KY,42134,USA
+Manhattan,IL,60442,USA
+Paris,TN,38242,USA
+Shasta Lake,CA,96019,USA
+Farmersville,CA,93223,USA
+Valley,AL,36854,USA
+Taylorville,IL,62568,USA
+Galion,OH,44833,USA
+Alpine,UT,84004,USA
+Camden,AR,71701,USA
+Safford,AZ,85546,USA
+La Grange,KY,40031,USA
+Boaz,AL,35956,USA
+Clay,AL,35048,USA
+Ironton,OH,45638,USA
+Hardeeville,SC,29927,USA
+Cedartown,GA,30125,USA
+Rainbow City,AL,35906,USA
+Exeter,CA,93221,USA
+Riverdale,IL,60827,USA
+Glenwood Springs,CO,81601,USA
+Fairmont,MN,56031,USA
+Arkadelphia,AR,71923,USA
+Independence,OR,97351,USA
+Baker City,OR,97814,USA
+Clinton,TN,37716,USA
+Conway,NH,3818,USA
+Elkhorn,WI,53121,USA
+Kittery,ME,3904,USA
+Kennett,MO,63857,USA
+Cody,WY,82414,USA
+Kendallville,IN,46755,USA
+Watervliet,NY,12189,USA
+North Bend,OR,97459,USA
+Portage,WI,53901,USA
+Warrenton,VA,20186,USA
+Carroll,IA,51401,USA
+Astoria,OR,97103,USA
+Robstown,TX,78380,USA
+Molalla,OR,97038,USA
+Raymondville,TX,78580,USA
+New Hyde Park,NY,11040,USA
+Snohomish,WA,98290,USA
+Hull,MA,2045,USA
+Alpena,MI,49707,USA
+Oneida,NY,13421,USA
+Littleton,MA,1460,USA
+San Elizario,TX,79849,USA
+Fort Madison,IA,52627,USA
+Hackettstown,NJ,7840,USA
+Lancaster,NY,14086,USA
+Ingleside,TX,78362,USA
+Williston,VT,5495,USA
+Canton,CT,6019,USA
+Sweet Home,OR,97386,USA
+Columbia City,IN,46725,USA
+Howell,MI,48843,USA
+Paris,KY,40361,USA
+Mahomet,IL,61853,USA
+Sellersburg,IN,47172,USA
+Woodbury,NJ,8096,USA
+Avon Park,FL,33825,USA
+Winfield,IL,60190,USA
+Green Cove Springs,FL,32043,USA
+East Rockaway,NY,11518,USA
+Oakland,TN,38060,USA
+Cairo,GA,39827,USA
+Burlington,NJ,8016,USA
+Ivins,UT,84738,USA
+Detroit Lakes,MN,56501,USA
+Highland,IL,62249,USA
+Corte Madera,CA,94925,USA
+Decatur,IN,46733,USA
+Cape Canaveral,FL,32920,USA
+Cambridge,OH,43725,USA
+Hartland,WI,53029,USA
+Lincoln City,OR,97367,USA
+Jesup,GA,31545,USA
+Roanoke,TX,76262,USA
+Marysville,MI,48040,USA
+Struthers,OH,44471,USA
+Cordele,GA,31010,USA
+Fairview,TN,37062,USA
+Bernalillo,NM,87004,USA
+Mayfield,KY,42066,USA
+West Point,MS,39773,USA
+DuPont,WA,98327,USA
+Greencastle,IN,46135,USA
+Sturbridge,MA,1566,USA
+Eagle Point,OR,97524,USA
+Plainville,MA,2762,USA
+Winchester,TN,37398,USA
+Thomaston,GA,30286,USA
+Marathon,FL,33050,USA
+Morehead City,NC,28557,USA
+Harrisonville,MO,64701,USA
+Alamosa,CO,81101,USA
+Yazoo City,MS,39194,USA
+Somers,CT,6071,USA
+Middleton,MA,1949,USA
+Mount Airy,MD,21771,USA
+Mission,KS,66201,USA
+College Place,WA,99324,USA
+Woodbury,CT,6798,USA
+Pleasant Valley,NY,12569,USA
+Sedona,AZ,86336,USA
+Monett,MO,65708,USA
+Sandpoint,ID,83864,USA
+Wapakoneta,OH,45895,USA
+Hamburg,NY,14075,USA
+Peru,IL,61354,USA
+Hillsborough,NC,27278,USA
+East Liverpool,OH,43920,USA
+Mooresville,IN,46158,USA
+Vernon,TX,76384,USA
+Burlington,WA,98233,USA
+Lisbon,ME,4250,USA
+Topsham,ME,4086,USA
+Sanger,TX,76266,USA
+Wasilla,AK,99623,USA
+Burlington,CT,6013,USA
+Fairfield,AL,35064,USA
+Uniontown,PA,15401,USA
+Vidor,TX,77662,USA
+Fultondale,AL,35068,USA
+Brewer,ME,4412,USA
+Capitola,CA,95010,USA
+Canal Winchester,OH,43110,USA
+Hailey,ID,83333,USA
+DeRidder,LA,70634,USA
+Keokuk,IA,52632,USA
+Greenwood,AR,72936,USA
+Helotes,TX,78023,USA
+Jennings,LA,70546,USA
+Sunbury,PA,17801,USA
+Woodway,TX,76712,USA
+Cape Elizabeth,ME,4107,USA
+Washington,NC,27889,USA
+Bridge City,TX,77611,USA
+Amityville,NY,11701,USA
+Fredonia,NY,14063,USA
+Clarksville,AR,72830,USA
+Brownsville,TN,38012,USA
+Esopus,NY,12429,USA
+Orange Cove,CA,93646,USA
+Silver City,NM,88061,USA
+Berlin,NH,3570,USA
+Louisville,OH,44641,USA
+Barrington,NH,3825,USA
+Brooksville,FL,34601,USA
+Monroe,NY,10949,USA
+Girard,OH,44420,USA
+Grinnell,IA,50112,USA
+Blanchard,OK,73010,USA
+Delta,CO,81416,USA
+Fairfield,IA,52556,USA
+Oil City,PA,16301,USA
+Pleasant Grove,AL,35127,USA
+Fallon,NV,89406,USA
+Bladensburg,MD,20710,USA
+Prospect,CT,6712,USA
+Portland,CT,6480,USA
+Live Oak,CA,95953,USA
+Saint Francis,WI,53235,USA
+Angola,IN,46703,USA
+Newmarket,NH,3857,USA
+Bluefield,WV,24701,USA
+Parsons,KS,67357,USA
+Harvard,IL,60033,USA
+Sutton,MA,1590,USA
+Florence,OR,97439,USA
+Dayton,TX,77535,USA
+Clinton,MO,64735,USA
+Hastings,NY,13076,USA
+Alma,MI,48801,USA
+Itasca,IL,60143,USA
+Denham Springs,LA,70706,USA
+Groton,CT,6340,USA
+Timnath,CO,80547,USA
+Rochelle,IL,61068,USA
+Flossmoor,IL,60422,USA
+Farmington,AR,72730,USA
+Waterford,CA,95386,USA
+Steger,IL,60475,USA
+South Amboy,NJ,8879,USA
+Ogdensburg,NY,13669,USA
+Kennedale,TX,76060,USA
+Oak Island,NC,28465,USA
+Sheffield,AL,35660,USA
+Thompson,CT,6277,USA
+Bridgeport,WV,26330,USA
+Aberdeen,NC,28315,USA
+Putnam,CT,6260,USA
+Hooper,UT,84315,USA
+Old Orchard Beach,ME,4064,USA
+Rutland,MA,1543,USA
+Huntertown,IN,46748,USA
+Macedon,NY,14502,USA
+Commerce,TX,75428,USA
+Shelby,OH,44875,USA
+Laurens,SC,29360,USA
+Walworth,NY,14568,USA
+Charlotte,MI,48813,USA
+Newfane,NY,14108,USA
+Plymouth,MI,48170,USA
+Rensselaer,NY,12144,USA
+Ventnor City,NJ,8406,USA
+Palm Beach,FL,33480,USA
+Eunice,LA,70535,USA
+Augusta,KS,67010,USA
+Bethalto,IL,62010,USA
+Havre,MT,59501,USA
+Blackstone,MA,1504,USA
+Diamondhead,MS,39525,USA
+Windsor,WI,53598,USA
+Weare,NH,3281,USA
+Shawano,WI,54166,USA
+Southwick,MA,1077,USA
+Salisbury,MA,1952,USA
+Warren,PA,16365,USA
+Sugar Grove,IL,60554,USA
+Warrenton,MO,63383,USA
+Bastrop,LA,71220,USA
+Manteno,IL,60950,USA
+Ecorse,MI,48229,USA
+Middlebury,VT,5753,USA
+Absecon,NJ,8201,USA
+Whitehouse,TX,75791,USA
+Douglas,MA,1516,USA
+Waseca,MN,56093,USA
+Harrodsburg,KY,40330,USA
+Toccoa,GA,30577,USA
+Altoona,WI,54720,USA
+Hampstead,NH,3841,USA
+Indianola,MS,38749,USA
+Mount Pleasant,IA,52641,USA
+Hebron,CT,6248,USA
+Tuscumbia,AL,35674,USA
+Springfield,VT,5156,USA
+Liberty Hill,TX,78642,USA
+Little Falls,MN,56345,USA
+Yarmouth,ME,4096,USA
+Milliken,CO,80543,USA
+Gibsonville,NC,27249,USA
+Gretna,NE,68028,USA
+Grants,NM,87020,USA
+Willowbrook,IL,60527,USA
+Aliquippa,PA,15001,USA
+Woodbridge,CT,6525,USA
+East Grand Forks,MN,56721,USA
+Lapeer,MI,48446,USA
+Orange Park,FL,32065,USA
+Mound,MN,55364,USA
+Newark,NY,14513,USA
+Mendon,NY,14506,USA
+Rockingham,NC,28379,USA
+Cortez,CO,81321,USA
+Providence,UT,84332,USA
+Greenville,MI,48838,USA
+Seneca,SC,29672,USA
+Booneville,MS,38829,USA
+Purcellville,VA,20132,USA
+Baxter,MN,56425,USA
+Craig,CO,81625,USA
+Poteau,OK,74953,USA
+Clanton,AL,35045,USA
+Gypsum,CO,81637,USA
+Orting,WA,98360,USA
+East Haddam,CT,6423,USA
+Townsend,MA,1469,USA
+Mont Belvieu,TX,77580,USA
+Benton Harbor,MI,49022,USA
+Riverside,IL,60546,USA
+Seneca Falls,NY,13148,USA
+Sheffield Lake,OH,44054,USA
+Chillicothe,MO,64601,USA
+Whitefish,MT,59937,USA
+Othello,WA,99344,USA
+Pulaski,VA,24301,USA
+Savoy,IL,61874,USA
+Thief River Falls,MN,56701,USA
+Fitzgerald,GA,31750,USA
+Saline,MI,48176,USA
+Signal Mountain,TN,37377,USA
+Pearsall,TX,78061,USA
+Guntersville,AL,35976,USA
+Oconomowoc,WI,53066,USA
+Smithfield,VA,23430,USA
+Auburn,GA,30011,USA
+Tuskegee,AL,36083,USA
+Collinsville,OK,74021,USA
+Fort Valley,GA,31030,USA
+Millis,MA,2054,USA
+Franklin,NH,3235,USA
+Fort Lupton,CO,80621,USA
+Lancaster,SC,29720,USA
+Boonton,NJ,7005,USA
+Hudson,WI,54016,USA
+Cloverdale,CA,95425,USA
+Bath,ME,4530,USA
+Stanwood,WA,98292,USA
+Carbondale,PA,18407,USA
+Beaver Falls,PA,15010,USA
+Hoquiam,WA,98550,USA
+Andalusia,AL,36420,USA
+Livingston,MT,59047,USA
+Freeport,ME,4032,USA
+Aransas Pass,TX,78335,USA
+Hillview,KY,40129,USA
+Oxford,NC,27565,USA
+Milton,WA,98354,USA
+Napoleon,OH,43545,USA
+Graham,TX,76450,USA
+Redding,CT,6896,USA
+Maysville,KY,41056,USA
+Winslow,AZ,86047,USA
+Wharton,TX,77488,USA
+Ellsworth,ME,4605,USA
+Harwood Heights,IL,60706,USA
+Beebe,AR,72012,USA
+Brownfield,TX,79316,USA
+Pleasant Hill,MO,64080,USA
+Fruitland Park,FL,34731,USA
+Bondurant,IA,50035,USA
+Toppenish,WA,98948,USA
+Hollis,NH,3049,USA
+Coffeyville,KS,67337,USA
+Presque Isle,ME,4769,USA
+Cameron,MO,64429,USA
+Haddam,CT,6438,USA
+Joshua,TX,76058,USA
+Zebulon,NC,27597,USA
+Skowhegan,ME,4976,USA
+Guadalupe,CA,93434,USA
+Highland Park,MI,48203,USA
+Tecumseh,MI,49286,USA
+Monmouth,IL,61462,USA
+York,SC,29745,USA
+Lake Villa,IL,60046,USA
+Park Hills,MO,63601,USA
+Jeannette,PA,15644,USA
+Hondo,TX,78861,USA
+Liberty,TX,77575,USA
+Mascoutah,IL,62224,USA
+Sutherlin,OR,97479,USA
+Anthony,NM,88021,USA
+Port Jervis,NY,12771,USA
+Hope,AR,71801,USA
+Arab,AL,35016,USA
+Gilberts,IL,60136,USA
+Bryan,OH,43506,USA
+Rock Falls,IL,61071,USA
+Glencoe,IL,60022,USA
+Olmsted Falls,OH,44138,USA
+Hamlin,NY,14464,USA
+Covington,TN,38019,USA
+Skiatook,OK,74070,USA
+Lock Haven,PA,17745,USA
+Payette,ID,83661,USA
+Clarendon Hills,IL,60514,USA
+Conover,NC,28613,USA
+Chanute,KS,66720,USA
+Potsdam,NY,13676,USA
+Georgetown,SC,29440,USA
+Hillsboro,TX,76645,USA
+Lake Geneva,WI,53147,USA
+Sallisaw,OK,74955,USA
+Dunn,NC,28334,USA
+Selah,WA,98942,USA
+Seaford,DE,19973,USA
+Litchfield,NH,3052,USA
+Marcy,NY,13403,USA
+Centerville,GA,31028,USA
+Buxton,ME,4093,USA
+Cleveland,TX,77327,USA
+Brooklyn,CT,6234,USA
+Black Mountain,NC,28711,USA
+Corrales,NM,87048,USA
+Oak Grove,MO,64075,USA
+Perryville,MO,63775,USA
+Olney,IL,62450,USA
+Travelers Rest,SC,29690,USA
+Waukesha,WI,53186,USA
+Gering,NE,69341,USA
+Ephrata,WA,98823,USA
+Miles City,MT,59301,USA
+Newton,NJ,7860,USA
+Montague,MA,1351,USA
+Jefferson City,TN,37760,USA
+Northfield,NJ,8225,USA
+Butner,NC,27509,USA
+Harrisburg,SD,57032,USA
+Orange Beach,AL,36561,USA
+Barton,NY,13734,USA
+Piedmont,OK,73078,USA
+Socorro,NM,87801,USA
+Malverne,NY,11565,USA
+Gonzales,CA,93926,USA
+Seabrook,NH,3874,USA
+Independence,KS,67301,USA
+Duvall,WA,98019,USA
+Orrville,OH,44667,USA
+Sioux Center,IA,51250,USA
+Gray,ME,4039,USA
+Lamesa,TX,79331,USA
+Ayer,MA,1432,USA
+Elwood,IN,46036,USA
+Prairie View,TX,77446,USA
+Firebaugh,CA,93622,USA
+Navasota,TX,77868,USA
+Hopkinton,RI,2833,USA
+Georgetown,MA,1833,USA
+Saint Marys,OH,45885,USA
+Charlestown,IN,47111,USA
+Dalhart,TX,79022,USA
+Scott,LA,70583,USA
+Lancaster,MA,1523,USA
+Sunnyvale,TX,75182,USA
+Winnemucca,NV,89445,USA
+Kaufman,TX,75142,USA
+Saint Francis,MN,55070,USA
+Center Line,MI,48015,USA
+Park City,UT,84060,USA
+Farmingdale,NY,11735,USA
+Princeton,IN,47670,USA
+Waite Park,MN,56387,USA
+Carl Junction,MO,64834,USA
+Glenwood,IL,60425,USA
+Hood River,OR,97031,USA
+Menominee,MI,49858,USA
+Cohasset,MA,2025,USA
+Cushing,OK,74023,USA
+Merton,WI,53056,USA
+Crete,IL,60417,USA
+Abingdon,VA,24210,USA
+Virginia,MN,55777,USA
+Atmore,AL,36502,USA
+Westminster,MA,1441,USA
+Senatobia,MS,38668,USA
+Winooski,VT,5404,USA
+New Paltz,NY,12561,USA
+Oswego,NY,13126,USA
+Sequim,WA,98382,USA
+Eaton,OH,45320,USA
+Trinidad,CO,81082,USA
+Woodstock,CT,6281,USA
+Sand Lake,NY,12153,USA
+Maryville,IL,62062,USA
+Clinton,OK,73601,USA
+Pulaski,TN,38478,USA
+Litchfield,CT,6759,USA
+Clinton,NC,28328,USA
+Bay Minette,AL,36507,USA
+Flushing,MI,48433,USA
+Long Grove,IL,60049,USA
+Jerseyville,IL,62052,USA
+Hampton,GA,30228,USA
+Price,UT,84501,USA
+Milan,TN,38358,USA
+Franklin,VA,23851,USA
+Rhinelander,WI,54501,USA
+Scappoose,OR,97056,USA
+Corning,CA,96021,USA
+Quincy,WA,98848,USA
+Westwego,LA,70094,USA
+Richfield,UT,84701,USA
+Orland,CA,95963,USA
+Los Fresnos,TX,78566,USA
+Camden,SC,29020,USA
+Brunswick,MD,21716,USA
+Wynne,AR,72396,USA
+Nevada,MO,64772,USA
+Mason,MI,48854,USA
+Delafield,WI,53018,USA
+Rawlins,WY,82301,USA
+Berwick,ME,3901,USA
+Farmington,ME,4938,USA
+Fort Stockton,TX,79735,USA
+Stayton,OR,97383,USA
+Emmett,ID,83617,USA
+Pewaukee,WI,53072,USA
+Templeton,MA,1468,USA
+Wytheville,VA,24382,USA
+Monticello,AR,71655,USA
+Brazil,IN,47834,USA
+York,NE,68467,USA
+Denison,IA,51442,USA
+Dighton,MA,2715,USA
+Roxboro,NC,27573,USA
+Sterling,MA,1564,USA
+Perryton,TX,79070,USA
+Sheboygan,WI,53081,USA
+Wagoner,OK,74467,USA
+Upton,MA,1568,USA
+Mount Rainier,MD,20712,USA
+Santa Clara,UT,84765,USA
+Boxford,MA,1921,USA
+Fletcher,NC,28732,USA
+Cuero,TX,77954,USA
+Hornell,NY,14843,USA
+Monson,MA,1057,USA
+Paris,IL,61944,USA
+Waterboro,ME,4087,USA
+Siler City,NC,27344,USA
+Tuttle,OK,73089,USA
+Ketchikan,AK,99901,USA
+Port Jefferson,NY,11777,USA
+Albertville,MN,55301,USA
+Wyoming,MN,55092,USA
+Floresville,TX,78114,USA
+Adams,MA,1220,USA
+Pismo Beach,CA,93448,USA
+Charlestown,RI,2813,USA
+Vinton,VA,24179,USA
+Alliance,NE,69301,USA
+Hillsdale,MI,49242,USA
+Oak Brook,IL,60523,USA
+Montpelier,VT,5601,USA
+Wahpeton,ND,58074,USA
+Barre,VT,5641,USA
+Perry,IA,50220,USA
+Hillside,IL,60162,USA
+Oak Grove,KY,42262,USA
+Houghton,MI,49931,USA
+Harrisburg,IL,62946,USA
+Mascotte,FL,34753,USA
+Newport,AR,72112,USA
+Aubrey,TX,76227,USA
+Box Elder,SD,57719,USA
+Blair,NE,68008,USA
+Grand Blanc,MI,48439,USA
+Boston,NY,14025,USA
+Woodland Park,CO,80863,USA
+Island Lake,IL,60042,USA
+Lexington,TN,38351,USA
+Oak Hill,WV,25901,USA
+Union,SC,29379,USA
+Lincolnshire,IL,60069,USA
+Wickenburg,AZ,85358,USA
+South Beloit,IL,61080,USA
+Stuttgart,AR,72160,USA
+Tyrone,GA,30290,USA
+Sunbury,OH,43074,USA
+Three Rivers,MI,49093,USA
+Ponchatoula,LA,70454,USA
+North Bend,WA,98045,USA
+Austell,GA,30106,USA
+Silvis,IL,61282,USA
+Hampden,ME,4444,USA
+Kenton,OH,43326,USA
+Shelburne,VT,5482,USA
+Dexter,MO,63841,USA
+South Boston,VA,24592,USA
+Plaistow,NH,3865,USA
+Gilford,NH,3249,USA
+Big Rapids,MI,49307,USA
+Corbin,KY,40701,USA
+Pea Ridge,AR,72751,USA
+Newberry,FL,32669,USA
+Broadview,IL,60155,USA
+Humboldt,TN,38343,USA
+Lake Dallas,TX,75065,USA
+Moundsville,WV,26041,USA
+Yreka,CA,96097,USA
+Brevard,NC,28712,USA
+Hampshire,IL,60140,USA
+Middlebury,CT,6762,USA
+Mukwonago,WI,53149,USA
+Stratham,NH,3885,USA
+Kill Devil Hills,NC,27948,USA
+Ruidoso,NM,88345,USA
+Grand Ledge,MI,48837,USA
+Rockton,IL,61072,USA
+Saint Joseph,MI,49085,USA
+Inverness,FL,34450,USA
+West Boylston,MA,1583,USA
+Webster City,IA,50595,USA
+Ashland,VA,23005,USA
+Oak Ridge,NC,27310,USA
+Geneseo,NY,14454,USA
+Bremen,GA,30110,USA
+Campbell,OH,44405,USA
+Hughson,CA,95326,USA
+Beloit,WI,53511,USA
+Princeton,IL,61356,USA
+Oberlin,OH,44074,USA
+Quincy,FL,32351,USA
+Saint Johns,MI,48879,USA
+Madras,OR,97741,USA
+Hudsonville,MI,49426,USA
+Commerce,GA,30529,USA
+Ludington,MI,49431,USA
+Halifax,MA,2338,USA
+Westlake Village,CA,91359,USA
+Lampasas,TX,76550,USA
+Arcadia,FL,34265,USA
+Marshfield,MO,65706,USA
+Old Lyme,CT,6371,USA
+Mount Horeb,WI,53572,USA
+Decorah,IA,52101,USA
+Baldwinsville,NY,13027,USA
+Cumming,GA,30028,USA
+Ripley,TN,38063,USA
+Dade City,FL,33523,USA
+Macclenny,FL,32063,USA
+South Berwick,ME,3908,USA
+New Albany,MS,38652,USA
+Boonville,MO,65233,USA
+Brigantine,NJ,8203,USA
+Williamstown,MA,1267,USA
+Seward,NE,68434,USA
+Georgetown,DE,19947,USA
+Fairlawn,OH,44334,USA
+Bradford,PA,16701,USA
+Kenai,AK,99611,USA
+Chehalis,WA,98532,USA
+Hitchcock,TX,77563,USA
+Wellington,KS,67152,USA
+Montevallo,AL,35115,USA
+Easton,CT,6612,USA
+Umatilla,OR,97882,USA
+West Bridgewater,MA,2379,USA
+Albion,MI,49224,USA
+Ilion,NY,13357,USA
+Fort Scott,KS,66701,USA
+Pittston,PA,18640,USA
+Canfield,OH,44406,USA
+Prairie Grove,AR,72753,USA
+Union,KY,41091,USA
+Lamar,CO,81052,USA
+Woodlake,CA,93286,USA
+Swainsboro,GA,30401,USA
+Lander,WY,82520,USA
+Big Flats,NY,14814,USA
+London,KY,40741,USA
+Hubbard,OH,44425,USA
+Longboat Key,FL,34228,USA
+Marengo,IL,60152,USA
+Hales Corners,WI,53130,USA
+Orange,MA,1364,USA
+Noble,OK,73068,USA
+Mount Sterling,KY,40353,USA
+Clinton,SC,29325,USA
+Pocahontas,AR,72455,USA
+Brighton,MI,48114,USA
+Basehor,KS,66007,USA
+Ojai,CA,93023,USA
+Winters,CA,95694,USA
+Clear Lake,IA,50428,USA
+Eden,NY,14057,USA
+Hamilton,MA,1936,USA
+Hastings,MI,49058,USA
+Independence,OH,44131,USA
+Kimberly,WI,54136,USA
+Iron Mountain,MI,49801,USA
+Marion,NC,28752,USA
+Williston Park,NY,11596,USA
+Farmville,VA,23901,USA
+Thomaston,CT,6787,USA
+Wauseon,OH,43567,USA
+Dahlonega,GA,30533,USA
+Dacula,GA,30019,USA
+Lexington,VA,24450,USA
+Cotati,CA,94931,USA
+Knoxville,IA,50138,USA
+Old Town,ME,4468,USA
+Escalon,CA,95320,USA
+Tell City,IN,47586,USA
+Eagle,CO,81631,USA
+Belle Plaine,MN,56011,USA
+Epping,NH,3042,USA
+Caribou,ME,4736,USA
+Catoosa,OK,74015,USA
+Breaux Bridge,LA,70517,USA
+Pacific,MO,63069,USA
+Swanzey,NH,3446,USA
+Millsboro,DE,19966,USA
+King,NC,27021,USA
+Fairfax,CA,94930,USA
+Jasper,TX,75951,USA
+Marble Falls,TX,78654,USA
+Belmont,NH,3220,USA
+Hartsville,SC,29550,USA
+Hudson Falls,NY,12839,USA
+Belen,NM,87002,USA
+Aurora,MO,65605,USA
+Clover,SC,29710,USA
+Vandalia,IL,62471,USA
+Saint Johnsbury,VT,5819,USA
+Creston,IA,50801,USA
+Briarcliff Manor,NY,10510,USA
+Bellbrook,OH,45305,USA
+Scottsburg,IN,47170,USA
+Rochester,NY,14602,USA
+Pikeville,KY,41501,USA
+Forest City,NC,28043,USA
+Page,AZ,86040,USA
+Nebraska City,NE,68410,USA
+Valley Center,KS,67147,USA
+Dayton,TN,37321,USA
+Wetumpka,AL,36092,USA
+Ocean Shores,WA,98569,USA
+Taneytown,MD,21787,USA
+Sebastopol,CA,95472,USA
+Bloomfield,NM,87413,USA
+Batesville,MS,38606,USA
+Addis,LA,70710,USA
+Monahans,TX,79756,USA
+Crookston,MN,56716,USA
+Atkinson,NH,3811,USA
+Walled Lake,MI,48390,USA
+Trumann,AR,72472,USA
+Pleasantville,NY,10570,USA
+Northport,NY,11768,USA
+Herkimer,NY,13350,USA
+Richland,MS,39218,USA
+Batesville,IN,47006,USA
+Monticello,NY,12701,USA
+Russellville,KY,42276,USA
+Washington,IA,52353,USA
+Lincoln,AL,35096,USA
+Marianna,FL,32446,USA
+Cedarhurst,NY,11516,USA
+Savannah,TN,38372,USA
+Tolleson,AZ,85353,USA
+Logan,OH,43138,USA
+Waterloo,NY,13165,USA
+Clarkston,WA,99403,USA
+Flatwoods,KY,41139,USA
+Charles City,IA,50616,USA
+Gridley,CA,95948,USA
+Seaside,OR,97138,USA
+Globe,AZ,85501,USA
+Strasburg,VA,22641,USA
+Grove,OK,74344,USA
+Great Barrington,MA,1230,USA
+Durham,CT,6422,USA
+Mills River,NC,28759,USA
+Decatur,TX,76234,USA
+Isanti,MN,55040,USA
+Laurel,MT,59044,USA
+Dunbar,WV,25064,USA
+Heber Springs,AR,72543,USA
+Clewiston,FL,33440,USA
+La Follette,TN,37766,USA
+Gonzales,TX,78629,USA
+Canton,NY,13617,USA
+Pelham,NY,10803,USA
+Robertsdale,AL,36567,USA
+Nyack,NY,10960,USA
+Coeymans,NY,12045,USA
+West Frankfort,IL,62896,USA
+Sturgis,SD,57785,USA
+Eliot,ME,3903,USA
+Hiawatha,IA,52233,USA
+Devils Lake,ND,58301,USA
+Greenville,AL,36037,USA
+Sandwich,IL,60548,USA
+Fowler,CA,93625,USA
+La Junta,CO,81050,USA
+Seminole,OK,74818,USA
+Seminole,TX,79360,USA
+Lebanon,CT,6249,USA
+Charles Town,WV,25414,USA
+Church Hill,TN,37642,USA
+Pinson,AL,35126,USA
+Salem,IL,62881,USA
+Saint Joseph,MN,56374,USA
+Trinity,NC,27370,USA
+Saint Albans,VT,5478,USA
+Lake Alfred,FL,33850,USA
+Roosevelt,UT,84066,USA
+Sausalito,CA,94965,USA
+Robinson,IL,62454,USA
+Mammoth Lakes,CA,93546,USA
+Delphos,OH,45833,USA
+Morrilton,AR,72110,USA
+Cortland,OH,44410,USA
+Brockport,NY,14420,USA
+Dripping Springs,TX,78620,USA
+Idabel,OK,74745,USA
+Fayetteville,TN,37334,USA
+Neptune Beach,FL,32266,USA
+Pompey,NY,13138,USA
+Stow,MA,1775,USA
+Belfast,ME,4915,USA
+Rayne,LA,70578,USA
+River Rouge,MI,48218,USA
+Taft,CA,93268,USA
+Live Oak,FL,32060,USA
+Greenville,IL,62246,USA
+Murphysboro,IL,62966,USA
+Pacific,WA,98047,USA
+Crete,NE,68333,USA
+University Park,IL,60484,USA
+Youngtown,AZ,85363,USA
+Junction City,OR,97448,USA
+Rockland,ME,4841,USA
+Kasson,MN,55944,USA
+Greenbrier,TN,37073,USA
+Perry,FL,32347,USA
+Oneonta,AL,35121,USA
+Linwood,NJ,8221,USA
+Nevada,IA,50201,USA
+Litchfield Park,AZ,85340,USA
+Frostburg,MD,21532,USA
+Algoma,WI,54201,USA
+Sealy,TX,77474,USA
+Josephine,TX,75164,USA
+Waveland,MS,39576,USA
+Willis,TX,77318,USA
+Hamilton,AL,35570,USA
+Philadelphia,MS,39350,USA
+Mendota,IL,61342,USA
+Rockport,MA,1966,USA
+Kosciusko,MS,39090,USA
+Tea,SD,57064,USA
+Ocean City,MD,21842,USA
+Newport,TN,37821,USA
+Nappanee,IN,46550,USA
+Atherton,CA,94027,USA
+Delano,MN,55328,USA
+Tuckahoe,NY,10707,USA
+Demopolis,AL,36732,USA
+Clinton,IL,61727,USA
+Fort Bragg,CA,95437,USA
+Vine Grove,KY,40175,USA
+Harvard,MA,1451,USA
+Mexia,TX,76667,USA
+Silsbee,TX,77656,USA
+Westbrook,CT,6498,USA
+Thomson,GA,30824,USA
+Sullivan,MO,63080,USA
+Loomis,CA,95650,USA
+Lincoln,MA,1773,USA
+Hurricane,WV,25526,USA
+Farmington,NH,3835,USA
+Donaldsonville,LA,70346,USA
+Nephi,UT,84648,USA
+Shamokin,PA,17872,USA
+Williamson,NY,14589,USA
+Mount Carmel,IL,62863,USA
+Holly Springs,MS,38634,USA
+Connellsville,PA,15425,USA
+Clarkson,NY,14430,USA
+Saint Louis,MI,48880,USA
+Selma,NC,27576,USA
+Satsuma,AL,36572,USA
+La Feria,TX,78559,USA
+Stewartville,MN,55976,USA
+Elkins,WV,26241,USA
+Berkley,MA,2779,USA
+Gunnison,CO,81230,USA
+Essex,CT,6426,USA
+Walden,NY,12586,USA
+Shirley,MA,1464,USA
+Jordan,MN,55352,USA
+Carolina Beach,NC,28428,USA
+Atlantic,IA,50022,USA
+Valley Park,MO,63088,USA
+Meredith,NH,3253,USA
+Monessen,PA,15062,USA
+Mulvane,KS,67110,USA
+Huron,OH,44839,USA
+Purcell,OK,73080,USA
+Brookings,OR,97415,USA
+Lanett,AL,36863,USA
+Eldridge,IA,52748,USA
+Marshall,MI,49068,USA
+Venus,TX,76084,USA
+Nolanville,TX,76559,USA
+Fruitland,ID,83619,USA
+Aspen,CO,81611,USA
+Bedford,VA,24523,USA
+Morehead,KY,40351,USA
+Cairo,NY,12413,USA
+Galax,VA,24333,USA
+Keene,TX,76059,USA
+Groveland,MA,1834,USA
+Sturtevant,WI,53177,USA
+Opp,AL,36467,USA
+Columbiana,OH,44408,USA
+Chatham,MA,2633,USA
+Byron,MN,55920,USA
+Burnet,TX,78611,USA
+Peru,NY,12972,USA
+Litchfield,IL,62056,USA
+Indiantown,FL,34956,USA
+Merrimac,MA,1860,USA
+New Hartford,CT,6057,USA
+Bayville,NY,11709,USA
+Bridgewater,VA,22812,USA
+South Lebanon,OH,45065,USA
+Boonville,IN,47601,USA
+Upper Sandusky,OH,43351,USA
+Ontario,OH,44862,USA
+Bonne Terre,MO,63628,USA
+Osceola,AR,72370,USA
+Exeter,RI,2822,USA
+Lindale,TX,75771,USA
+Gulf Breeze,FL,32561,USA
+Ellettsville,IN,47429,USA
+Steilacoom,WA,98388,USA
+Bennettsville,SC,29512,USA
+Elmira,NY,14901,USA
+Middleton,WI,53562,USA
+Lebanon,ME,4027,USA
+Plattsmouth,NE,68048,USA
+Hoosick,NY,12089,USA
+Carbondale,CO,81623,USA
+Stone Mountain,GA,30083,USA
+Belpre,OH,45714,USA
+Ward,AR,72176,USA
+Sandown,NH,3873,USA
+Benton,IL,62812,USA
+Winthrop Harbor,IL,60096,USA
+Saint Gabriel,LA,70776,USA
+Wolfeboro,NH,3894,USA
+Munford,TN,38058,USA
+Litchfield,MN,55355,USA
+Garrett,IN,46738,USA
+Buena Vista,VA,24416,USA
+Mattapoisett,MA,2739,USA
+Johnstown,NY,12095,USA
+Wolfforth,TX,79382,USA
+Thurmont,MD,21788,USA
+Iowa Park,TX,76367,USA
+Hillsboro,OH,45133,USA
+Warwick,NY,10990,USA
+Valley City,ND,58072,USA
+North Vernon,IN,47265,USA
+Carthage,TX,75633,USA
+High Springs,FL,32643,USA
+Eatonton,GA,31024,USA
+Freeport,FL,32439,USA
+Fairfield,ME,4937,USA
+Pratt,KS,67124,USA
+Tontitown,AR,72770,USA
+New Haven,MI,48048,USA
+Snowflake,AZ,85937,USA
+Rindge,NH,3461,USA
+Woodland,WA,98674,USA
+Walkersville,MD,21793,USA
+Oakdale,LA,71463,USA
+Lavon,TX,75166,USA
+Powell,WY,82435,USA
+Paradise,CA,95967,USA
+Geneseo,IL,61254,USA
+Willard,MO,65781,USA
+Lyman,SC,29365,USA
+Topsfield,MA,1983,USA
+Peterborough,NH,3458,USA
+Bulverde,TX,78163,USA
+Huntingburg,IN,47542,USA
+Dacono,CO,80514,USA
+Larchmont,NY,10538,USA
+Sanibel,FL,33957,USA
+Chesapeake Beach,MD,20732,USA
+De Soto,KS,66018,USA
+Amory,MS,38821,USA
+Brookfield,WI,53005,USA
+Waterford,WI,53185,USA
+Irvington,NY,10533,USA
+Nitro,WV,25143,USA
+Schuyler,NE,68661,USA
+Bronxville,NY,10708,USA
+Adel,IA,50003,USA
+Franklin,LA,70538,USA
+De Soto,MO,63020,USA
+Sweetwater,TN,37874,USA
+Taos,NM,87571,USA
+Abilene,KS,67410,USA
+Cynthiana,KY,41031,USA
+Douglas,WY,82633,USA
+Lebanon,KY,40033,USA
+Milford,MI,48380,USA
+Leitchfield,KY,42754,USA
+Morrow,GA,30260,USA
+Eudora,KS,66025,USA
+Newport,NH,3773,USA
+Harrah,OK,73045,USA
+Sidney,NE,69160,USA
+Henderson,TN,38340,USA
+Burlington,WI,53105,USA
+Orleans,MA,2653,USA
+Plymouth,NH,3264,USA
+Elburn,IL,60119,USA
+Maize,KS,67101,USA
+Carver,MN,55315,USA
+Horseheads,NY,14845,USA
+Walker,LA,70785,USA
+Mount Vernon,IN,47620,USA
+Hamilton,NY,13346,USA
+Ashburnham,MA,1430,USA
+Colusa,CA,95932,USA
+Twin Lakes,WI,53181,USA
+Warrenton,OR,97146,USA
+Crestwood,KY,40014,USA
+Hampstead,MD,21074,USA
+Penitas,TX,78576,USA
+Black Diamond,WA,98010,USA
+Tecumseh,OK,74873,USA
+Dillon,SC,29536,USA
+Elm Grove,WI,53122,USA
+Calipatria,CA,92233,USA
+Oakland,ME,4963,USA
+Bridgeport,TX,76426,USA
+Whitestown,IN,46075,USA
+Clyde,OH,43410,USA
+Rossford,OH,43460,USA
+Loudon,TN,37774,USA
+Salem,IN,47167,USA
+Crockett,TX,75835,USA
+Kingston,NH,3848,USA
+Palmer,AK,99645,USA
+Slinger,WI,53086,USA
+Orange City,IA,51041,USA
+Mendon,MA,1756,USA
+Rowley,MA,1969,USA
+Huntington Woods,MI,48070,USA
+Bethel,AK,99559,USA
+Temple,GA,30179,USA
+Woodstock,NY,12498,USA
+Cedarburg,WI,53012,USA
+Manistee,MI,49660,USA
+Mead,CO,80542,USA
+Sheridan,OR,97378,USA
+Prosser,WA,99350,USA
+Huron,CA,93234,USA
+Killingworth,CT,6419,USA
+Rupert,ID,83350,USA
+Ville Platte,LA,70586,USA
+Dalton,MA,1226,USA
+Portland,IN,47371,USA
+Gladewater,TX,75647,USA
+White Oak,TX,75693,USA
+Midway,UT,84049,USA
+Pigeon Forge,TN,37863,USA
+East Rochester,NY,14445,USA
+Rochester,IN,46975,USA
+Batavia,NY,14020,USA
+Jackson,OH,45640,USA
+Princeton,KY,42445,USA
+Marion,SC,29571,USA
+Southampton,MA,1073,USA
+Cherryville,NC,28021,USA
+Sultan,WA,98294,USA
+Talent,OR,97540,USA
+Henniker,NH,3242,USA
+Ishpeming,MI,49849,USA
+Winthrop,ME,4364,USA
+Homer,NY,13077,USA
+Gustine,CA,95322,USA
+Barnesville,GA,30204,USA
+Independence,IA,50644,USA
+Hempstead,TX,77445,USA
+Rockford,MI,49341,USA
+Jonesborough,TN,37659,USA
+Sidney,MT,59270,USA
+New Boston,NH,3070,USA
+Braidwood,IL,60408,USA
+Pass Christian,MS,39571,USA
+Willard,OH,44888,USA
+Hurley,NY,12443,USA
+Crystal City,TX,78839,USA
+Martins Ferry,OH,43935,USA
+Torrington,WY,82240,USA
+Van Alstyne,TX,75495,USA
+Rushville,IN,46173,USA
+Wayne,NE,68787,USA
+Beacon Falls,CT,6403,USA
+Aztec,NM,87410,USA
+Corry,PA,16407,USA
+Auburn,NH,3032,USA
+Edgewood,NM,87015,USA
+Willows,CA,95988,USA
+Kingston,TN,37763,USA
+Marlborough,CT,6447,USA
+Madison,WI,53701,USA
+Gardiner,ME,4345,USA
+Angier,NC,27501,USA
+Madison,SD,57042,USA
+Harriman,TN,37748,USA
+Littleton,NH,3561,USA
+Greenwood,MO,64034,USA
+Mocksville,NC,27028,USA
+Dallas,NC,28034,USA
+Darlington,SC,29532,USA
+Gas City,IN,46933,USA
+Lewistown,MT,59457,USA
+Blackwell,OK,74631,USA
+Houlton,ME,4730,USA
+Wappingers Falls,NY,12590,USA
+Krum,TX,76249,USA
+Claverack,NY,12513,USA
+Granby,MA,1033,USA
+Maquoketa,IA,52060,USA
+Cave Springs,AR,72718,USA
+Polk City,IA,50226,USA
+De Queen,AR,71832,USA
+Pevely,MO,63070,USA
+Alton,NH,3809,USA
+Pauls Valley,OK,73075,USA
+East Aurora,NY,14052,USA
+Clairton,PA,15025,USA
+Blaine,WA,98230,USA
+Wilmore,KY,40390,USA
+Waterville,OH,43566,USA
+Edna,TX,77957,USA
+Hopedale,MA,1747,USA
+Chillicothe,IL,61523,USA
+Rittman,OH,44270,USA
+Dundee,FL,33838,USA
+Monticello,IL,61856,USA
+Lake City,SC,29560,USA
+Preston,ID,83263,USA
+Stokesdale,NC,27357,USA
+Franklin,PA,16323,USA
+Solvang,CA,93463,USA
+Hartford City,IN,47348,USA
+Crescent City,CA,95531,USA
+Hillsborough,NH,3244,USA
+Truth or Consequences,NM,87901,USA
+Oakwood,GA,30566,USA
+Raton,NM,87740,USA
+Hamlet,NC,28345,USA
+Byron,GA,31008,USA
+Port Clinton,OH,43452,USA
+Belding,MI,48809,USA
+Louisville,MS,39339,USA
+Richmond,MO,64085,USA
+Greenbrier,AR,72058,USA
+Peculiar,MO,64078,USA
+Plaquemine,LA,70764,USA
+Medina,NY,14103,USA
+Erwin,TN,37650,USA
+Poland,ME,4274,USA
+Tallulah,LA,71282,USA
+Hilton,NY,14468,USA
+Ephraim,UT,84627,USA
+Rumford,ME,4276,USA
+Holly,MI,48442,USA
+Alpine,TX,79830,USA
+Northfield,VT,5663,USA
+Brookville,OH,45309,USA
+Avon,CO,81620,USA
+Holdenville,OK,74848,USA
+Eaton,CO,80615,USA
+Weiser,ID,83672,USA
+Alvarado,TX,76009,USA
+Woodstock,VA,22664,USA
+Alma,AR,72921,USA
+Yoakum,TX,77995,USA
+Watford City,ND,58854,USA
+Westmoreland,NY,13490,USA
+Geneva,OH,44041,USA
+Metropolis,IL,62960,USA
+Homer,AK,99603,USA
+Verona,NY,13478,USA
+Kermit,TX,79745,USA
+Duanesburg,NY,12056,USA
+Walkertown,NC,27051,USA
+Petoskey,MI,49770,USA
+Starke,FL,32091,USA
+Aledo,TX,76008,USA
+Estes Park,CO,80511,USA
+Dover,MA,2030,USA
+Groveport,OH,43125,USA
+Tonganoxie,KS,66086,USA
+Belle Fourche,SD,57717,USA
+Turner,ME,4282,USA
+Fruitland,MD,21826,USA
+Blythewood,SC,29016,USA
+Swartz Creek,MI,48473,USA
+Attalla,AL,35954,USA
+Oelwein,IA,50662,USA
+Onalaska,WI,54650,USA
+Wilmer,TX,75172,USA
+Corning,NY,14830,USA
+Hudson,NY,12534,USA
+Hillsboro,IL,62049,USA
+Margaret,AL,35112,USA
+Eastham,MA,2642,USA
+Dos Palos,CA,93620,USA
+Evansville,WI,53536,USA
+District Heights,MD,20747,USA
+Rochester,MA,2770,USA
+Carterville,IL,62918,USA
+Perry,NY,14530,USA
+Central City,KY,42330,USA
+Salida,CO,81201,USA
+Tiffin,IA,52340,USA
+Germantown,OH,45327,USA
+Estherville,IA,51334,USA
+Childress,TX,79201,USA
+Monroeville,AL,36460,USA
+Edgerton,WI,53534,USA
+Cottleville,MO,63338,USA
+Peoria Heights,IL,61616,USA
+Livingston,TX,77351,USA
+Littlefield,TX,79339,USA
+Beardstown,IL,62618,USA
+New Gloucester,ME,4260,USA
+Pontotoc,MS,38863,USA
+Goshen,NY,10924,USA
+Monticello,KY,42633,USA
+Dumfries,VA,22026,USA
+Webster,NY,14580,USA
+Brookline,NH,3033,USA
+Berryville,AR,72616,USA
+Dayton,KY,41074,USA
+Slaton,TX,79364,USA
+Willow Springs,IL,60480,USA
+Coal City,IL,60416,USA
+Rosendale,NY,12472,USA
+Richland,NY,13144,USA
+Paola,KS,66071,USA
+Bowie,TX,76230,USA
+Villa Park,CA,92861,USA
+Bolton,MA,1740,USA
+Princeton,WV,24739,USA
+Du Quoin,IL,62832,USA
+Philomath,OR,97370,USA
+Patterson,LA,70392,USA
+Dunlap,TN,37327,USA
+Lafayette,TN,37083,USA
+Dundee,MI,48131,USA
+Columbia,MS,39429,USA
+Lee,MA,1238,USA
+Loudon,NH,3307,USA
+Washingtonville,NY,10992,USA
+Nashville,NC,27856,USA
+Jackson,GA,30233,USA
+Poolesville,MD,20837,USA
+East Alton,IL,62024,USA
+Covington,VA,24426,USA
+Rensselaer,IN,47978,USA
+Rainsville,AL,35986,USA
+Glencoe,MN,55336,USA
+Winston,OR,97496,USA
+Zeeland,MI,49464,USA
+Chisago City,MN,55013,USA
+Marion,VA,24354,USA
+International Falls,MN,56649,USA
+Fort Myers Beach,FL,33931,USA
+Elsa,TX,78543,USA
+Senoia,GA,30276,USA
+Ulysses,KS,67880,USA
+Little Suamico,WI,54141,USA
+Columbia Falls,MT,59912,USA
+Belleview,FL,34420,USA
+Williams,CA,95987,USA
+Bridgton,ME,4009,USA
+Creswell,OR,97426,USA
+Waynesboro,GA,30830,USA
+Gardiner,NY,12525,USA
+New London,WI,54961,USA
+Bellevue,KY,41073,USA
+Trenton,MO,64683,USA
+Henryetta,OK,74437,USA
+Adel,GA,31620,USA
+Lyndon,VT,5849,USA
+Eastman,GA,31023,USA
+Lyons,NY,14489,USA
+Hutchins,TX,75141,USA
+Odessa,MO,64076,USA
+Rye,NH,3870,USA
+Dowagiac,MI,49047,USA
+Mena,AR,71953,USA
+Justin,TX,76247,USA
+Hyde Park,UT,84318,USA
+Grafton,OH,44044,USA
+Wilmington,IL,60481,USA
+Carlinville,IL,62626,USA
+Walton,KY,41094,USA
+Amsterdam,NY,12010,USA
+Osceola,IA,50213,USA
+Chestertown,MD,21620,USA
+Bessemer City,NC,28016,USA
+Harwinton,CT,6791,USA
+Granville,OH,43023,USA
+Goddard,KS,67052,USA
+Bath,NY,14810,USA
+Grosse Pointe,MI,48230,USA
+Lake Bluff,IL,60044,USA
+Luling,TX,78648,USA
+Colby,KS,67701,USA
+Sandersville,GA,31082,USA
+Jamestown,RI,2835,USA
+Rockwood,TN,37854,USA
+Pahokee,FL,33476,USA
+Mount Carmel,TN,37645,USA
+New Castle,DE,19720,USA
+Barre,MA,1005,USA
+Brookshire,TX,77423,USA
+Cicero,IN,46034,USA
+Anadarko,OK,73005,USA
+Rockdale,TX,76567,USA
+Anamosa,IA,52205,USA
+Spirit Lake,IA,51360,USA
+Ashland City,TN,37015,USA
+Rothschild,WI,54474,USA
+Red Oak,IA,51566,USA
+Watertown,NY,13601,USA
+Holtville,CA,92250,USA
+New Carlisle,OH,45344,USA
+Sinton,TX,78387,USA
+Holdrege,NE,68949,USA
+Argyle,TX,76226,USA
+Sylvester,GA,31791,USA
+Leesville,LA,71446,USA
+Semmes,AL,36575,USA
+Walnut Ridge,AR,72476,USA
+Spring Grove,IL,60081,USA
+Manchester,MD,21102,USA
+Monticello,IN,47960,USA
+Emporia,VA,23847,USA
+Hollywood,SC,29449,USA
+Polson,MT,59860,USA
+Jaffrey,NH,3452,USA
+White Hall,AR,71602,USA
+Marlin,TX,76661,USA
+Sheldon,IA,51201,USA
+Walterboro,SC,29488,USA
+Spring Valley,IL,61362,USA
+Macon,MO,63552,USA
+Winterset,IA,50273,USA
+Rigby,ID,83442,USA
+Malone,NY,12953,USA
+Thatcher,AZ,85552,USA
+Cramerton,NC,28032,USA
+Wellston,OH,45692,USA
+Rusk,TX,75785,USA
+Okeechobee,FL,34972,USA
+Waynesville,MO,65583,USA
+Saint Paul Park,MN,55071,USA
+Atlanta,TX,75551,USA
+Waterbury,VT,5671,USA
+Kodiak,AK,99615,USA
+Cameron,TX,76520,USA
+Iola,KS,66749,USA
+Medina,TN,38355,USA
+Chelsea,MI,48118,USA
+Collins,NY,14034,USA
+Posen,IL,60469,USA
+Saint Robert,MO,65584,USA
+Fairport,NY,14450,USA
+Oak Bluffs,MA,2557,USA
+Kirkwood,NY,13795,USA
+Algona,IA,50511,USA
+Nottingham,NH,3290,USA
+Ripley,MS,38663,USA
+Ione,CA,95640,USA
+Genoa,IL,60135,USA
+Clarinda,IA,51632,USA
+Benson,AZ,85602,USA
+Central,SC,29630,USA
+Paris,ME,4271,USA
+Roanoke,AL,36274,USA
+New Ipswich,NH,3071,USA
+Highwood,IL,60040,USA
+Forest,MS,39074,USA
+Salem,NJ,8079,USA
+Moab,UT,84532,USA
+Chester,NH,3036,USA
+Centerville,IA,52544,USA
+Estacada,OR,97023,USA
+Smithville,TN,37166,USA
+Saint Martinville,LA,70582,USA
+Mabank,TX,75147,USA
+Montevideo,MN,56265,USA
+Canal Fulton,OH,44614,USA
+Caruthersville,MO,63830,USA
+Buckley,WA,98321,USA
+Ghent,NY,12075,USA
+Marion,MA,2738,USA
+Stowe,VT,5672,USA
+Grambling,LA,71245,USA
+West Salem,WI,54669,USA
+Camden,ME,4843,USA
+Flagler Beach,FL,32136,USA
+Tipton,IN,46072,USA
+Pleasant View,TN,37146,USA
+Johnstown,OH,43031,USA
+Bethany,CT,6524,USA
+Waldoboro,ME,4572,USA
+Hadley,MA,1035,USA
+Bar Harbor,ME,4609,USA
+Westville,IN,46391,USA
+Edgartown,MA,2539,USA
+Social Circle,GA,30025,USA
+Delavan,WI,53115,USA
+Ada,OH,45810,USA
+Berlin,MD,21811,USA
+Madisonville,TN,37354,USA
+Columbia,CT,6237,USA
+Brush,CO,80723,USA
+Sergeant Bluff,IA,51054,USA
+Rockmart,GA,30153,USA
+North Manchester,IN,46962,USA
+Chardon,OH,44024,USA
+Headland,AL,36345,USA
+Wright City,MO,63390,USA
+Middletown,MD,21769,USA
+Gladstone,MI,49837,USA
+Blakely,GA,39823,USA
+Post,TX,79356,USA
+Norway,ME,4268,USA
+Tillamook,OR,97141,USA
+Toronto,OH,43964,USA
+Warren,AR,71671,USA
+Chadron,NE,69337,USA
+Hugo,OK,74743,USA
+East Granby,CT,6026,USA
+Margate City,NJ,8402,USA
+Fairfax,VT,5454,USA
+Brewton,AL,36426,USA
+Hiram,GA,30141,USA
+Saint Helena,CA,94574,USA
+Titusville,PA,16354,USA
+Bolivar,TN,38008,USA
+Fort Meade,FL,33841,USA
+Lawrenceburg,IN,47025,USA
+Northwood,OH,43619,USA
+Richlands,VA,24641,USA
+Chester,SC,29706,USA
+Pendleton,IN,46064,USA
+Eaton Rapids,MI,48827,USA
+Vinita,OK,74301,USA
+Manchester,IA,52057,USA
+Bristol,WI,53104,USA
+Breckenridge,TX,76424,USA
+North Stonington,CT,6359,USA
+Uhrichsville,OH,44683,USA
+Marilla,NY,14102,USA
+Eureka,IL,61530,USA
+Alexandria,IN,46001,USA
+Herculaneum,MO,63048,USA
+Hamilton,MT,59840,USA
+Allegan,MI,49010,USA
+Williamsburg,KY,40769,USA
+Moultonborough,NH,3254,USA
+Linton,IN,47441,USA
+Deerfield,MA,1342,USA
+Veneta,OR,97487,USA
+Mayville,WI,53050,USA
+Carlisle,MA,1741,USA
+Wildwood,NJ,8260,USA
+Frankenmuth,MI,48734,USA
+Big Stone Gap,VA,24219,USA
+Camilla,GA,31730,USA
+Whiteland,IN,46184,USA
+Tucumcari,NM,88401,USA
+North Berwick,ME,3906,USA
+Center,TX,75935,USA
+Berkeley,IL,60163,USA
+Utica,MI,48315,USA
+New Martinsville,WV,26155,USA
+Liberty,NY,12754,USA
+Attica,NY,14011,USA
+Mechanicville,NY,12118,USA
+Glenwood,IA,51534,USA
+Cave Creek,AZ,85327,USA
+Lone Grove,OK,73443,USA
+Duquesne,PA,15110,USA
+Kanab,UT,84741,USA
+Giddings,TX,78942,USA
+Elmsford,NY,10523,USA
+Cherokee,IA,51012,USA
+Kingsford,MI,49802,USA
+Minocqua,WI,54548,USA
+Jackson,CA,95642,USA
+Shelley,ID,83274,USA
+Windsor Heights,IA,50324,USA
+Port Isabel,TX,78578,USA
+Poplar Grove,IL,61065,USA
+Buellton,CA,93427,USA
+Winona Lake,IN,46590,USA
+Buckhannon,WV,26201,USA
+Sheridan,AR,72150,USA
+Sabattus,ME,4280,USA
+Broadalbin,NY,12025,USA
+Canterbury,CT,6331,USA
+Ixonia,WI,53036,USA
+North Salem,NY,10560,USA
+Williamston,NC,27892,USA
+Jericho,VT,5465,USA
+Pana,IL,62557,USA
+Orange,VA,22960,USA
+Maine,NY,13802,USA
+Union Grove,WI,53182,USA
+Monee,IL,60449,USA
+Morris,MN,56267,USA
+Redwood Falls,MN,56283,USA
+Palmetto,GA,30268,USA
+Penn Yan,NY,14527,USA
+Kimberly,ID,83341,USA
+Valparaiso,FL,32580,USA
+Lenox,MA,1240,USA
+Louisburg,KS,66053,USA
+Davison,MI,48423,USA
+Concordia,KS,66901,USA
+Muleshoe,TX,79347,USA
+Adairsville,GA,30103,USA
+Glennville,GA,30427,USA
+Ayden,NC,28513,USA
+Springville,AL,35146,USA
+Whitehouse,OH,43571,USA
+Savannah,MO,64485,USA
+Big Bear Lake,CA,92315,USA
+Calistoga,CA,94515,USA
+Gilmer,TX,75644,USA
+Lakeport,CA,95453,USA
+Paxton,MA,1612,USA
+Colville,WA,99114,USA
+Pleasant Garden,NC,27313,USA
+Mineola,TX,75773,USA
+Bucksport,ME,4416,USA
+Saint Clairsville,OH,43950,USA
+Medical Lake,WA,99022,USA
+Oneonta,NY,13820,USA
+Bisbee,AZ,85603,USA
+Pinckneyville,IL,62274,USA
+Sea Cliff,NY,11579,USA
+Munroe Falls,OH,44262,USA
+Brady,TX,76825,USA
+Cornelia,GA,30531,USA
+Barnstead,NH,3218,USA
+Bluefield,VA,24605,USA
+Hazard,KY,41701,USA
+Iowa Falls,IA,50126,USA
+Ironwood,MI,49938,USA
+Alva,OK,73717,USA
+Becker,MN,55308,USA
+Milan,IL,61264,USA
+Cheraw,SC,29520,USA
+Lindstrom,MN,55045,USA
+Staunton,IL,62088,USA
+Ballston Spa,NY,12020,USA
+Odenville,AL,35120,USA
+Creedmoor,NC,27522,USA
+Island Park,NY,11558,USA
+Warren,MA,1083,USA
+Wadesboro,NC,28170,USA
+Kingfisher,OK,73750,USA
+Baxley,GA,31513,USA
+Colona,IL,61241,USA
+Richland Center,WI,53581,USA
+Deerfield,NH,3037,USA
+Sonora,CA,95370,USA
+Fellsmere,FL,32948,USA
+Pound Ridge,NY,10576,USA
+Progreso,TX,78579,USA
+Sulphur,OK,73086,USA
+Vinton,IA,52349,USA
+Newfield,NY,14867,USA
+Circle Pines,MN,55014,USA
+Wauchula,FL,33873,USA
+Ardsley,NY,10502,USA
+Epsom,NH,3234,USA
+Saltillo,MS,38866,USA
+Wahoo,NE,68066,USA
+Rocky Mount,VA,24151,USA
+Omak,WA,98841,USA
+Wenham,MA,1984,USA
+Granite Falls,NC,28630,USA
+Denton,MD,21629,USA
+Boylston,MA,1505,USA
+Barling,AR,72923,USA
+Breckenridge,CO,80424,USA
+Madison,GA,30650,USA
+Midland,NC,28107,USA
+Hampden,MA,1036,USA
+Lonsdale,MN,55046,USA
+Port Allen,LA,70767,USA
+Holly Ridge,NC,28445,USA
+Charlestown,NH,3603,USA
+Baldwin City,KS,66006,USA
+Leonardtown,MD,20650,USA
+Saranac Lake,NY,12983,USA
+Warren,ME,4864,USA
+Conklin,NY,13748,USA
+Sparta,TN,38583,USA
+Hinton,OK,73047,USA
+Cherokee Village,AR,72525,USA
+Hector,NY,14841,USA
+Daleville,AL,36322,USA
+Shenandoah,IA,51601,USA
+Nashville,GA,31639,USA
+Pilot Point,TX,76258,USA
+Willits,CA,95490,USA
+Rogersville,MO,65742,USA
+Marksville,LA,71351,USA
+Wamego,KS,66547,USA
+Chatsworth,GA,30705,USA
+Lincoln,ME,4457,USA
+Greenwich,NY,12834,USA
+Indian Wells,CA,92210,USA
+Abbeville,SC,29620,USA
+Needles,CA,92363,USA
+Luverne,MN,56156,USA
+Holbrook,AZ,86025,USA
+Creve Coeur,IL,61610,USA
+South Bay,FL,33493,USA
+Randolph,VT,5060,USA
+Keyser,WV,26726,USA
+New Castle,CO,81647,USA
+Aberdeen,MS,39730,USA
+Columbia,KY,42728,USA
+Coopersville,MI,49404,USA
+Watertown,MN,55388,USA
+Wellington,OH,44090,USA
+Harlan,IA,51537,USA
+Clarkdale,AZ,86324,USA
+Chittenango,NY,13037,USA
+Granite Falls,WA,98252,USA
+Bolton,CT,6043,USA
+Luray,VA,22835,USA
+Schuyler Falls,NY,12985,USA
+Cheboygan,MI,49721,USA
+Winchester,IN,47394,USA
+Newton,NH,3858,USA
+Fremont,NH,3044,USA
+Mount Pleasant,TN,38474,USA
+Ashland,MO,65010,USA
+Osage Beach,MO,65065,USA
+Newport,MN,55055,USA
+Clinton,IN,47842,USA
+Carthage,MS,39051,USA
+Platte City,MO,64079,USA
+Glendive,MT,59330,USA
+Deer Park,WA,99006,USA
+DeWitt,MI,48820,USA
+Winfield,AL,35594,USA
+Ogallala,NE,69153,USA
+Worland,WY,82401,USA
+Palos Park,IL,60464,USA
+Elberton,GA,30635,USA
+Madison,ME,4950,USA
+Connell,WA,99326,USA
+Humboldt,IA,50548,USA
+Hoopeston,IL,60942,USA
+Fairfield,IL,62837,USA
+Constantia,NY,13044,USA
+Marseilles,IL,61341,USA
+Dilworth,MN,56529,USA
+West Milton,OH,45383,USA
+Silverthorne,CO,80497,USA
+Old Westbury,NY,11568,USA
+Tallassee,AL,36078,USA
+Sayre,OK,73662,USA
+Carmi,IL,62821,USA
+Benton,KY,42025,USA
+New Prague,MN,56071,USA
+Horseshoe Bay,TX,78657,USA
+Centreville,MD,21617,USA
+Higginsville,MO,64037,USA
+Grayson,GA,30017,USA
+Saint Clair,MO,63077,USA
+South Hill,VA,23970,USA
+Windom,MN,56101,USA
+Alfred,NY,14802,USA
+Avon,MA,2322,USA
+Forsyth,GA,31029,USA
+Fortville,IN,46040,USA
+North Brookfield,MA,1535,USA
+Columbiana,AL,35051,USA
+Berryville,VA,22611,USA
+Carrizo Springs,TX,78834,USA
+Flora,IL,62839,USA
+Le Claire,IA,52753,USA
+Pittsboro,NC,27312,USA
+Chisholm,MN,55719,USA
+Manitou Springs,CO,80829,USA
+Crystal City,MO,63019,USA
+Piedmont,AL,36272,USA
+Locust,NC,28097,USA
+Ticonderoga,NY,12883,USA
+Coldwater,OH,45828,USA
+Saint James,MN,56081,USA
+Florence,MS,39073,USA
+Hinesburg,VT,5461,USA
+Crystal Springs,MS,39059,USA
+Erwin,NC,28339,USA
+Beaufort,NC,28516,USA
+Winnsboro,LA,71295,USA
+Ashville,OH,43103,USA
+Valdese,NC,28690,USA
+Boiling Springs,NC,28017,USA
+East Palestine,OH,44413,USA
+Centralia,MO,65240,USA
+Weaverville,NC,28787,USA
+Northwood,NH,3261,USA
+Beecher,IL,60401,USA
+Buhl,ID,83316,USA
+Westlake,LA,70669,USA
+American Falls,ID,83211,USA
+La Joya,TX,78560,USA
+Jay,ME,4239,USA
+Negaunee,MI,49866,USA
+Hollister,MO,65672,USA
+Ahoskie,NC,27910,USA
+Whiteville,NC,28472,USA
+Childersburg,AL,35044,USA
+Salem,MO,65560,USA
+Haverhill,NH,3765,USA
+Greenville,NY,12083,USA
+Tuscola,IL,61953,USA
+Edwardsville,KS,66113,USA
+Aurora,NE,68818,USA
+Cochran,GA,31014,USA
+Hallsville,TX,75650,USA
+Jeanerette,LA,70544,USA
+Holts Summit,MO,65043,USA
+Bremen,IN,46506,USA
+Randleman,NC,27317,USA
+Fox River Grove,IL,60021,USA
+Crandall,TX,75114,USA
+Vail,CO,81657,USA
+Breese,IL,62230,USA
+Folkston,GA,31537,USA
+Rogersville,TN,37857,USA
+Sherman,IL,62684,USA
+Manlius,NY,13104,USA
+Sauk Centre,MN,56378,USA
+Southampton,NY,11968,USA
+Lebanon,IL,62254,USA
+Crossett,AR,71635,USA
+Shelbyville,IL,62565,USA
+Berwick,LA,70342,USA
+Buffalo,WY,82834,USA
+Raymond,ME,4071,USA
+Lee,NH,3861,USA
+Brisbane,CA,94005,USA
+Vermilion,OH,44089,USA
+Ligonier,IN,46767,USA
+Wellsville,NY,14895,USA
+Barnwell,SC,29812,USA
+Grafton,WV,26354,USA
+Fremont,MI,49412,USA
+Jackson,AL,36545,USA
+Bellevue,OH,44811,USA
+Vassalboro,ME,4989,USA
+Mansfield,LA,71052,USA
+Springhill,LA,71075,USA
+Milton,NH,3851,USA
+Lexington,MO,64067,USA
+Olympia Fields,IL,60461,USA
+Clayton,WI,54004,USA
+Ossipee,NH,3864,USA
+Camanche,IA,52730,USA
+Madisonville,TX,77864,USA
+Ellisville,MS,39437,USA
+West Newbury,MA,1985,USA
+Canton,TX,75103,USA
+Diboll,TX,75941,USA
+Whiteville,TN,38075,USA
+Huxley,IA,50124,USA
+Watseka,IL,60970,USA
+North Hampton,NH,3862,USA
+Mountain Grove,MO,65711,USA
+Dyersville,IA,52040,USA
+Mount Vernon,MO,65712,USA
+New Boston,TX,75570,USA
+Marion,NY,14505,USA
+Eldon,MO,65026,USA
+Fredericktown,MO,63645,USA
+Nelsonville,OH,45764,USA
+Newton Falls,OH,44444,USA
+Hearne,TX,77859,USA
+Oneida,WI,54155,USA
+Enfield,NH,3748,USA
+La Verkin,UT,84745,USA
+Waynesboro,MS,39367,USA
+Freeburg,IL,62243,USA
+Whiting,IN,46394,USA
+Dexter,MI,48130,USA
+Raeford,NC,28376,USA
+Hartwell,GA,30643,USA
+Binghamton,NY,13901,USA
+Danville,NH,3819,USA
+Robbins,IL,60472,USA
+Jasper,GA,30143,USA
+Soldotna,AK,99669,USA
+Dardanelle,AR,72834,USA
+China Grove,NC,28023,USA
+Wapato,WA,98951,USA
+Edenton,NC,27932,USA
+Clintonville,WI,54929,USA
+Fulton,MS,38843,USA
+Hancock,MI,49930,USA
+Mount Vernon,IA,52314,USA
+Lillington,NC,27546,USA
+Devine,TX,78016,USA
+Prospect,KY,40059,USA
+West Wendover,NV,89883,USA
+Evansdale,IA,50707,USA
+Nassau,NY,12123,USA
+Canastota,NY,13032,USA
+Dawsonville,GA,30534,USA
+Farmville,NC,27828,USA
+Shallotte,NC,28459,USA
+Vilonia,AR,72173,USA
+California,MO,65018,USA
+Newport,NC,28570,USA
+Auburn,IL,62615,USA
+Waverly,NE,68462,USA
+Archbold,OH,43502,USA
+Foster,RI,2825,USA
+Marlow,OK,73055,USA
+Wonder Lake,IL,60097,USA
+Jonesboro,GA,30236,USA
+Perry,OK,73077,USA
+Falfurrias,TX,78355,USA
+Morgan,UT,84050,USA
+Selmer,TN,38375,USA
+Georgetown,OH,45121,USA
+New Lexington,OH,43764,USA
+McLoud,OK,74851,USA
+La Grange,TX,78945,USA
+Castleton,VT,5735,USA
+Crestline,OH,44827,USA
+Deep River,CT,6417,USA
+Haughton,LA,71037,USA
+Perryville,MD,21903,USA
+Moriah,NY,12960,USA
+Belton,SC,29627,USA
+Cortland,IL,60112,USA
+Scottsville,KY,42164,USA
+Woodruff,SC,29388,USA
+Mills,WY,82644,USA
+West Bend,WI,53090,USA
+Stone Park,IL,60165,USA
+Ottawa,OH,45875,USA
+Huntingdon,TN,38344,USA
+Wayland,MI,49348,USA
+Cobleskill,NY,12043,USA
+Eagar,AZ,85925,USA
+Harrogate,TN,37752,USA
+New London,NH,3257,USA
+Pittsburg,TX,75686,USA
+Tazewell,VA,24651,USA
+Norfolk,NY,13667,USA
+Pocola,OK,74902,USA
+Lake City,MN,55041,USA
+Egg Harbor City,NJ,8215,USA
+Greene,ME,4236,USA
+Prescott,WI,54021,USA
+Loxley,AL,36551,USA
+Grafton,WI,53024,USA
+Pocomoke City,MD,21851,USA
+Greenville,KY,42345,USA
+Canton,NC,28716,USA
+Edinburgh,IN,46124,USA
+Lafayette,OR,97127,USA
+Middleville,MI,49333,USA
+Goodland,KS,67735,USA
+Chelan,WA,98816,USA
+Caseyville,IL,62232,USA
+Sunset Beach,NC,28468,USA
+Louisville,TN,37777,USA
+Summerville,GA,30747,USA
+Tulia,TX,79088,USA
+Somerset,WI,54025,USA
+New Roads,LA,70760,USA
+Barboursville,WV,25504,USA
+Bloomfield Hills,MI,48301,USA
+Riverside,MO,64150,USA
+Sherborn,MA,1770,USA
+Sykesville,MD,21784,USA
+Brookland,AR,72417,USA
+La Center,WA,98629,USA
+Isle of Palms,SC,29451,USA
+Palacios,TX,77465,USA
+Gaylord,MI,49734,USA
+Russell,KS,67665,USA
+Scott City,MO,63780,USA
+Caldwell,TX,77836,USA
+Haleyville,AL,35565,USA
+Paxton,IL,60957,USA
+Oxford,ME,4270,USA
+Jacksboro,TX,76458,USA
+Wayzata,MN,55391,USA
+Mount Orab,OH,45154,USA
+Hubbardston,MA,1452,USA
+Plain City,OH,43064,USA
+Strafford,NH,3884,USA
+Salem,CT,6420,USA
+Greenfield,OH,45123,USA
+Reedsport,OR,97467,USA
+Waverly,NY,14892,USA
+Pomfret,CT,6258,USA
+Poestenkill,NY,12140,USA
+Denver City,TX,79323,USA
+Waverly,TN,37185,USA
+Hampton,IA,50441,USA
+Rose Hill,KS,67133,USA
+Lamar,MO,64759,USA
+Whitesboro,TX,76273,USA
+Hoschton,GA,30548,USA
+Lakewood,IL,62438,USA
+Franklin,NC,28734,USA
+Caro,MI,48723,USA
+Carlisle,IA,50047,USA
+Mathis,TX,78368,USA
+Sullivan,IL,61951,USA
+North Wilkesboro,NC,28656,USA
+Charleston,MO,63834,USA
+Horace,ND,58047,USA
+Duncan,SC,29334,USA
+Park Rapids,MN,56470,USA
+Benson,NC,27504,USA
+Sparta,MI,49345,USA
+Wiggins,MS,39577,USA
+Le Roy,NY,14482,USA
+Forest City,IA,50436,USA
+Southport,NC,28461,USA
+Jourdanton,TX,78026,USA
+Mauston,WI,53948,USA
+Broadway,VA,22815,USA
+Bristow,OK,74010,USA
+Comanche,TX,76442,USA
+Lisbon,NY,13658,USA
+Cedarville,OH,45314,USA
+Middlefield,CT,6455,USA
+Butler,MO,64730,USA
+Portola Valley,CA,94028,USA
+Winchester,NH,3470,USA
+Broken Bow,OK,74728,USA
+Wadena,MN,56482,USA
+Cold Spring,MN,56320,USA
+Salisbury,CT,6068,USA
+Osawatomie,KS,66064,USA
+Spindale,NC,28160,USA
+Lonoke,AR,72086,USA
+Sullivan,IN,47882,USA
+Bullard,TX,75757,USA
+Buchanan,MI,49107,USA
+Clayton,DE,19938,USA
+Adamsville,AL,35005,USA
+Ashford,CT,6278,USA
+Taylor,AZ,85939,USA
+Cannon Falls,MN,55009,USA
+Le Sueur,MN,56058,USA
+Dawson,GA,31742,USA
+Chariton,IA,50049,USA
+Pittsboro,IN,46167,USA
+Blanchester,OH,45107,USA
+Rockford,MN,55373,USA
+Gentry,AR,72734,USA
+Lawrenceville,IL,62439,USA
+Kaplan,LA,70548,USA
+Aumsville,OR,97325,USA
+Bellville,TX,77418,USA
+Phoenix,OR,97535,USA
+Geneva,AL,36340,USA
+Berne,IN,46711,USA
+Paintsville,KY,41240,USA
+Ellenville,NY,12428,USA
+Fayetteville,NY,13066,USA
+Farrell,PA,16121,USA
+Mount Olive,NC,28365,USA
+Kimberly,AL,35091,USA
+Berlin,MA,1503,USA
+Fayette,AL,35555,USA
+Unalaska,AK,99685,USA
+Lyons,GA,30436,USA
+Hometown,IL,60456,USA
+Springville,NY,14141,USA
+West Jefferson,OH,43162,USA
+Ashburn,GA,31714,USA
+Peotone,IL,60468,USA
+Ashdown,AR,71822,USA
+Jefferson,IA,50129,USA
+Monmouth,ME,4259,USA
+Nash,TX,75569,USA
+Montesano,WA,98563,USA
+Pipestone,MN,56164,USA
+Laurel,DE,19956,USA
+Anna,IL,62906,USA
+Winona,MS,38967,USA
+Lambertville,NJ,8530,USA
+Walhalla,SC,29691,USA
+Algonac,MI,48001,USA
+Williamston,SC,29697,USA
+Candia,NH,3034,USA
+Trenton,TN,38382,USA
+Monte Vista,CO,81144,USA
+Linden,MI,48451,USA
+Bowling Green,MO,63334,USA
+Wingate,NC,28174,USA
+Austin,IN,47102,USA
+Sebring,OH,44672,USA
+Wellsville,UT,84339,USA
+Richmond,VT,5477,USA
+Pittsfield,NH,3263,USA
+North East,MD,21901,USA
+Smithville,TX,78957,USA
+Jena,LA,71342,USA
+Pittsfield,IL,62363,USA
+Clay Center,KS,67432,USA
+Delmar,MD,21875,USA
+Waverly,OH,45690,USA
+Lowell,MI,49331,USA
+Grafton,ND,58237,USA
+Dimmitt,TX,79027,USA
+Fort Kent,ME,4743,USA
+Brandon,VT,5733,USA
+Chagrin Falls,OH,44022,USA
+Millinocket,ME,4462,USA
+Greenland,NH,3840,USA
+Gorham,NY,14461,USA
+Monongahela,PA,15063,USA
+Dillon,MT,59725,USA
+Mulberry,FL,33860,USA
+Crittenden,KY,41030,USA
+Elkin,NC,28621,USA
+Chatham,NY,12037,USA
+Brookfield,MO,64628,USA
+West Monroe,NY,13167,USA
+Hazlehurst,GA,31539,USA
+Monticello,IA,52310,USA
+Rock Valley,IA,51247,USA
+Church Point,LA,70525,USA
+Otsego,MI,49078,USA
+Mary Esther,FL,32569,USA
+Tilton,NH,3276,USA
+Sparta,IL,62286,USA
+Basalt,CO,81621,USA
+Fenton,MO,63026,USA
+Chazy,NY,12921,USA
+Nashville,AR,71852,USA
+Quitman,GA,31643,USA
+Friona,TX,79035,USA
+Falls City,NE,68355,USA
+Portland,NY,14769,USA
+Hawkinsville,GA,31036,USA
+Camdenton,MO,65020,USA
+Jonesboro,LA,71251,USA
+Swansboro,NC,28584,USA
+Beaver Dam,WI,53916,USA
+Bosque Farms,NM,87068,USA
+Stanley,NC,28164,USA
+Limington,ME,4049,USA
+Coquille,OR,97423,USA
+Marine City,MI,48039,USA
+Indian Head,MD,20640,USA
+Peshtigo,WI,54157,USA
+Madill,OK,73446,USA
+Gilmanton,NH,3237,USA
+Austin,AR,72007,USA
+Farmersville,TX,75442,USA
+Bordentown,NJ,8505,USA
+Chautauqua,NY,14722,USA
+Lancaster,KY,40444,USA
+Hinsdale,NH,3451,USA
+East Troy,WI,53120,USA
+Scott City,KS,67871,USA
+White Bluff,TN,37187,USA
+Dwight,IL,60420,USA
+Morrison,IL,61270,USA
+Livingston,TN,38570,USA
+Saint Charles,MN,55972,USA
+Zumbrota,MN,55992,USA
+South Haven,MI,49090,USA
+Oswegatchie,NY,13670,USA
+McCall,ID,83638,USA
+Millstadt,IL,62260,USA
+Jackson,WI,53037,USA
+Bethel,NY,12720,USA
+Naples,ME,4055,USA
+Coleman,TX,76834,USA
+Metter,GA,30439,USA
+Rossville,GA,30741,USA
+Wolcott,NY,14590,USA
+Wilton,NH,3086,USA
+Ely,NV,89301,USA
+Eaton,NY,13334,USA
+Boardman,OR,97818,USA
+Harlem,GA,30814,USA
+Point Pleasant,WV,25550,USA
+Cisco,TX,76437,USA
+Scandia,MN,55073,USA
+Williamstown,KY,41097,USA
+Belleville,MI,48111,USA
+Capitol Heights,MD,20731,USA
+Smithton,IL,62285,USA
+Clyde,TX,79510,USA
+Colonial Beach,VA,22443,USA
+Jackson,LA,70748,USA
+Barnesville,OH,43713,USA
+Mitchell,IN,47446,USA
+Cresco,IA,52136,USA
+Warrensburg,NY,12885,USA
+Emerald Isle,NC,28594,USA
+Colorado City,TX,79512,USA
+Owego,NY,13827,USA
+Winnfield,LA,71483,USA
+Pittsfield,ME,4967,USA
+Wills Point,TX,75169,USA
+Dell Rapids,SD,57022,USA
+Saint James,MO,65559,USA
+Rutland,VT,5701,USA
+Montrose,MN,55363,USA
+Bluffton,OH,45817,USA
+Marshall,IL,62441,USA
+Carrollton,KY,41008,USA
+Spencer,OK,73084,USA
+Citronelle,AL,36522,USA
+Sullivan City,TX,78595,USA
+Charlotte,VT,5445,USA
+Lancaster,WI,53813,USA
+Vidalia,LA,71373,USA
+Magee,MS,39111,USA
+Cozad,NE,69130,USA
+Lansing,NY,14882,USA
+Montpelier,OH,43543,USA
+Troutman,NC,28166,USA
+Mullins,SC,29574,USA
+Fairbury,NE,68352,USA
+Del Mar,CA,92014,USA
+Dupo,IL,62239,USA
+Wilton,ME,4294,USA
+Florence,CO,81226,USA
+Saugerties,NY,12477,USA
+River Falls,WI,54022,USA
+Saint Anthony,ID,83445,USA
+Moscow Mills,MO,63362,USA
+Baldwin,GA,30511,USA
+Norwood Young America,MN,55368,USA
+Valdez,AK,99686,USA
+Winterport,ME,4496,USA
+Madawaska,ME,4756,USA
+Swanton,OH,43558,USA
+Vicksburg,MI,49097,USA
+Pomona,NY,10970,USA
+Metamora,IL,61548,USA
+Rochester,IL,62563,USA
+Orrington,ME,4474,USA
+Boyne City,MI,49712,USA
+Hohenwald,TN,38462,USA
+Weston,WV,26452,USA
+Hayward,WI,54843,USA
+Wiscasset,ME,4578,USA
+Walthourville,GA,31333,USA
+Ball,LA,71405,USA
+Ravenswood,WV,26164,USA
+Baxter Springs,KS,66713,USA
+Amenia,NY,12501,USA
+Saranac,NY,12981,USA
+Hephzibah,GA,30815,USA
+Lewisburg,WV,24901,USA
+Umatilla,FL,32784,USA
+Canaan,NH,3741,USA
+Harrington,DE,19952,USA
+Grayson,KY,41143,USA
+Mount Pleasant,UT,84647,USA
+Coal Valley,IL,61240,USA
+West Brookfield,MA,1585,USA
+Dexter,ME,4930,USA
+Boonsboro,MD,21713,USA
+Catskill,NY,12414,USA
+Fort Gibson,OK,74434,USA
+Milan,MI,48160,USA
+Portland,MI,48875,USA
+Oneida,TN,37841,USA
+Springtown,TX,76082,USA
+Booneville,AR,72927,USA
+Upland,IN,46989,USA
+Bellaire,OH,43906,USA
+Manning,SC,29102,USA
+Lindsborg,KS,67456,USA
+Rocky Ford,CO,81067,USA
+Unicoi,TN,37692,USA
+Yorkshire,NY,14173,USA
+Maiden,NC,28650,USA
+Williamston,MI,48895,USA
+Prestonsburg,KY,41653,USA
+Anthony,TX,79821,USA
+Wheatland,CA,95692,USA
+Honea Path,SC,29654,USA
+Horicon,WI,53032,USA
+Georgetown,IN,47122,USA
+Hanover,IN,47243,USA
+Chandler,IN,47610,USA
+Ridgeland,SC,29936,USA
+New Lebanon,OH,45345,USA
+Red Bud,IL,62278,USA
+Mora,MN,55051,USA
+Clifton,AZ,85533,USA
+Bishop,CA,93514,USA
+Leakesville,MS,39451,USA
+Dumas,AR,71639,USA
+Hudson,NC,28638,USA
+Byron,IL,61010,USA
+Rochester,WI,53167,USA
+Lowell,NC,28098,USA
+Bristol,VT,5443,USA
+Montgomery,NY,12549,USA
+Carter Lake,IA,51510,USA
+Star Prairie,WI,54026,USA
+Chester,CT,6412,USA
+Landis,NC,28088,USA
+Waukon,IA,52172,USA
+West Liberty,IA,52776,USA
+Leland,MS,38756,USA
+South Glens Falls,NY,12803,USA
+Neenah,WI,54956,USA
+Hebron,IN,46341,USA
+Plainwell,MI,49080,USA
+Hardin,MT,59034,USA
+Romeo,MI,48065,USA
+Kitty Hawk,NC,27949,USA
+Elkins,AR,72727,USA
+Brentwood,MD,20722,USA
+Saint Joseph,IL,61873,USA
+Janesville,WI,53545,USA
+Imlay City,MI,48444,USA
+Stilwell,OK,74960,USA
+South Point,OH,45680,USA
+Yellow Springs,OH,45387,USA
+Delta,UT,84624,USA
+Provincetown,MA,2657,USA
+Bayport,MN,55003,USA
+Gooding,ID,83330,USA
+Fond du Lac,WI,54935,USA
+Sidney,NY,13838,USA
+Columbus,TX,78934,USA
+Jamestown,NC,27282,USA
+Larned,KS,67550,USA
+Rockport,ME,4856,USA
+Houston,MS,38851,USA
+Beaver,UT,84713,USA
+Gravette,AR,72736,USA
+Cottage Grove,WI,53527,USA
+San Joaquin,CA,93660,USA
+Long Prairie,MN,56347,USA
+Walpole,NH,3608,USA
+Howe,TX,75459,USA
+Chipley,FL,32428,USA
+Richfield,OH,44286,USA
+Kennebunkport,ME,4046,USA
+Mattawa,WA,99349,USA
+Washington,GA,30673,USA
+Minerva,OH,44657,USA
+Albia,IA,52531,USA
+Brimfield,MA,1010,USA
+Carefree,AZ,85377,USA
+Hugoton,KS,67951,USA
+Harrisburg,OR,97446,USA
+Middlebury,IN,46540,USA
+Casco,ME,4015,USA
+Lyons,WI,53148,USA
+Granger,WA,98932,USA
+Highland Falls,NY,10928,USA
+Livingston,NY,12541,USA
+Etowah,TN,37331,USA
+Forsyth,IL,62535,USA
+Russell,KY,41169,USA
+Essex,MA,1929,USA
+Barkhamsted,CT,6063,USA
+Alexander,AR,72002,USA
+Washington,CT,6793,USA
+Centre,AL,35960,USA
+Cedar Springs,MI,49319,USA
+Manila,AR,72442,USA
+Camden,TN,38320,USA
+Indian Rocks Beach,FL,33785,USA
+Spencerport,NY,14559,USA
+Wilkesboro,NC,28697,USA
+Benton City,WA,99320,USA
+San Diego,TX,78384,USA
+Nome,AK,99762,USA
+Rutherfordton,NC,28139,USA
+Combined Locks,WI,54113,USA
+Newcomerstown,OH,43832,USA
+Morton,MS,39117,USA
+Gatlinburg,TN,37738,USA
+Lac du Flambeau,WI,54538,USA
+Sunderland,MA,1375,USA
+Gouverneur,NY,13642,USA
+Minoa,NY,13116,USA
+Stanford,KY,40484,USA
+Wellfleet,MA,2667,USA
+Norwich,VT,5055,USA
+Eldorado,IL,62930,USA
+Heyburn,ID,83336,USA
+Elgin,OK,73538,USA
+Eastland,TX,76448,USA
+Oglesby,IL,61348,USA
+Johnson,AR,72741,USA
+Chesterfield,NH,3443,USA
+Cotulla,TX,78014,USA
+Roland,OK,74954,USA
+West Point,GA,31833,USA
+Perham,MN,56573,USA
+Bunnell,FL,32110,USA
+Warsaw,NY,14569,USA
+East Bloomfield,NY,14443,USA
+Knox,IN,46534,USA
+Sterling,CT,6377,USA
+Groesbeck,TX,76642,USA
+Fayette,NY,13065,USA
+Whitesboro,NY,13492,USA
+Port Saint Joe,FL,32456,USA
+Palmyra,MO,63461,USA
+Melrose,MN,56352,USA
+Kiel,WI,53042,USA
+Jasper,TN,37347,USA
+Norton,VA,24273,USA
+Shaftsbury,VT,5262,USA
+Fairbury,IL,61739,USA
+Emmetsburg,IA,50536,USA
+Greensboro,GA,30642,USA
+Fairview,NC,28730,USA
+Paoli,IN,47454,USA
+West Columbia,TX,77486,USA
+Silt,CO,81652,USA
+West Tisbury,MA,2575,USA
+Franklinton,LA,70438,USA
+Hot Springs,SD,57747,USA
+Little Compton,RI,2837,USA
+Pendleton,SC,29670,USA
+Manti,UT,84642,USA
+Williamstown,VT,5679,USA
+Two Harbors,MN,55616,USA
+El Dorado Springs,MO,64744,USA
+Blackshear,GA,31516,USA
+Aledo,IL,61231,USA
+Malden,MO,63863,USA
+Fulton,IL,61252,USA
+Oregon,IL,61061,USA
+Lyons,KS,67554,USA
+Milton,DE,19968,USA
+Ballinger,TX,76821,USA
+Richmond,ME,4357,USA
+Oakland,FL,34760,USA
+Wheatland,WY,82201,USA
+Islandia,NY,11749,USA
+Eagle Grove,IA,50533,USA
+Nowata,OK,74048,USA
+Norwich,NY,13815,USA
+Winnsboro,TX,75494,USA
+Osage,IA,50461,USA
+Windsor,VT,5089,USA
+Mohawk,NY,13407,USA
+Ozark,AR,72949,USA
+Sweeny,TX,77480,USA
+Ketchum,ID,83340,USA
+Thomasville,AL,36784,USA
+Manchester,GA,31816,USA
+Grangeville,ID,83530,USA
+Gunnison,UT,84634,USA
+Cleveland,GA,30528,USA
+Paulding,OH,45879,USA
+Piggott,AR,72454,USA
+Tabor City,NC,28463,USA
+Toledo,OR,97391,USA
+Eagle,WI,53119,USA
+Sherman,CT,6784,USA
+Eagle Lake,FL,33839,USA
+Lewes,DE,19958,USA
+Centerville,TN,37033,USA
+Flat Rock,NC,28731,USA
+Northfield,OH,44067,USA
+Leesburg,GA,31763,USA
+Tolono,IL,61880,USA
+Bennett,CO,80102,USA
+Wrightsville,GA,31096,USA
+Wellford,SC,29385,USA
+Plainview,MN,55964,USA
+Mount Gilead,OH,43338,USA
+Spring Hill,KS,66083,USA
+Clifton,TX,76634,USA
+Dannemora,NY,12929,USA
+Carey,OH,43316,USA
+Princeton,MA,1541,USA
+Hesston,KS,67062,USA
+Myrtle Creek,OR,97457,USA
+Tiptonville,TN,38079,USA
+Aurora,IN,47001,USA
+Caddo Mills,TX,75135,USA
+Fryeburg,ME,4037,USA
+Hazlehurst,MS,39083,USA
+Riverton,IL,62561,USA
+Hillsboro,MO,63050,USA
+Le Roy,IL,61752,USA
+Avondale Estates,GA,30002,USA
+Beaver Dam,KY,42320,USA
+Dandridge,TN,37725,USA
+Lake Delton,WI,53940,USA
+Crystal River,FL,34423,USA
+Montgomery,MN,56069,USA
+Geneva,NY,14456,USA
+Milbank,SD,57252,USA
+Durand,MI,48429,USA
+Llano,TX,78643,USA
+Sauk City,WI,53583,USA
+Auburn,NE,68305,USA
+Grantham,NH,3753,USA
+Chandler,TX,75758,USA
+Menomonie,WI,54751,USA
+Broken Bow,NE,68822,USA
+Frederick,OK,73542,USA
+Hartland,VT,5048,USA
+Wadsworth,IL,60083,USA
+Princess Anne,MD,21853,USA
+Carrollton,MO,64633,USA
+Elma,WA,98541,USA
+Midway,FL,32343,USA
+Rush,NY,14543,USA
+Rural Hall,NC,27045,USA
+Alma,GA,31510,USA
+Oxford,MI,48370,USA
+West Point,NE,68788,USA
+Heflin,AL,36264,USA
+Teague,TX,75860,USA
+Eagle Lake,TX,77434,USA
+Union City,IN,47390,USA
+Eveleth,MN,55734,USA
+Black River Falls,WI,54615,USA
+Elba,AL,36323,USA
+Clifton Forge,VA,24422,USA
+Welch,WV,24801,USA
+Wilson,WI,54027,USA
+Benson,MN,56215,USA
+Limerick,ME,4048,USA
+Ringgold,GA,30736,USA
+Wallace,NC,28466,USA
+Pine City,MN,55063,USA
+West Point,VA,23181,USA
+Dublin,TX,76446,USA
+West Liberty,KY,41472,USA
+Sunapee,NH,3782,USA
+Mooers,NY,12958,USA
+Goldendale,WA,98620,USA
+Marianna,AR,72360,USA
+Brookfield,MA,1506,USA
+Kenedy,TX,78119,USA
+Hahira,GA,31632,USA
+Hartford,SD,57033,USA
+Gray,GA,31032,USA
+Yuma,CO,80759,USA
+Marysville,KS,66508,USA
+Buffalo,MO,65622,USA
+Madison,OH,44057,USA
+Johnson Creek,WI,53038,USA
+Blanchard,LA,71009,USA
+Pelham,GA,31779,USA
+Sleepy Eye,MN,56085,USA
+Hicksville,OH,43526,USA
+New Hampton,IA,50659,USA
+Jarrell,TX,76537,USA
+Bethlehem,CT,6751,USA
+Hubbard,OR,97032,USA
+Somerville,TN,38068,USA
+Gothenburg,NE,69138,USA
+Haslet,TX,76052,USA
+Newburgh,IN,47629,USA
+Gibson City,IL,60936,USA
+Moulton,AL,35650,USA
+Frontenac,KS,66763,USA
+Mount Angel,OR,97362,USA
+Saint Johns,AZ,85936,USA
+Williams,AZ,86046,USA
+Dewey,OK,74029,USA
+North Plains,OR,97133,USA
+Paw Paw,MI,49079,USA
+Peralta,NM,87042,USA
+Shadyside,OH,43947,USA
+Pickens,SC,29671,USA
+Red Oak,NC,27868,USA
+Clinton,ME,4927,USA
+New Baden,IL,62265,USA
+Watkinsville,GA,30677,USA
+Windsor,NC,27983,USA
+North Baltimore,OH,45872,USA
+Neversink,NY,12765,USA
+Avon,NY,14414,USA
+Forks,WA,98331,USA
+Evergreen,AL,36401,USA
+Newcastle,WY,82701,USA
+Annandale,MN,55302,USA
+Hartford,WI,53027,USA
+Story City,IA,50248,USA
+Holton,KS,66436,USA
+Holden,ME,4429,USA
+Hartville,OH,44632,USA
+Summersville,WV,26651,USA
+Beloit,KS,67420,USA
+Milford,IA,51351,USA
+Parker,AZ,85344,USA
+Water Valley,MS,38965,USA
+Hortonville,WI,54944,USA
+Port Richey,FL,34668,USA
+Ossian,IN,46777,USA
+Rio Dell,CA,95562,USA
+Cleves,OH,45002,USA
+Yountville,CA,94599,USA
+Dunstable,MA,1827,USA
+Waldron,AR,72958,USA
+Oliver Springs,TN,37840,USA
+Crane,TX,79731,USA
+Williamsburg,IA,52361,USA
+Tupper Lake,NY,12986,USA
+Magnolia,TX,77353,USA
+Breckenridge,MN,56520,USA
+Lowville,NY,13367,USA
+Hobart,OK,73651,USA
+Bandon,OR,97411,USA
+Blackstone,VA,23824,USA
+Robins,IA,52328,USA
+Fort Fairfield,ME,4742,USA
+Welsh,LA,70591,USA
+Sheffield,MA,1257,USA
+Altavista,VA,24517,USA
+Rush City,MN,55069,USA
+Johnston City,IL,62951,USA
+Essexville,MI,48732,USA
+Spencer,NC,28159,USA
+Delta,OH,43515,USA
+Copake,NY,12516,USA
+Hatfield,MA,1038,USA
+Bartlett,NH,3812,USA
+Weaver,AL,36277,USA
+Avalon,CA,90704,USA
+Dilley,TX,78017,USA
+Cashmere,WA,98815,USA
+Bristol,NH,3222,USA
+Burgaw,NC,28425,USA
+Norridgewock,ME,4957,USA
+Palmyra,NY,14522,USA
+Jefferson,OR,97352,USA
+Mannford,OK,74044,USA
+Farmerville,LA,71241,USA
+Carthage,NY,13619,USA
+Liberty,SC,29657,USA
+Gallipolis,OH,45631,USA
+Lake Providence,LA,71254,USA
+Belgrade,ME,4917,USA
+Mineral Springs,NC,28108,USA
+Thiensville,WI,53092,USA
+Nahant,MA,1908,USA
+Muldrow,OK,74948,USA
+Clarendon,NY,14429,USA
+Lodi,WI,53555,USA
+Huntsville,AR,72740,USA
+Blissfield,MI,49228,USA
+Hominy,OK,74035,USA
+Orofino,ID,83544,USA
+Hodgenville,KY,42748,USA
+Mingo Junction,OH,43938,USA
+Tallapoosa,GA,30176,USA
+Port Aransas,TX,78373,USA
+Shelter Island,NY,11964,USA
+Newbern,TN,38059,USA
+Eagle Lake,MN,56024,USA
+Moundville,AL,35474,USA
+Pownal,VT,5261,USA
+Hanceville,AL,35077,USA
+Jackson,MN,56143,USA
+Elizabethtown,NC,28337,USA
+Holland,NY,14080,USA
+Ashland,NE,68003,USA
+Rayville,LA,71269,USA
+Sheridan,IN,46069,USA
+Galena,IL,61036,USA
+Perkins,OK,74059,USA
+Sparta,WI,54656,USA
+Hogansville,GA,30230,USA
+Plymouth,NC,27962,USA
+Grantville,GA,30220,USA
+New Palestine,IN,46163,USA
+Bunkie,LA,71322,USA
+Shelby,MT,59474,USA
+Union Springs,AL,36089,USA
+Melbourne Beach,FL,32951,USA
+Lancaster,NH,3584,USA
+Pottsville,AR,72858,USA
+Fordyce,AR,71742,USA
+Ely,MN,55731,USA
+Nyssa,OR,97913,USA
+Ravena,NY,12143,USA
+New Baltimore,NY,12124,USA
+Louisiana,MO,63353,USA
+Blanding,UT,84511,USA
+Mobridge,SD,57601,USA
+Hiawatha,KS,66434,USA
+Stanton,KY,40380,USA
+Grand Saline,TX,75140,USA
+Carlyle,IL,62231,USA
+Cleveland,OK,74020,USA
+Salmon,ID,83467,USA
+Cheshire,MA,1225,USA
+Croghan,NY,13327,USA
+Louisburg,NC,27549,USA
+Cassville,MO,65625,USA
+New York Mills,NY,13417,USA
+Willcox,AZ,85643,USA
+Livingston,AL,35470,USA
+Red Bay,AL,35582,USA
+Attica,IN,47918,USA
+Onalaska,TX,77360,USA
+Goshen,CT,6756,USA
+Sterling,NY,13156,USA
+Atoka,OK,74525,USA
+Early,TX,76802,USA
+Jefferson,OH,44047,USA
+Warrior,AL,35180,USA
+Mount Shasta,CA,96067,USA
+Glasgow,MT,59230,USA
+Westerlo,NY,12193,USA
+Paris,AR,72855,USA
+Garnett,KS,66032,USA
+Dundee,OR,97115,USA
+Rockwood,MI,48173,USA
+Virden,IL,62690,USA
+Woolwich,ME,4579,USA
+Millersburg,OH,44654,USA
+Soda Springs,ID,83276,USA
+Oakridge,OR,97463,USA
+Blue Earth,MN,56013,USA
+York,NY,14592,USA
+Commercial Point,OH,43116,USA
+Parowan,UT,84761,USA
+Brightwaters,NY,11718,USA
+Presidio,TX,79845,USA
+Henrietta,TX,76365,USA
+Raymond,WA,98577,USA
+Morganfield,KY,42437,USA
+Combes,TX,78535,USA
+Corydon,IN,47112,USA
+Ashby,MA,1431,USA
+Nags Head,NC,27959,USA
+West Burlington,IA,52655,USA
+Bowdoinham,ME,4008,USA
+Fort Edward,NY,12828,USA
+Winnsboro,SC,29180,USA
+Hoosick Falls,NY,12090,USA
+Cuba,MO,65453,USA
+Barbourville,KY,40906,USA
+Zillah,WA,98953,USA
+Andover,CT,6232,USA
+Solon,IA,52333,USA
+Newport,ME,4953,USA
+Inman,SC,29349,USA
+Green Forest,AR,72638,USA
+Millville,MA,1529,USA
+Corning,AR,72422,USA
+Bloomingdale,GA,31302,USA
+Wallburg,NC,27373,USA
+Bushnell,FL,33513,USA
+Colden,NY,14033,USA
+Maybrook,NY,12543,USA
+Gillespie,IL,62033,USA
+Valley,NE,68064,USA
+Nocona,TX,76255,USA
+Underhill,VT,5489,USA
+Yerington,NV,89447,USA
+Ellsworth,KS,67439,USA
+Tybee Island,GA,31328,USA
+Homedale,ID,83628,USA
+San Saba,TX,76877,USA
+Ladysmith,WI,54848,USA
+Iowa,LA,70647,USA
+Smithsburg,MD,21783,USA
+Newton,MS,39345,USA
+Red Springs,NC,28377,USA
+Waller,TX,77484,USA
+Calais,ME,4619,USA
+Mechanic Falls,ME,4256,USA
+Tishomingo,OK,73460,USA
+Burlington,CO,80807,USA
+Nevada City,CA,95959,USA
+Karnes City,TX,78118,USA
+Walsenburg,CO,81089,USA
+Boothbay,ME,4537,USA
+Campbell,NY,14821,USA
+Vinton,LA,70668,USA
+Mount Morris,MI,48458,USA
+Franklin,MI,48025,USA
+Cache,OK,73527,USA
+Gladwin,MI,48624,USA
+Lebanon,VA,24266,USA
+Greenwood,LA,71033,USA
+Kingstree,SC,29556,USA
+Milford,ME,4461,USA
+Alfred,ME,4002,USA
+Minden,NE,68959,USA
+Bishop,TX,78343,USA
+Libby,MT,59923,USA
+Iuka,MS,38852,USA
+Tipton,IA,52772,USA
+Selbyville,DE,19975,USA
+Madison,IL,62060,USA
+Westville,IL,61883,USA
+Oostburg,WI,53070,USA
+Needville,TX,77461,USA
+Williston,FL,32696,USA
+Osceola,WI,54020,USA
+Denmark,SC,29042,USA
+Spearman,TX,79081,USA
+Potterville,MI,48876,USA
+Carrollton,OH,44615,USA
+Syracuse,IN,46567,USA
+Ferriday,LA,71334,USA
+Hanover,MN,55341,USA
+Milton,WI,53563,USA
+Central City,NE,68826,USA
+Shady Cove,OR,97539,USA
+Castroville,TX,78009,USA
+Checotah,OK,74426,USA
+Haskell,TX,79521,USA
+Chester,NY,10918,USA
+Lake Luzerne,NY,12846,USA
+Indialantic,FL,32903,USA
+Livermore Falls,ME,4254,USA
+Sunset,LA,70584,USA
+Canton,SD,57013,USA
+Tama,IA,52339,USA
+Wewoka,OK,74884,USA
+Malabar,FL,32950,USA
+Ripley,WV,25271,USA
+Sanbornton,NH,3269,USA
+Frostproof,FL,33843,USA
+Georgetown,IL,61846,USA
+Windermere,FL,34786,USA
+Nicholls,GA,31554,USA
+Wellsville,OH,43968,USA
+Garner,IA,50438,USA
+Saluda,SC,29138,USA
+Everson,WA,98247,USA
+Levant,ME,4456,USA
+Ava,MO,65608,USA
+Cactus,TX,79013,USA
+Lytle,TX,78052,USA
+Kent,CT,6757,USA
+Hunter,NY,12442,USA
+Orchard Park,NY,14127,USA
+Oregon,WI,53575,USA
+Milaca,MN,56353,USA
+Nashville,IL,62263,USA
+Baldwyn,MS,38824,USA
+Momence,IL,60954,USA
+Beulah,ND,58523,USA
+Holmes Beach,FL,34218,USA
+Kalama,WA,98625,USA
+Plymouth,WI,53073,USA
+Doylestown,OH,44230,USA
+Prescott,AR,71857,USA
+Cut Bank,MT,59427,USA
+Granite Quarry,NC,28072,USA
+Chickamauga,GA,30707,USA
+Corunna,MI,48817,USA
+Walbridge,OH,43465,USA
+Deer Lodge,MT,59722,USA
+Callicoon,NY,12723,USA
+Chaffee,MO,63740,USA
+Hickman,NE,68372,USA
+Simpsonville,KY,40067,USA
+Bean Station,TN,37708,USA
+Hilliard,FL,32046,USA
+North Sioux City,SD,57049,USA
+Chester,VT,5143,USA
+East Syracuse,NY,13057,USA
+Cadiz,OH,43907,USA
+Merrill,WI,54452,USA
+Iona,ID,83427,USA
+Timberville,VA,22853,USA
+Clever,MO,65631,USA
+Whitehall,MI,49461,USA
+South Pittsburg,TN,37380,USA
+Sherrill,NY,13461,USA
+Lanesborough,MA,1237,USA
+Tonkawa,OK,74653,USA
+David City,NE,68632,USA
+Farmingdale,ME,4344,USA
+Calera,OK,74730,USA
+Sisters,OR,97759,USA
+Lead,SD,57754,USA
+Jones,OK,73049,USA
+Snowmass Village,CO,81615,USA
+Okemah,OK,74859,USA
+Brownstown,IN,47220,USA
+Sloatsburg,NY,10974,USA
+Bad Axe,MI,48413,USA
+Delphi,IN,46923,USA
+Iron River,MI,49935,USA
+La Villa,TX,78562,USA
+Minster,OH,45865,USA
+Olney,TX,76374,USA
+West Union,OH,45693,USA
+Dadeville,AL,36853,USA
+Yadkinville,NC,27055,USA
+Heavener,OK,74937,USA
+Ocilla,GA,31774,USA
+Elkton,VA,22827,USA
+Alamo,GA,30411,USA
+Greenwood Lake,NY,10925,USA
+Bicknell,IN,47512,USA
+Lucedale,MS,39452,USA
+Richmond,UT,84333,USA
+Shapleigh,ME,4076,USA
+Davenport,NY,13750,USA
+Roslyn,NY,11576,USA
+Kotzebue,AK,99752,USA
+Delhi,NY,13753,USA
+Baltimore,OH,43105,USA
+Dresden,TN,38225,USA
+Pima,AZ,85543,USA
+Polk City,FL,33868,USA
+Bamberg,SC,29003,USA
+Buena Vista,CO,81211,USA
+Lutcher,LA,70071,USA
+Vandalia,MO,63382,USA
+New Haven,NY,13121,USA
+Vivian,LA,71082,USA
+Lakewood,NY,14750,USA
+Hardwick,VT,5843,USA
+Chattahoochee,FL,32324,USA
+Flemingsburg,KY,41041,USA
+New Bremen,OH,45869,USA
+Williams Bay,WI,53191,USA
+Kingwood,WV,26537,USA
+Amery,WI,54001,USA
+Jacksonville,OR,97530,USA
+Williamstown,WV,26187,USA
+Kingman,KS,67068,USA
+Lula,GA,30554,USA
+Madison,FL,32340,USA
+Montezuma,GA,31063,USA
+Millen,GA,30442,USA
+Afton,MN,55001,USA
+Warner,NH,3278,USA
+Eunice,NM,88231,USA
+Lakeland,GA,31635,USA
+Grottoes,VA,24441,USA
+Westfield,NY,14787,USA
+Poteet,TX,78065,USA
+Fort Branch,IN,47648,USA
+Genoa City,WI,53128,USA
+Wendell,ID,83355,USA
+Carmel,ME,4419,USA
+Troy,NC,27371,USA
+Springfield,GA,31329,USA
+Sublimity,OR,97385,USA
+Platteville,CO,80651,USA
+Cuthbert,GA,31740,USA
+Wilton,IA,52778,USA
+Wales,WI,53183,USA
+Bristol,ME,4539,USA
+Ferrysburg,MI,49409,USA
+Shallowater,TX,79363,USA
+Fowlerville,MI,48836,USA
+Marion,AL,36756,USA
+Pawhuska,OK,74056,USA
+Kenova,WV,25530,USA
+Brandenburg,KY,40108,USA
+Rushville,IL,62681,USA
+Walton,NY,13856,USA
+Statham,GA,30666,USA
+Rogers City,MI,49779,USA
+Arcola,IL,61910,USA
+Plympton,MA,2367,USA
+Lake Helen,FL,32744,USA
+Emmitsburg,MD,21727,USA
+Stamford,TX,79553,USA
+Moose Lake,MN,55767,USA
+Williamson,WV,25661,USA
+Mountain View,AR,72560,USA
+Philippi,WV,26416,USA
+Wise,VA,24293,USA
+Bethany,MO,64424,USA
+Bishopville,SC,29010,USA
+Carthage,NC,28327,USA
+Soperton,GA,30457,USA
+Moira,NY,12957,USA
+Fairfield,TX,75840,USA
+Marion,KY,42064,USA
+Lakemore,OH,44250,USA
+Buckner,MO,64016,USA
+Bayfield,CO,81122,USA
+Fairfax,IA,52228,USA
+Tamworth,NH,3886,USA
+East Prairie,MO,63845,USA
+Dale,WI,54931,USA
+Chandler,OK,74834,USA
+Winnebago,IL,61088,USA
+Akron,NY,14001,USA
+Ferris,TX,75125,USA
+Winner,SD,57580,USA
+Wimberley,TX,78676,USA
+Florida,NY,10921,USA
+Hamilton,TX,76531,USA
+Licking,MO,65542,USA
+Pittsford,VT,5763,USA
+New Hope,AL,35760,USA
+Brighton,TN,38011,USA
+Columbus,KS,66725,USA
+Havana,IL,62644,USA
+Lake Orion,MI,48359,USA
+Manistique,MI,49854,USA
+Mount Morris,NY,14510,USA
+Filer,ID,83328,USA
+Springfield,KY,40069,USA
+Northfield,MA,1360,USA
+Cherry Valley,IL,61016,USA
+Atkins,AR,72823,USA
+Taft,TX,78390,USA
+Abingdon,IL,61410,USA
+DeQuincy,LA,70633,USA
+Mountain Iron,MN,55768,USA
+Hillsville,VA,24343,USA
+Windsor,VA,23487,USA
+Medina,WA,98039,USA
+Chevy Chase,MD,20815,USA
+Lindsay,OK,73052,USA
+Ball Ground,GA,30107,USA
+Seward,AK,99664,USA
+Mamou,LA,70554,USA
+Shandaken,NY,12480,USA
+Ocean View,DE,19970,USA
+Rice Lake,WI,54868,USA
+Williston,SC,29853,USA
+Almont,MI,48003,USA
+Brazoria,TX,77422,USA
+Fayetteville,WV,25840,USA
+Knob Noster,MO,65336,USA
+Clarksville,TX,75426,USA
+Lagrange,OH,44050,USA
+Marietta,OK,73448,USA
+Pearisburg,VA,24134,USA
+Caledonia,MN,55921,USA
+Windsor,MO,65360,USA
+Dodge Center,MN,55927,USA
+Donalsonville,GA,31745,USA
+Bradford,VT,5033,USA
+Knoxville,IL,61448,USA
+Norway,MI,49870,USA
+Ovid,NY,14521,USA
+Albany,MN,56307,USA
+Blue Hill,ME,4614,USA
+Eatonville,WA,98328,USA
+Montgomery City,MO,63361,USA
+Providence,KY,42450,USA
+Mount Morris,IL,61054,USA
+Glen Rose,TX,76043,USA
+Osage City,KS,66523,USA
+Van,TX,75790,USA
+Vienna,GA,31092,USA
+Onawa,IA,51040,USA
+Voorheesville,NY,12186,USA
+Abernathy,TX,79311,USA
+Portageville,MO,63873,USA
+Greenville,WI,54942,USA
+Weed,CA,96094,USA
+Poplarville,MS,39470,USA
+Fayette,MO,65248,USA
+Pembroke,NC,28372,USA
+Townsend,DE,19734,USA
+Thornton,NH,3285,USA
+Stroud,OK,74079,USA
+Ithaca,MI,48847,USA
+Brent,AL,35034,USA
+Federalsburg,MD,21632,USA
+Owensville,MO,65066,USA
+Eufaula,OK,74432,USA
+Frisco,CO,80443,USA
+Woodbury,TN,37190,USA
+Eutaw,AL,35462,USA
+Madrid,IA,50156,USA
+Grundy Center,IA,50638,USA
+Mexico,ME,4257,USA
+Kewaunee,WI,54216,USA
+Forsyth,MO,65653,USA
+Heyworth,IL,61745,USA
+Oak Harbor,OH,43449,USA
+Davis,OK,73030,USA
+Gramercy,LA,70052,USA
+New Tazewell,TN,37824,USA
+Mangum,OK,73554,USA
+Bonifay,FL,32425,USA
+Sibley,IA,51249,USA
+Clinton,NJ,8809,USA
+Madison,WV,25130,USA
+Minot,ME,4258,USA
+Thomaston,ME,4861,USA
+Sag Harbor,NY,11963,USA
+Oronogo,MO,64855,USA
+Barnesville,MN,56514,USA
+Jemison,AL,35085,USA
+Cape May,NJ,8204,USA
+Santa Rosa,NM,88435,USA
+Mogadore,OH,44260,USA
+Waynesville,OH,45068,USA
+Cokato,MN,55321,USA
+Colfax,WA,99111,USA
+Centerville,IN,47330,USA
+Kingston Springs,TN,37082,USA
+Stephentown,NY,12168,USA
+Bellows Falls,VT,5101,USA
+Unadilla,GA,31091,USA
+Bloomfield,IA,52537,USA
+Milton,WV,25541,USA
+Loudonville,OH,44842,USA
+Evansville,WY,82636,USA
+Lodi,OH,44254,USA
+Gosnell,AR,72319,USA
+Coxsackie,NY,12051,USA
+Saint Marys,KS,66536,USA
+Rising Sun,MD,21911,USA
+Chichester,NH,3258,USA
+Strasburg,OH,44680,USA
+Abbeville,GA,31001,USA
+Newton,IL,62448,USA
+New Durham,NH,3855,USA
+Westmoreland,TN,37186,USA
+Pottsboro,TX,75076,USA
+Guyton,GA,31312,USA
+Friendship,WI,53934,USA
+Refugio,TX,78377,USA
+Middlefield,OH,44062,USA
+New Richmond,OH,45157,USA
+Bridgeville,DE,19933,USA
+Monticello,GA,31064,USA
+Friday Harbor,WA,98250,USA
+Russell Springs,KY,42642,USA
+Clarion,IA,50525,USA
+Canton,MO,63435,USA
+Cazenovia,NY,13035,USA
+Big Lake,TX,76932,USA
+Galena,KS,66739,USA
+Verona,MS,38879,USA
+Honeoye Falls,NY,14472,USA
+La Grange,NC,28551,USA
+Follansbee,WV,26037,USA
+Monterey,TN,38574,USA
+Northville,MI,48167,USA
+Lagrange,IN,46761,USA
+Burns,OR,97720,USA
+Hallettsville,TX,77964,USA
+Keego Harbor,MI,48320,USA
+Roseau,MN,56751,USA
+Jasper,FL,32052,USA
+Hillsboro,KS,67063,USA
+Montpelier,ID,83254,USA
+El Paso,IL,61738,USA
+Troy,TX,76579,USA
+Sharon,CT,6069,USA
+Fair Haven,VT,5743,USA
+Savanna,IL,61074,USA
+Lovettsville,VA,20180,USA
+Centreville,AL,35042,USA
+Elm Springs,AR,72728,USA
+West Bloomfield,NY,14585,USA
+North Kingsville,OH,44068,USA
+Warsaw,NC,28398,USA
+Versailles,OH,45380,USA
+Schulenburg,TX,78956,USA
+Cadiz,KY,42211,USA
+Eminence,KY,40019,USA
+Acton,ME,4001,USA
+Guilford,NY,13780,USA
+Kalona,IA,52247,USA
+Sandusky,MI,48471,USA
+Abita Springs,LA,70420,USA
+Pawnee,IL,62558,USA
+Sutter Creek,CA,95685,USA
+Vassar,MI,48768,USA
+Sardinia,NY,14134,USA
+Gorham,NH,3581,USA
+Thermopolis,WY,82443,USA
+Lena,IL,61048,USA
+Bonners Ferry,ID,83805,USA
+Victor,NY,14564,USA
+Hamilton,IL,62341,USA
+Stigler,OK,74462,USA
+Hartford,AL,36344,USA
+Hammond,WI,54015,USA
+East Tawas,MI,48730,USA
+Edcouch,TX,78538,USA
+Pembroke,GA,31321,USA
+Cohasset,MN,55721,USA
+Madison,NH,3849,USA
+Wentworth,NC,27375,USA
+Bono,AR,72416,USA
+Windsor,ME,4363,USA
+Covington,IN,47932,USA
+Tipton,MO,65081,USA
+Luverne,AL,36049,USA
+Rhinebeck,NY,12572,USA
+Liberty,NC,27298,USA
+Mattawan,MI,49071,USA
+Foley,MN,56329,USA
+Antrim,NH,3440,USA
+Ashippun,WI,53003,USA
+Missouri Valley,IA,51555,USA
+Dayton,OR,97114,USA
+Bushnell,IL,61422,USA
+Rock Rapids,IA,51246,USA
+Godley,TX,76044,USA
+Berne,NY,12023,USA
+Dublin,VA,24084,USA
+Dennison,OH,44621,USA
+Jefferson,ME,4348,USA
+Hawarden,IA,51023,USA
+Norton,KS,67654,USA
+Alturas,CA,96101,USA
+Readfield,ME,4355,USA
+Hardwick,MA,1037,USA
+Tobaccoville,NC,27050,USA
+Stanton,TX,79782,USA
+Franklinton,NC,27525,USA
+Trenton,IL,62293,USA
+New Madrid,MO,63869,USA
+Butler,IN,46721,USA
+Searsport,ME,4974,USA
+West Branch,IA,52358,USA
+Ferrisburgh,VT,5456,USA
+Owens Cross Roads,AL,35763,USA
+Glenwood,MN,56334,USA
+Monroe City,MO,63456,USA
+Fairmount,IN,46928,USA
+Durham,NY,12422,USA
+Pearl River,LA,70452,USA
+Mont Vernon,NH,3057,USA
+Royston,GA,30662,USA
+Arcadia,LA,71001,USA
+New Town,ND,58763,USA
+Bethel,OH,45106,USA
+Christopher,IL,62822,USA
+Ruidoso Downs,NM,88346,USA
+Strafford,MO,65757,USA
+Fillmore,UT,84631,USA
+Clearwater,KS,67026,USA
+Hoisington,KS,67544,USA
+Brookville,IN,47012,USA
+Fairview,OK,73737,USA
+Monticello,FL,32344,USA
+Loris,SC,29569,USA
+Hartford,KY,42347,USA
+Fredericktown,OH,43019,USA
+Denmark,NY,13631,USA
+Rollinsford,NH,3869,USA
+Saint George,ME,4857,USA
+Charleston,AR,72933,USA
+Homer,LA,71040,USA
+Hudson,IA,50643,USA
+Harriman,NY,10926,USA
+Palmer Lake,CO,80133,USA
+Louisa,KY,41230,USA
+Bethel,ME,4217,USA
+Sylva,NC,28779,USA
+Marshville,NC,28103,USA
+Monroe,UT,84754,USA
+Saint Henry,OH,45883,USA
+Williamsburg,OH,45176,USA
+Putney,VT,5346,USA
+Landrum,SC,29356,USA
+Garland,UT,84312,USA
+Lithonia,GA,30038,USA
+Hampton,SC,29924,USA
+Eldora,IA,50627,USA
+Versailles,MO,65084,USA
+Romulus,NY,14541,USA
+Burlington,KS,66839,USA
+Salem,NY,12865,USA
+Hoxie,AR,72433,USA
+Leadville,CO,80461,USA
+Silver Creek,NY,14136,USA
+Valentine,NE,69201,USA
+Kendall,NY,14476,USA
+Yorkville,NY,13495,USA
+Sumner,IL,62466,USA
+Knox,NY,12107,USA
+Ravenel,SC,29470,USA
+Sylvania,GA,30467,USA
+Pelican Rapids,MN,56572,USA
+Santa Claus,IN,47579,USA
+East Montpelier,VT,5651,USA
+Winneconne,WI,54986,USA
+Bellevue,ID,83313,USA
