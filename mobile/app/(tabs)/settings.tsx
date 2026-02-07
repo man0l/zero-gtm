@@ -17,6 +17,7 @@ import {
 import type { AgentConfig, AgentToolDefaults } from "@/lib/types";
 import { Select } from "@/components/ui/select";
 import type { SelectOption } from "@/components/ui/select";
+import { useAuth } from "@/lib/auth";
 
 const API_SERVICES = [
   { key: "openai", label: "OpenAI", desc: "GPT models for enrichment & icebreakers" },
@@ -82,6 +83,36 @@ function Section({
         </CardHeader>
       </Pressable>
       {open && <CardContent>{children}</CardContent>}
+    </Card>
+  );
+}
+
+// ─── Sign Out ───────────────────────────────────────────────────────
+
+function SignOutSection() {
+  const { signOut, session } = useAuth();
+  const email = session?.user?.email;
+
+  return (
+    <Card className="mt-6 mb-8">
+      <CardContent>
+        {email && (
+          <Text className="text-sm text-muted-foreground mb-3">
+            Signed in as {email}
+          </Text>
+        )}
+        <Button
+          variant="destructive"
+          onPress={() =>
+            Alert.alert("Sign Out", "Are you sure you want to sign out?", [
+              { text: "Cancel", style: "cancel" },
+              { text: "Sign Out", style: "destructive", onPress: signOut },
+            ])
+          }
+        >
+          Sign Out
+        </Button>
+      </CardContent>
     </Card>
   );
 }
@@ -398,6 +429,9 @@ export default function SettingsScreen() {
           <Text className="text-xs text-muted-foreground">Version: 1.0.0</Text>
         </CardContent>
       </Card>
+
+      {/* Sign Out */}
+      <SignOutSection />
     </ScrollView>
   );
 }

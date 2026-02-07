@@ -6,6 +6,7 @@
  * Accept-Profile/Content-Profile headers for schema selection.
  * We inject these via a custom fetch wrapper.
  */
+import { Platform } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createClient } from "@supabase/supabase-js";
 import type { Database } from "./types";
@@ -40,7 +41,8 @@ export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
     storage: AsyncStorage,
     autoRefreshToken: true,
     persistSession: true,
-    detectSessionInUrl: false,
+    // On web, detect tokens in the URL after OAuth redirect
+    detectSessionInUrl: Platform.OS === "web",
   },
   global: {
     fetch: schemaFetch,
