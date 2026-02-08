@@ -48,14 +48,21 @@ export function useCampaigns() {
         .order("created_at", { ascending: false });
       if (error) throw error;
 
-      // Get lead counts separately
-      const { count } = await supabase
-        .from("leads")
-        .select("id", { count: "exact", head: true });
+      // Get lead counts per campaign in parallel (each is a lightweight HEAD request)
+      const counts = await Promise.all(
+        (campaigns || []).map(async (c) => {
+          const { count } = await supabase
+            .from("leads")
+            .select("id", { count: "exact", head: true })
+            .eq("campaign_id", c.id);
+          return { id: c.id, count: count || 0 };
+        })
+      );
+      const countMap = Object.fromEntries(counts.map((c) => [c.id, c.count]));
 
       return (campaigns || []).map((c) => ({
         ...c,
-        leads: [{ count: count || 0 }],
+        leads: [{ count: countMap[c.id] || 0 }],
       })) as Campaign[];
     },
   });
