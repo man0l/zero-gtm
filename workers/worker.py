@@ -51,6 +51,25 @@ JOB_HANDLERS = {
 POLL_INTERVAL = int(os.getenv("WORKER_POLL_INTERVAL", "5"))
 
 
+def recover_orphaned_jobs(db):
+    """Reset any 'running' jobs back to 'pending' on worker startup.
+
+    Since there is only one worker, any job still in 'running' state when
+    the worker starts must have been orphaned by a previous crash or
+    Watchtower restart.  Resetting them lets the new worker pick them up.
+    """
+    try:
+        result = db.from_("bulk_jobs") \
+            .update({"status": "pending", "started_at": None, "progress": {}}) \
+            .eq("status", "running") \
+            .execute()
+        recovered = len(result.data) if result.data else 0
+        if recovered:
+            logger.info(f"Recovered {recovered} orphaned job(s) → reset to pending")
+    except Exception as e:
+        logger.warning(f"Orphan recovery check failed (non-fatal): {e}")
+
+
 def main():
     logger.info("Cold Email Ninja Worker starting...")
     logger.info(f"Supabase URL: {os.getenv('SUPABASE_URL')}")
@@ -58,6 +77,9 @@ def main():
     logger.info(f"Registered job types: {list(JOB_HANDLERS.keys())}")
 
     db = get_supabase_client()
+
+    # On startup, recover any jobs orphaned by a previous crash / restart
+    recover_orphaned_jobs(db)
 
     while True:
         try:
