@@ -81,6 +81,8 @@ jobs:
     environment: production          # requires manual approval in GitHub
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2          # need HEAD~1 for migration diff
 
       - name: Detect new migrations
         id: detect
