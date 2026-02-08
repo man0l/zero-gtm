@@ -88,15 +88,23 @@ Deno.serve(async (req: Request) => {
     }
 
     // Process names in batches via OpenAI (25 names per API call, 25 concurrent DB writes)
-    const allUpdates: { id: string; casual: string }[] = [];
+    const allUpdates: { id: string; casual: string; source: "ai" | "fallback" }[] = [];
+    let aiBatches = 0;
+    let fallbackBatches = 0;
 
     // Fire all OpenAI batch requests concurrently for maximum throughput
+    const totalBatches = Math.ceil(leads.length / OPENAI_BATCH_SIZE);
+    console.log(`[casualise-names] Starting: ${leads.length} leads in ${totalBatches} batches, campaign=${campaign_id}`);
+    const startTime = Date.now();
+
     const batchPromises: Promise<void>[] = [];
     for (let i = 0; i < leads.length; i += OPENAI_BATCH_SIZE) {
+      const batchIdx = Math.floor(i / OPENAI_BATCH_SIZE);
       const chunk = leads.slice(i, i + OPENAI_BATCH_SIZE);
       const names = chunk.map((l: { company_name: string }) => l.company_name);
 
       const promise = (async () => {
+        const batchStart = Date.now();
         try {
           const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
@@ -115,27 +123,40 @@ Deno.serve(async (req: Request) => {
             }),
           });
 
+          if (!response.ok) {
+            const errBody = await response.text();
+            console.error(`[casualise-names] Batch ${batchIdx}: OpenAI HTTP ${response.status}: ${errBody.slice(0, 300)}`);
+            throw new Error(`OpenAI HTTP ${response.status}: ${errBody.slice(0, 200)}`);
+          }
+
           const result = await response.json();
           if (!result.choices?.[0]?.message?.content) {
-            console.error(`OpenAI unexpected response: ${JSON.stringify(result).slice(0, 500)}`);
+            console.error(`[casualise-names] Batch ${batchIdx}: No choices: ${JSON.stringify(result).slice(0, 500)}`);
             throw new Error(`No choices in response: ${result.error?.message || 'unknown'}`);
           }
           const content = JSON.parse(result.choices[0].message.content);
           // Accept various JSON shapes: { names: [...] }, { result: [...] }, or values
           const casualNames: string[] = content.names || content.result || Object.values(content);
 
+          const batchMs = Date.now() - batchStart;
+          console.log(`[casualise-names] Batch ${batchIdx}: OpenAI OK in ${batchMs}ms, ${casualNames.length} names returned`);
+          aiBatches++;
+
           for (let j = 0; j < chunk.length && j < casualNames.length; j++) {
             const casual = (casualNames[j] || "").trim();
             allUpdates.push({
               id: chunk[j].id,
               casual: casual.length >= 2 ? casual : chunk[j].company_name,
+              source: "ai",
             });
           }
         } catch (err) {
-          // On OpenAI failure, keep original names
-          console.error(`OpenAI batch error: ${err}`);
+          // On OpenAI failure, keep original names but track it
+          const batchMs = Date.now() - batchStart;
+          console.error(`[casualise-names] Batch ${batchIdx}: FALLBACK after ${batchMs}ms — ${err}`);
+          fallbackBatches++;
           for (const lead of chunk) {
-            allUpdates.push({ id: lead.id, casual: lead.company_name });
+            allUpdates.push({ id: lead.id, casual: lead.company_name, source: "fallback" });
           }
         }
       })();
@@ -143,6 +164,12 @@ Deno.serve(async (req: Request) => {
     }
 
     await Promise.all(batchPromises);
+
+    const aiProcessed = allUpdates.filter(u => u.source === "ai").length;
+    const fallbackCount = allUpdates.filter(u => u.source === "fallback").length;
+    const changed = allUpdates.filter(u => u.source === "ai" && u.casual !== leads.find((l: { id: string }) => l.id === u.id)?.company_name).length;
+
+    console.log(`[casualise-names] OpenAI done: ${aiBatches}/${totalBatches} batches succeeded, ${fallbackBatches} fell back. ${aiProcessed} AI-processed, ${fallbackCount} fallback, ${changed} names actually changed.`);
 
     // Write all updates to DB with 25-concurrent writes
     let processed = 0;
@@ -159,7 +186,20 @@ Deno.serve(async (req: Request) => {
       processed += batch.length;
     }
 
-    return jsonResponse({ processed, total: leads.length, campaign_id });
+    const totalMs = Date.now() - startTime;
+    console.log(`[casualise-names] Complete: ${processed} writes in ${totalMs}ms`);
+
+    return jsonResponse({
+      processed,
+      total: leads.length,
+      campaign_id,
+      ai_processed: aiProcessed,
+      fallback_count: fallbackCount,
+      names_changed: changed,
+      batches_succeeded: aiBatches,
+      batches_failed: fallbackBatches,
+      duration_ms: totalMs,
+    });
   } catch (err) {
     return errorResponse(String(err), 500);
   }
