@@ -485,9 +485,33 @@ export default function AgentScreen() {
 
   const flatListRef = useRef<FlatList>(null);
 
+  // ─── Auto-suggest: track the last async job for completion ─────
+  const [trackedJobId, setTrackedJobId] = useState<string | null>(null);
+  const { data: trackedJobData } = useJobProgress(trackedJobId);
+  const prevTrackedStatusRef = useRef<string | null>(null);
+
   const sendMutation = useSendAgentMessage();
   const saveMutation = useSaveConversation();
   const deleteMutation = useDeleteConversation();
+
+  // ─── Auto-suggest on job completion ─────────────────────────────
+  // When the tracked job transitions to "completed", pre-fill the
+  // input with "Next" so the user can advance with one tap.
+  useEffect(() => {
+    const status = trackedJobData?.status;
+    if (!trackedJobId || !status) return;
+
+    if (status === "completed" && prevTrackedStatusRef.current !== "completed") {
+      // Only suggest if input is empty (don't overwrite user typing)
+      setInputText((prev) => (prev.trim() === "" ? "Next" : prev));
+      setTrackedJobId(null);
+    } else if (status === "failed" || status === "cancelled") {
+      // Stop tracking dead jobs — let the user decide
+      setTrackedJobId(null);
+    }
+
+    prevTrackedStatusRef.current = status;
+  }, [trackedJobData?.status, trackedJobId]);
 
   // ─── New chat ───────────────────────────────────────────────────
   const startNewChat = useCallback(() => {
@@ -497,6 +521,8 @@ export default function AgentScreen() {
     setAllToolLogs([]);
     setInputText("");
     setSentAt(null);
+    setTrackedJobId(null);
+    prevTrackedStatusRef.current = null;
   }, []);
 
   // ─── Load conversation ──────────────────────────────────────────
@@ -517,6 +543,8 @@ export default function AgentScreen() {
       setMessages((data.display_messages || []) as DisplayMessage[]);
       setConversationHistory((data.messages || []) as AgentMessage[]);
       setAllToolLogs((data.tool_log || []) as AgentToolLogEntry[]);
+      setTrackedJobId(null);
+      prevTrackedStatusRef.current = null;
     } catch {
       // ignore
     }
@@ -625,6 +653,27 @@ export default function AgentScreen() {
           setConversationHistory(updatedHistory);
           setAllToolLogs(updatedToolLogs);
           setSentAt(null);
+
+          // ─── Auto-suggest next action based on tool results ────
+          // Check the LAST tool result to determine what to pre-fill.
+          const lastEntry =
+            response.tool_log[response.tool_log.length - 1];
+          if (lastEntry) {
+            try {
+              const parsed = JSON.parse(lastEntry.result);
+              if (parsed.job_id) {
+                // Async job created → track it; when it completes
+                // the useEffect above will pre-fill "Next"
+                setTrackedJobId(parsed.job_id);
+                prevTrackedStatusRef.current = null;
+              } else if (parsed.mode === "PREVIEW") {
+                // dry_run preview shown → suggest confirmation
+                setInputText("Yes, run it");
+              }
+            } catch {
+              // non-JSON result — no suggestion
+            }
+          }
 
           // Auto-save
           saveToDb(
