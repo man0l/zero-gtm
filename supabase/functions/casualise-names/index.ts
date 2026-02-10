@@ -8,6 +8,7 @@
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { getSupabaseClient, getUserId, jsonResponse, errorResponse, handleCors } from "../_shared/supabase.ts";
+import { isBillingEnabled, checkAndDeductCredits, hasOwnApiKeys, getRequiredServices } from "../_shared/billing.ts";
 
 // Same prompt as execution/casualise_company_name.py → openai_casualise_name()
 const SYSTEM_PROMPT =
@@ -58,7 +59,7 @@ Deno.serve(async (req: Request) => {
     const { campaign_id, lead_ids } = await req.json();
     if (!campaign_id) return errorResponse("campaign_id required");
 
-    // Get OpenAI key for this customer
+    // Get OpenAI key: prefer user's own key, fall back to platform key when billing is enabled
     const { data: keyRow } = await supabase
       .from("api_keys")
       .select("api_key")
@@ -66,7 +67,10 @@ Deno.serve(async (req: Request) => {
       .eq("customer_id", customerId)
       .single();
 
-    if (!keyRow) return errorResponse("OpenAI API key not configured");
+    const platformKey = Deno.env.get("OPENAI_API_KEY");
+    const openaiKey = keyRow?.api_key || (isBillingEnabled() ? platformKey : null);
+
+    if (!openaiKey) return errorResponse("OpenAI API key not configured");
 
     // Fetch leads needing casualisation (scoped to customer)
     let query = supabase
@@ -85,6 +89,33 @@ Deno.serve(async (req: Request) => {
     if (error) return errorResponse(error.message);
     if (!leads?.length) {
       return jsonResponse({ processed: 0, message: "No leads need casualisation" });
+    }
+
+    // Check if billing is enabled and user needs to pay for this operation
+    if (isBillingEnabled()) {
+      const requiredServices = getRequiredServices("casualise_names");
+      const hasByok = await hasOwnApiKeys(supabase, customerId, requiredServices);
+      
+      if (!hasByok) {
+        // User doesn't have their own OpenAI key, deduct credits
+        const creditCheck = await checkAndDeductCredits(
+          supabase,
+          customerId,
+          leads.length,
+          "inline_operation",
+          campaign_id,
+          `Casualise ${leads.length} company names`
+        );
+
+        if (!creditCheck.allowed) {
+          return jsonResponse({
+            error: "insufficient_credits",
+            message: creditCheck.message || "Insufficient credits",
+            balance: creditCheck.balance || 0,
+            needed: leads.length,
+          }, 402);
+        }
+      }
     }
 
     // Process names in batches via OpenAI (25 names per API call, 25 concurrent DB writes)
@@ -109,7 +140,7 @@ Deno.serve(async (req: Request) => {
           const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
             headers: {
-              "Authorization": `Bearer ${keyRow.api_key}`,
+              "Authorization": `Bearer ${openaiKey}`,
               "Content-Type": "application/json",
             },
             body: JSON.stringify({

@@ -789,3 +789,86 @@ export function useDeleteConversation() {
     },
   });
 }
+
+// ==================== BILLING ====================
+
+export function useBillingStatus() {
+  return useQuery({
+    queryKey: ["billing_status"],
+    queryFn: async () => {
+      const data = await invokeFunction<{
+        billing_enabled: boolean;
+        plan?: string;
+        plan_name?: string;
+        subscription?: any;
+        credits?: {
+          balance: number;
+          used_this_period: number;
+          period_start?: string;
+          period_end?: string;
+        };
+        limits?: {
+          max_campaigns?: number;
+          max_shares?: number;
+        };
+      }>("billing-status", {});
+      return data;
+    },
+    staleTime: 30_000, // 30 seconds
+    refetchInterval: 30_000,
+  });
+}
+
+export function useCreateCheckout() {
+  return useMutation({
+    mutationFn: async (planId: string) => {
+      const data = await invokeFunction<{
+        checkout_url: string;
+        session_id: string;
+      }>("create-checkout", { plan_id: planId });
+      return data;
+    },
+  });
+}
+
+export function useCustomerPortal() {
+  return useMutation({
+    mutationFn: async () => {
+      const data = await invokeFunction<{
+        portal_url: string;
+      }>("customer-portal", {});
+      return data;
+    },
+  });
+}
+
+export function usePlans() {
+  return useQuery({
+    queryKey: ["plans"],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("plans")
+        .select("*")
+        .order("price_cents", { ascending: true });
+      if (error) throw error;
+      return data;
+    },
+    staleTime: 5 * 60_000, // 5 minutes
+  });
+}
+
+export function useCreditTransactions(limit = 20) {
+  return useQuery({
+    queryKey: ["credit_transactions", limit],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("credit_transactions")
+        .select("*")
+        .order("created_at", { ascending: false })
+        .limit(limit);
+      if (error) throw error;
+      return data;
+    },
+  });
+}
+

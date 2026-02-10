@@ -6,6 +6,7 @@
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { getSupabaseClient, getUserId, jsonResponse, errorResponse, handleCors } from "../_shared/supabase.ts";
+import { isBillingEnabled, checkAndDeductCredits, hasOwnApiKeys, getRequiredServices } from "../_shared/billing.ts";
 
 const VALID_TYPES = [
   "find_emails",          // OpenWeb Ninja -> emails, phones, socials
@@ -66,6 +67,35 @@ Deno.serve(async (req: Request) => {
     const { count } = await countQuery.limit(max_leads);
     const eligibleCount = Math.min(count || 0, max_leads);
 
+    // Check if billing is enabled and user needs to pay for this operation
+    let creditsDeducted = 0;
+    if (isBillingEnabled()) {
+      const requiredServices = getRequiredServices(type);
+      const hasByok = await hasOwnApiKeys(supabase, customerId, requiredServices);
+      
+      if (!hasByok) {
+        // User doesn't have their own API keys, deduct credits
+        const creditCheck = await checkAndDeductCredits(
+          supabase,
+          customerId,
+          eligibleCount,
+          "bulk_job",
+          undefined, // job ID not yet created
+          `${type}: ${eligibleCount} leads`
+        );
+
+        if (!creditCheck.allowed) {
+          return jsonResponse({
+            error: "insufficient_credits",
+            message: creditCheck.message || "Insufficient credits",
+            balance: creditCheck.balance || 0,
+            needed: eligibleCount,
+          }, 402);
+        }
+        creditsDeducted = eligibleCount;
+      }
+    }
+
     // Create bulk job
     const { data: job, error } = await supabase
       .from("bulk_jobs")
@@ -77,6 +107,7 @@ Deno.serve(async (req: Request) => {
           max_leads,
           include_existing,
           estimated_leads: eligibleCount,
+          credits_deducted: creditsDeducted,
           ...config,
         },
       })

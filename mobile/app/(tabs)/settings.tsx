@@ -13,11 +13,13 @@ import {
   useAgentConfig,
   useSaveAgentConfig,
   useOpenAIModels,
+  useBillingStatus,
 } from "@/lib/queries";
 import type { AgentConfig, AgentToolDefaults } from "@/lib/types";
 import { Select } from "@/components/ui/select";
 import type { SelectOption } from "@/components/ui/select";
 import { useAuth } from "@/lib/auth";
+import { useRouter } from "expo-router";
 
 const API_SERVICES = [
   { key: "openai", label: "OpenAI", desc: "GPT models for enrichment & icebreakers" },
@@ -120,10 +122,14 @@ function SignOutSection() {
 // ─── Main Screen ────────────────────────────────────────────────────
 
 export default function SettingsScreen() {
+  const router = useRouter();
   const { data: existingKeys } = useApiKeys();
   const saveKey = useSaveApiKey();
   const [editingService, setEditingService] = useState<string | null>(null);
   const [keyValue, setKeyValue] = useState("");
+  
+  // Billing status
+  const { data: billingStatus } = useBillingStatus();
 
   // Agent config
   const { data: agentConfig, isLoading: configLoading } = useAgentConfig();
@@ -223,6 +229,46 @@ export default function SettingsScreen() {
       className="flex-1 bg-background"
       contentContainerClassName="p-4 pb-8"
     >
+      {/* ────── Billing ────── */}
+      {billingStatus?.billing_enabled && (
+        <>
+          <View className="mb-4">
+            <Text className="text-lg font-bold text-foreground">
+              Billing
+            </Text>
+            <Text className="text-sm text-muted-foreground">
+              Manage your subscription and credits.
+            </Text>
+          </View>
+
+          <Card className="mb-6">
+            <CardContent>
+              <View className="flex-row items-center justify-between mb-3">
+                <View>
+                  <Text className="text-sm text-muted-foreground">Current Plan</Text>
+                  <Text className="text-lg font-semibold text-foreground">
+                    {billingStatus?.plan_name || billingStatus?.plan || "Free"}
+                  </Text>
+                </View>
+                <View>
+                  <Text className="text-sm text-muted-foreground text-right">Credits</Text>
+                  <Text className="text-lg font-semibold text-foreground text-right">
+                    {billingStatus?.credits?.balance.toLocaleString() || 0}
+                  </Text>
+                </View>
+              </View>
+              
+              <Button
+                variant="outline"
+                onPress={() => router.push("/billing")}
+              >
+                Manage Plan
+              </Button>
+            </CardContent>
+          </Card>
+        </>
+      )}
+
       {/* ────── API Keys ────── */}
       <Text className="text-lg font-bold text-foreground mb-1">API Keys</Text>
       <Text className="text-sm text-muted-foreground mb-4">

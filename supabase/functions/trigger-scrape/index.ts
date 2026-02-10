@@ -5,6 +5,7 @@
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { getSupabaseClient, getUserId, jsonResponse, errorResponse, handleCors } from "../_shared/supabase.ts";
+import { isBillingEnabled, checkAndDeductCredits, hasOwnApiKeys, getRequiredServices } from "../_shared/billing.ts";
 
 Deno.serve(async (req: Request) => {
   const corsResp = handleCors(req);
@@ -38,6 +39,35 @@ Deno.serve(async (req: Request) => {
       .single();
     if (campErr || !campaign) return errorResponse("Campaign not found", 404);
 
+    // Check if billing is enabled and user needs to pay for this operation
+    let creditsDeducted = 0;
+    if (isBillingEnabled()) {
+      const requiredServices = getRequiredServices("scrape_maps");
+      const hasByok = await hasOwnApiKeys(supabase, customerId, requiredServices);
+      
+      if (!hasByok) {
+        // User doesn't have their own API key, deduct credits
+        const creditCheck = await checkAndDeductCredits(
+          supabase,
+          customerId,
+          max_leads,
+          "bulk_job",
+          undefined, // job ID not yet created
+          `Scrape ${max_leads} leads`
+        );
+
+        if (!creditCheck.allowed) {
+          return jsonResponse({
+            error: "insufficient_credits",
+            message: creditCheck.message || "Insufficient credits",
+            balance: creditCheck.balance || 0,
+            needed: max_leads,
+          }, 402);
+        }
+        creditsDeducted = max_leads;
+      }
+    }
+
     // Create bulk job
     const { data: job, error } = await supabase
       .from("bulk_jobs")
@@ -50,6 +80,7 @@ Deno.serve(async (req: Request) => {
           locations_file: locations_file || "data/us_locations.csv",
           max_leads,
           concurrent,
+          credits_deducted: creditsDeducted,
         },
       })
       .select()
