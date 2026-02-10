@@ -31,3 +31,4 @@ Thumbs.db
 test-flows.mjs
 test-inspect.mjs
 .vercel
+.env.vercel
