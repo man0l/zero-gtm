@@ -23,6 +23,8 @@ Thumbs.db
 # Test artifacts
 .playwright-mcp/
 *.png
+# Allow blog post images (docs site)
+!docs/assets/blog/*.png
 
 # Playwright (root-level test deps)
 /package.json
