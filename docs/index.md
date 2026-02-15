@@ -65,7 +65,8 @@ Speed to lead happens on your phone. ZeroGTM gives you:
 [Features & capabilities →]({{ site.baseurl }}/features/)  
 [Compare ZeroGTM vs human SDR & other tools →]({{ site.baseurl }}/compare/)  
 [Pricing & plans →]({{ site.baseurl }}/pricing/)  
-[Blog: How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/)
+[Blog: How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/)  
+[Blog: AI SDR vs Human SDR — Real cost breakdown (2026) →]({{ site.baseurl }}/blog/ai-sdr-vs-human-sdr-cost-2026/)
 
 ---
 
