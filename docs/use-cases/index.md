@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Use Cases — Lead Enrichment by Industry
-description: "ZeroGTM lead enrichment and AI SDR for medical spas, dental, HVAC, and real estate. Industry-specific lead generation and email finder workflows."
+description: "ZeroGTM lead enrichment and AI SDR for medical spas, dental, HVAC, real estate, personal injury attorneys, and custom home builders. Industry-specific lead generation and email finder workflows."
 permalink: /use-cases/
 ---
 
@@ -19,6 +19,8 @@ ZeroGTM delivers **lead enrichment** and **AI SDR** workflows tailored to your i
 | [Dental]({{ site.baseurl }}/use-cases/dental-lead-generation/) | Patient retention, appointment reminders, filling empty chair time, voice search |
 | [HVAC]({{ site.baseurl }}/use-cases/hvac-lead-generation/) | Dispatch, emergency repair booking, speed to lead, mobile for field techs |
 | [Real Estate]({{ site.baseurl }}/use-cases/real-estate-lead-generation/) | Open house follow-ups, seller lead generation, agent automation |
+| [Personal Injury Attorney]({{ site.baseurl }}/use-cases/personal-injury-attorney-lead-generation/) | Speed to lead, case intake, accident and referral leads |
+| [Custom Home Builders]({{ site.baseurl }}/use-cases/custom-home-builders-lead-generation/) | Luxury and high-net-worth leads, architect/designer referrals, long-cycle sales |
 
 ---
 
