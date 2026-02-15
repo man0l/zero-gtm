@@ -44,6 +44,14 @@ nav:
     url: /
   - title: Features
     url: /features/
+  - title: Use Cases
+    url: /use-cases/
+  - title: Integrations
+    url: /integrations/
+  - title: Changelog
+    url: /changelog/
+  - title: Glossary
+    url: /glossary/
   - title: Compare
     url: /compare/
   - title: Pricing

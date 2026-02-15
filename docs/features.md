@@ -68,7 +68,7 @@ Your data stays yours. ZeroGTM runs on your infra (or optional hosted tier):
 
 ## Built for B2B Lead Enrichment
 
-Best for teams that want **b2b lead enrichment tools** and **best lead enrichment for sales teams** without the SaaS tax: GTM engineers, sales ops, and founders running signal-driven outreach. See [pricing]({{ site.baseurl }}/pricing/) for plans and [compare]({{ site.baseurl }}/compare/) for how ZeroGTM stacks up to human SDRs and other tools.
+Best for teams that want **b2b lead enrichment tools** and **best lead enrichment for sales teams** without the SaaS tax: GTM engineers, sales ops, and founders running signal-driven outreach. See [use cases]({{ site.baseurl }}/use-cases/) (med spa, dental, HVAC, real estate), [integrations]({{ site.baseurl }}/integrations/), [pricing]({{ site.baseurl }}/pricing/), and [compare]({{ site.baseurl }}/compare/) for how ZeroGTM stacks up to human SDRs and other tools.
 
 ---
 

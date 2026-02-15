@@ -63,6 +63,10 @@ Speed to lead happens on your phone. ZeroGTM gives you:
 
 [Getting Started guide →]({{ site.baseurl }}/docs/getting-started/)  
 [Features & capabilities →]({{ site.baseurl }}/features/)  
+[Use cases by industry →]({{ site.baseurl }}/use-cases/)  
+[Integrations →]({{ site.baseurl }}/integrations/)  
+[Changelog →]({{ site.baseurl }}/changelog/)  
+[Glossary (AI SDR, lead enrichment) →]({{ site.baseurl }}/glossary/)  
 [Compare ZeroGTM vs human SDR & other tools →]({{ site.baseurl }}/compare/)  
 [Pricing & plans →]({{ site.baseurl }}/pricing/)  
 [Blog: How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/)  
