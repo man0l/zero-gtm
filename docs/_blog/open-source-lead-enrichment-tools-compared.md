@@ -99,4 +99,4 @@ By owning the engine, the fuel (data), and the keys, you build a lead generation
 [Enrichment pipeline (step-by-step) →]({{ site.baseurl }}/docs/enrichment-pipeline/)  
 [Compare open-source vs Apollo & other tools →]({{ site.baseurl }}/compare/)  
 [Pricing & BYOK →]({{ site.baseurl }}/pricing/)  
-[How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/) · [AI SDR vs Human SDR cost (2026) →]({{ site.baseurl }}/blog/ai-sdr-vs-human-sdr-cost-2026/)
+[How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/) · [AI SDR vs Human SDR cost (2026) →]({{ site.baseurl }}/blog/ai-sdr-vs-human-sdr-cost-2026/) · [Cold email deliverability guide (2026) →]({{ site.baseurl }}/blog/cold-email-deliverability-guide-2026/)
