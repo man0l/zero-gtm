@@ -1,0 +1,25 @@
+{% assign base = site.url | append: site.baseurl %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ZeroGTM",
+  "description": "Open-source AI SDR and lead enrichment engine. Credit-based plans for lead enrichment and email finder. Self-hosted option for full control.",
+  "brand": { "@type": "Brand", "name": "ZeroGTM" },
+  "url": "{{ base }}/pricing/",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "0",
+    "highPrice": "199",
+    "offerCount": "5",
+    "offers": [
+      { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "100 credits/mo, 2 campaigns, view-only export" },
+      { "@type": "Offer", "name": "Starter", "price": "49", "priceCurrency": "USD", "description": "1,000 credits/mo, 10 campaigns, CSV export" },
+      { "@type": "Offer", "name": "Growth", "price": "99", "priceCurrency": "USD", "description": "3,000 credits/mo, unlimited campaigns, CSV + Sheets export" },
+      { "@type": "Offer", "name": "Scale", "price": "199", "priceCurrency": "USD", "description": "10,000 credits/mo, unlimited campaigns, full API" },
+      { "@type": "Offer", "name": "Self-Hosted", "price": "0", "priceCurrency": "USD", "description": "No per-credit fees; API and compute costs only" }
+    ]
+  }
+}
+</script>

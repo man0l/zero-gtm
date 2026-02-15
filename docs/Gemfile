@@ -1,0 +1,7 @@
+# Gemfile for local Jekyll build (optional)
+# GitHub Pages uses its own Gemfile; this is for `bundle exec jekyll serve`
+
+source "https://rubygems.org"
+gem "jekyll", "~> 3.9"
+gem "jekyll-seo-tag", "~> 2.8"
+gem "webrick", "~> 1.8"

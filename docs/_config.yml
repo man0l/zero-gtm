@@ -1,0 +1,67 @@
+# ZeroGTM / Cold Email Ninja - GitHub Pages
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
+# Encoding: all source files must be UTF-8 (no BOM).
+
+title: ZeroGTM — AI SDR & Lead Enrichment Engine
+description: "Open-source AI SDR agent for lead generation. Google Maps scraper, email finder, lead enrichment software. Self-hosted, mobile-first. 71% cheaper than human SDRs."
+baseurl: "/cold-email-ninja-app"
+url: "https://man0l.github.io"
+# Social / SEO: default share image (1200×630 recommended for OG/Twitter CTR)
+image: "/cold-email-ninja-app/assets/og-default.png"
+
+# Jekyll
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Build
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - potential_tags.md
+  - assets/README.md
+
+# Collections (optional later)
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name/
+
+plugins:
+  - jekyll-sitemap   # outputs sitemap.xml at site root (URL: baseurl/sitemap.xml)
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom (fallback for layouts that reference og_image)
+og_image: "/cold-email-ninja-app/assets/og-default.png"
+brand: ZeroGTM
+nav:
+  - title: Home
+    url: /
+  - title: Features
+    url: /features/
+  - title: Compare
+    url: /compare/
+  - title: Pricing
+    url: /pricing/
+  - title: Blog
+    url: /blog/google-maps-b2b-leads-2026/
+  - title: Docs
+    url: /docs/getting-started/
+    children:
+      - title: Getting Started
+        url: /docs/getting-started/
+      - title: Mobile App
+        url: /docs/mobile-app/
+      - title: Web App
+        url: /docs/web-app/
+      - title: Enrichment Pipeline
+        url: /docs/enrichment-pipeline/
+      - title: Self-Hosted
+        url: /docs/self-hosted/
+      - title: API Keys
+        url: /docs/api-keys/

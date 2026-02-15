@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://man0l.github.io/cold-email-ninja-app/sitemap.xml

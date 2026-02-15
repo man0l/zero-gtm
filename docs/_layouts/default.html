@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% seo %}
+  <!-- Social image: page.image or site default (jekyll-seo-tag uses site.image; override per page with image in front matter) -->
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | prepend: site.url }}" />
+  <meta name="twitter:image" content="{{ page.image | prepend: site.url }}" />
+  {% elsif site.og_image %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og_image }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og_image }}" />
+  {% endif %}
+  <meta property="og:site_name" content="{{ site.brand | default: site.title }}" />
+  <!-- Google Analytics (same as landing) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPRPH392YC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JPRPH392YC');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --fg: #f8fafc;
+      --fg-muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { color: var(--primary-hover); text-decoration: underline; }
+    .nav { background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 0.75rem 0; }
+    .nav-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+    .nav a { color: var(--fg); font-weight: 500; }
+    .nav a:hover { color: var(--primary); text-decoration: none; }
+    .nav .brand { font-weight: 700; margin-right: 1rem; }
+    .nav .links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .nav .dropdown { position: relative; }
+    .nav .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; min-width: 180px; padding: 0.5rem 0; z-index: 10; }
+    .nav .dropdown:hover .dropdown-content { display: block; }
+    .nav .dropdown-content a { display: block; padding: 0.5rem 1rem; color: var(--fg); }
+    main { padding: 2rem 0 4rem; }
+    h1 { font-size: 1.875rem; margin-top: 0; }
+    h2 { font-size: 1.5rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    h3 { font-size: 1.25rem; margin-top: 1.5rem; }
+    pre, code { background: var(--bg-card); padding: 0.2em 0.4em; border-radius: 4px; font-size: 0.9em; }
+    pre { padding: 1rem; overflow-x: auto; }
+    pre code { padding: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    th { background: var(--bg-card); font-weight: 600; }
+    .btn { display: inline-block; background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 500; }
+    .btn:hover { background: var(--primary-hover); color: white; text-decoration: none; }
+    .footer { border-top: 1px solid var(--border); padding: 1.5rem 0; color: var(--fg-muted); font-size: 0.875rem; }
+    .footer a { color: var(--fg-muted); }
+    .footer a:hover { color: var(--primary); }
+    .diagram { margin: 1.5rem 0; text-align: center; }
+    .diagram svg { max-width: 100%; height: auto; }
+    .diagram figcaption { margin-top: 0.5rem; font-size: 0.875rem; color: var(--fg-muted); }
+    .page-image { margin: 1.5rem 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+    .page-image img { width: 100%; height: auto; display: block; }
+    figure { margin: 1.5rem 0; }
+    @media (max-width: 640px) { .nav-inner { flex-direction: column; align-items: flex-start; } }
+  </style>
+  {% if page.schema == 'software' or page.schema == 'home' %}{% include jsonld-software.html %}{% endif %}
+  {% if page.schema == 'home' %}{% include jsonld-faq.html %}{% endif %}
+  {% if page.schema == 'compare' %}{% include jsonld-faq-compare.html %}{% endif %}
+  {% if page.schema == 'pricing' %}{% include jsonld-pricing.html %}{% include jsonld-faq-pricing.html %}{% endif %}
+  {% if page.schema == 'features' %}{% include jsonld-faq-features.html %}{% endif %}
+  {% if page.url == '/' or page.permalink == '/' %}{% include jsonld-breadcrumb-home.html %}{% elsif page.url != '' %}{% include jsonld-breadcrumb.html %}{% endif %}
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="{{ site.baseurl }}/" class="brand">{{ site.brand | default: site.title }}</a>
+      <nav class="links">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/features/">Features</a>
+        <a href="{{ site.baseurl }}/compare/">Compare</a>
+        <a href="{{ site.baseurl }}/pricing/">Pricing</a>
+        <a href="{{ site.baseurl }}/blog/google-maps-b2b-leads-2026/">Blog</a>
+        <span class="dropdown">
+          <a href="{{ site.baseurl }}/docs/getting-started/">Docs</a>
+          <div class="dropdown-content">
+            <a href="{{ site.baseurl }}/docs/getting-started/">Getting Started</a>
+            <a href="{{ site.baseurl }}/docs/mobile-app/">Mobile App</a>
+            <a href="{{ site.baseurl }}/docs/web-app/">Web App</a>
+            <a href="{{ site.baseurl }}/docs/enrichment-pipeline/">Enrichment Pipeline</a>
+            <a href="{{ site.baseurl }}/docs/self-hosted/">Self-Hosted</a>
+            <a href="{{ site.baseurl }}/docs/api-keys/">API Keys</a>
+          </div>
+        </span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      {{ content }}
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <a href="{{ site.baseurl }}/">ZeroGTM</a> — Open-source AI SDR & lead enrichment. 
+      <a href="https://github.com/man0l/cold-email-ninja-app">GitHub</a> · 
+      <a href="{{ site.baseurl }}/docs/getting-started/">Docs</a>
+    </div>
+  </footer>
+</body>
+</html>
