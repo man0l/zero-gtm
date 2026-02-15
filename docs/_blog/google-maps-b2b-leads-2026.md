@@ -80,4 +80,5 @@ By automating the pipeline—from the initial zip-code level scrape to website v
 [Get started with the self-hosted setup →]({{ site.baseurl }}/docs/self-hosted/)  
 [Enrichment pipeline (step-by-step) →]({{ site.baseurl }}/docs/enrichment-pipeline/)  
 [Pricing & plans →]({{ site.baseurl }}/pricing/)  
-[AI SDR vs Human SDR: Real cost breakdown (2026) →]({{ site.baseurl }}/blog/ai-sdr-vs-human-sdr-cost-2026/)
+[AI SDR vs Human SDR: Real cost breakdown (2026) →]({{ site.baseurl }}/blog/ai-sdr-vs-human-sdr-cost-2026/)  
+[Open source lead enrichment tools compared →]({{ site.baseurl }}/blog/open-source-lead-enrichment-tools-compared/)

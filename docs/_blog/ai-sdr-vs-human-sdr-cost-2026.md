@@ -87,4 +87,5 @@ Replacing a human SDR with AI isn't just about saving money (though saving **$70
 [Get started with the self-hosted ZeroGTM pipeline →]({{ site.baseurl }}/docs/self-hosted/)  
 [Compare ZeroGTM to human SDRs and other tools →]({{ site.baseurl }}/compare/)  
 [Pricing & plans →]({{ site.baseurl }}/pricing/)  
-[How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/)
+[How to scrape Google Maps for B2B leads (2026) →]({{ site.baseurl }}/blog/google-maps-b2b-leads-2026/)  
+[Open source lead enrichment tools compared →]({{ site.baseurl }}/blog/open-source-lead-enrichment-tools-compared/)
