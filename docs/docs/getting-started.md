@@ -33,8 +33,8 @@ Data flows: **Frontend → Edge Function → bulk_jobs table → Worker → lead
 ## 1. Clone the Repo
 
 ```bash
-git clone https://github.com/man0l/cold-email-ninja-app.git
-cd cold-email-ninja-app
+git clone https://github.com/man0l/zero-gtm.git
+cd zero-gtm
 ```
 
 ---

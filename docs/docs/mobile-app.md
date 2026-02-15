@@ -21,7 +21,7 @@ ZeroGTM is **mobile-first**: run your **lead pipeline on mobile** from a thumb-f
 ### Install and run
 
 ```bash
-cd cold-email-ninja-app/mobile
+cd zero-gtm/mobile
 npm install
 ```
 

@@ -35,7 +35,7 @@ Run ZeroGTM on your own infrastructure for **self-hosted lead generation** and f
 The repo references a deployment where Supabase (DB, Kong, Edge Functions, Realtime) and the worker run under a single Compose setup (e.g. `docker-compose.prod.yml` on the server). You’ll need:
 
 - Supabase images or your own build (e.g. `supabase/Dockerfile.functions` for Edge Functions).
-- Worker image from `workers/Dockerfile` (e.g. `ghcr.io/man0l/cold-email-ninja-app:worker-latest`).
+- Worker image from `workers/Dockerfile` (e.g. `ghcr.io/man0l/zero-gtm:worker-latest`).
 
 Apply migrations to the Postgres instance so the `ninja` schema and tables exist.
 
@@ -44,7 +44,7 @@ Apply migrations to the Postgres instance so the `ninja` schema and tables exist
 ## Worker Deployment
 
 - **Image**: Built from `workers/Dockerfile`, pushed to GHCR (or your registry).
-- **Env file**: On the server, e.g. `/app/salonease/cold-email-ninja-app-workers/.env`, mounted as `env_file` in Compose. Never bake secrets into the image.
+- **Env file**: On the server, e.g. `./.env` or `/app/zero-gtm-workers/.env`, mounted as `env_file` in Compose. Never bake secrets into the image.
 - **Required env**: Supabase URL, service role key, and API keys for RapidAPI, OpenWeb Ninja, Anymail Finder, and optionally OpenAI/Anthropic.
 
 Watchtower (or your CI) can auto-pull new images and restart the worker.
