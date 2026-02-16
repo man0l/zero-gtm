@@ -50,7 +50,8 @@ export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
 });
 
 /**
- * Invoke a Supabase Edge Function
+ * Invoke a Supabase Edge Function.
+ * On non-2xx, tries to surface the response body (e.g. { error: "..." }) so the app can show it instead of the generic "Edge Function returned a non-2xx status code".
  */
 export async function invokeFunction<T = unknown>(
   name: string,
@@ -59,6 +60,21 @@ export async function invokeFunction<T = unknown>(
   const { data, error } = await supabase.functions.invoke(name, {
     body,
   });
-  if (error) throw error;
+  if (error) {
+    let message = error.message;
+    const ctx = (error as { context?: { json?: () => Promise<unknown> } })
+      ?.context;
+    if (ctx && typeof ctx.json === "function") {
+      try {
+        const body = (await ctx.json()) as { error?: string; message?: string };
+        if (body?.error || body?.message) {
+          message = body.error ?? body.message ?? message;
+        }
+      } catch {
+        // ignore parse failure, use default message
+      }
+    }
+    throw new Error(message);
+  }
   return data as T;
 }

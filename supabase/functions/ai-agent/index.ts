@@ -1522,7 +1522,18 @@ Deno.serve(async (req: Request) => {
       tool_log: toolLog,
     });
   } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
     console.error("ai-agent error:", err);
-    return errorResponse(String(err), 500);
+    // Return user-friendly message for known OpenAI errors (e.g. quota)
+    if (msg.includes("429") || /quota|billing|rate limit/i.test(msg)) {
+      return errorResponse(
+        "OpenAI quota exceeded or rate limited. Check your OpenAI plan and billing, or try again later.",
+        503,
+      );
+    }
+    if (msg.includes("OpenAI API key not configured")) {
+      return errorResponse(msg, 422);
+    }
+    return errorResponse(msg, 500);
   }
 });
