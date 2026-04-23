@@ -88,4 +88,4 @@ jobs:
       - name: Apply migrations
         env:
           PGSSLMODE: disable
-        run: supabase db push --db-url "${{ secrets.SUPABASE_DB_URL }}"
+        run: supabase db push --include-all --db-url "${{ secrets.SUPABASE_DB_URL }}"
