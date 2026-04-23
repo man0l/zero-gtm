@@ -153,7 +153,7 @@ class ScrapeGoogleMapsWorker(SupabaseWorkerBase):
                 "phone": item.get("phone_number", ""),
                 "company_website": item.get("website", ""),
                 "rating": item.get("rating"),
-                "reviews": item.get("reviews"),
+                "reviews": item.get("review_count"),
                 "category": ", ".join(item.get("types", [])) if item.get("types") else "",
                 "place_id": item.get("place_id", ""),
                 "latitude": item.get("latitude"),
